@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operations Calendar | Secretariat of Finance – Argentina</title>
+  <meta name="description" content="Operations Calendar of the Argentine Republic's Secretariat of Finance. Upcoming ARS auctions, bond operations, and past results.">
+  <!-- Bootstrap 3.4.1 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Font Awesome 4.7.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loading-spinner"></div>
+    <img src="https://www.argentina.gob.ar/sites/default/files/economia_0.png" alt="Ministry of Economy" class="loading-logo">
+    <div class="loading-text">
+      <span class="lang-en">Loading</span>
+      <span class="lang-es" style="display:none">Cargando</span>
+    </div>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <a href="https://www.argentina.gob.ar" target="_blank">argentina.gob.ar</a>
+      <a href="https://www.argentina.gob.ar/economia" target="_blank">
+        <span class="lang-en">Ministry of Economy</span>
+        <span class="lang-es">Ministerio de Economía</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-poncho navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <span class="lang-en">Secretariat of Finance</span>
+          <span class="lang-es">Secretaría de Finanzas</span>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="nav navbar-nav">
+          <li><a href="debt-statistics.html">
+            <span class="lang-en">Debt Statistics</span>
+            <span class="lang-es">Estadísticas de Deuda</span>
+          </a></li>
+          <li><a href="credit-ratings.html">
+            <span class="lang-en">Credit Ratings</span>
+            <span class="lang-es">Calificaciones Crediticias</span>
+          </a></li>
+          <li class="active"><a href="calendar.html">
+            <span class="lang-en">Calendar</span>
+            <span class="lang-es">Calendario</span>
+          </a></li>
+          <li><a href="investor-presentation.html">
+            <span class="lang-en">Presentations</span>
+            <span class="lang-es">Presentaciones</span>
+          </a></li>
+          <li><a href="about-argentina.html">
+            <span class="lang-en">About Argentina</span>
+            <span class="lang-es">Sobre Argentina</span>
+          </a></li>
+        </ul>
+        <div class="nav navbar-nav navbar-right lang-toggle">
+          <button class="btn" id="lang-toggle-btn">ES</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header-section">
+    <div class="container">
+      <div class="celeste-line" style="width:80px; height:4px; background-color:var(--celeste); margin-bottom:16px;"></div>
+      <h1>
+        <span class="lang-en">Operations Calendar</span>
+        <span class="lang-es">Calendario de Operaciones</span>
+      </h1>
+      <p>
+        <span class="lang-en">Upcoming ARS auctions, bond operations, and past results.</span>
+        <span class="lang-es">Próximas subastas en pesos, operaciones de bonos y resultados anteriores.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Sample Data Notice -->
+  <div class="container" style="margin-top: 20px;">
+    <div class="sample-data-notice">
+      <i class="fa fa-info-circle"></i>
+      <span class="lang-en"><strong>Note:</strong> This is a functional prototype with sample data for demonstration purposes. All figures, dates, and operations are illustrative.</span>
+      <span class="lang-es"><strong>Nota:</strong> Este es un prototipo funcional con datos de muestra con fines demostrativos. Todas las cifras, fechas y operaciones son ilustrativas.</span>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="container">
+    <ol class="breadcrumb breadcrumb-poncho">
+      <li><a href="index.html">
+        <span class="lang-en">Home</span>
+        <span class="lang-es">Inicio</span>
+      </a></li>
+      <li class="active">
+        <span class="lang-en">Operations Calendar</span>
+        <span class="lang-es">Calendario de Operaciones</span>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Upcoming Operations -->
+  <section class="section-gray">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="lang-en">Upcoming Operations</span>
+        <span class="lang-es">Próximas Operaciones</span>
+      </h2>
+      <p style="margin-bottom: 20px; color: var(--text-muted); font-size: 13px;">
+        <span class="lang-en">Scheduled debt operations for the next 6 months. Dates and amounts are indicative and subject to market conditions.</span>
+        <span class="lang-es">Operaciones de deuda programadas para los próximos 6 meses. Las fechas y montos son indicativos y están sujetos a condiciones de mercado.</span>
+      </p>
+      <div class="table-responsive">
+        <table class="table table-poncho table-responsive-cards">
+          <thead>
+            <tr>
+              <th>
+                <span class="lang-en">Date</span>
+                <span class="lang-es">Fecha</span>
+              </th>
+              <th>
+                <span class="lang-en">Instrument</span>
+                <span class="lang-es">Instrumento</span>
+              </th>
+              <th>
+                <span class="lang-en">Currency</span>
+                <span class="lang-es">Moneda</span>
+              </th>
+              <th>
+                <span class="lang-en">Estimated Amount</span>
+                <span class="lang-es">Monto Estimado</span>
+              </th>
+              <th>
+                <span class="lang-en">Status</span>
+                <span class="lang-es">Estado</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Date / Fecha">
+                <span class="lang-en">Feb 25, 2026</span>
+                <span class="lang-es">25 feb 2026</span>
+              </td>
+              <td data-label="Instrument / Instrumento">BONCER T2X6</td>
+              <td data-label="Currency / Moneda">ARS (CER)</td>
+              <td data-label="Estimated Amount / Monto Estimado">ARS 150,000 M</td>
+              <td data-label="Status / Estado">
+                <span class="status-dot green"></span>
+                <span class="lang-en">Announced</span>
+                <span class="lang-es">Anunciado</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Date / Fecha">
+                <span class="lang-en">Mar 18, 2026</span>
+                <span class="lang-es">18 mar 2026</span>
+              </td>
+              <td data-label="Instrument / Instrumento">
+                <span class="lang-en">BONTE 2029 (re-open)</span>
+                <span class="lang-es">BONTE 2029 (reapertura)</span>
+              </td>
+              <td data-label="Currency / Moneda">ARS</td>
+              <td data-label="Estimated Amount / Monto Estimado">ARS 200,000 M</td>
+              <td data-label="Status / Estado">
+                <span class="status-dot yellow"></span>
+                <span class="lang-en">Scheduled</span>
+                <span class="lang-es">Programado</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Date / Fecha">
+                <span class="lang-en">Apr 22, 2026</span>
+                <span class="lang-es">22 abr 2026</span>
+              </td>
+              <td data-label="Instrument / Instrumento">LECER</td>
+              <td data-label="Currency / Moneda">ARS (CER)</td>
+              <td data-label="Estimated Amount / Monto Estimado">ARS 100,000 M</td>
+              <td data-label="Status / Estado">
+                <span class="status-dot yellow"></span>
+                <span class="lang-en">Scheduled</span>
+                <span class="lang-es">Programado</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Date / Fecha">
+                <span class="lang-en">Jun 10, 2026</span>
+                <span class="lang-es">10 jun 2026</span>
+              </td>
+              <td data-label="Instrument / Instrumento">BONCER T2X7</td>
+              <td data-label="Currency / Moneda">ARS (CER)</td>
+              <td data-label="Estimated Amount / Monto Estimado">ARS 180,000 M</td>
+              <td data-label="Status / Estado">
+                <span style="color: #999; font-style: italic;">
+                  <span class="lang-en">Tentative</span>
+                  <span class="lang-es">Tentativo</span>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size: 11px; color: #999; margin-top: 10px;">
+        <span class="lang-en"><span class="status-dot green" style="vertical-align: middle;"></span> Announced &nbsp;&nbsp; <span class="status-dot yellow" style="vertical-align: middle;"></span> Scheduled &nbsp;&nbsp; <span style="color: #999; font-style: italic;">Tentative</span></span>
+        <span class="lang-es"><span class="status-dot green" style="vertical-align: middle;"></span> Anunciado &nbsp;&nbsp; <span class="status-dot yellow" style="vertical-align: middle;"></span> Programado &nbsp;&nbsp; <span style="color: #999; font-style: italic;">Tentativo</span></span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Past Auction Results -->
+  <section class="section-default">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="lang-en">Past Auction Results</span>
+        <span class="lang-es">Resultados de Subastas Anteriores</span>
+      </h2>
+      <p style="margin-bottom: 20px; color: var(--text-muted); font-size: 13px;">
+        <span class="lang-en">Results of the most recent debt auctions conducted by the Secretariat of Finance.</span>
+        <span class="lang-es">Resultados de las subastas de deuda más recientes realizadas por la Secretaría de Finanzas.</span>
+      </p>
+      <div class="table-responsive">
+        <table class="table table-poncho table-responsive-cards">
+          <thead>
+            <tr>
+              <th>
+                <span class="lang-en">Date</span>
+                <span class="lang-es">Fecha</span>
+              </th>
+              <th>
+                <span class="lang-en">Instrument</span>
+                <span class="lang-es">Instrumento</span>
+              </th>
+              <th>
+                <span class="lang-en">Amount Offered</span>
+                <span class="lang-es">Monto Ofrecido</span>
+              </th>
+              <th>
+                <span class="lang-en">Amount Placed</span>
+                <span class="lang-es">Monto Colocado</span>
+              </th>
+              <th>
+                <span class="lang-en">Cut-off Rate / Price</span>
+                <span class="lang-es">Tasa / Precio de Corte</span>
+              </th>
+              <th>
+                <span class="lang-en">Bid-to-Cover</span>
+                <span class="lang-es">Ratio Oferta/Demanda</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Date / Fecha">
+                <span class="lang-en">Jan 28, 2026</span>
+                <span class="lang-es">28 ene 2026</span>
+              </td>
+              <td data-label="Instrument / Instrumento">
+                <span class="lang-en">LETES 182d</span>
+                <span class="lang-es">LETES 182d</span>
+              </td>
+              <td data-label="Amount Offered / Monto Ofrecido">USD 500 M</td>
+              <td data-label="Amount Placed / Monto Colocado">USD 487 M</td>
+              <td data-label="Cut-off Rate / Tasa de Corte">4.25%</td>
+              <td data-label="Bid-to-Cover / Ratio">2.3x</td>
+            </tr>
+            <tr>
+              <td data-label="Date / Fecha">
+                <span class="lang-en">Jan 21, 2026</span>
+                <span class="lang-es">21 ene 2026</span>
+              </td>
+              <td data-label="Instrument / Instrumento">BONCER T2X6</td>
+              <td data-label="Amount Offered / Monto Ofrecido">ARS 120,000 M</td>
+              <td data-label="Amount Placed / Monto Colocado">ARS 135,200 M</td>
+              <td data-label="Cut-off Rate / Tasa de Corte">CER+5.8%</td>
+              <td data-label="Bid-to-Cover / Ratio">2.8x</td>
+            </tr>
+            <tr>
+              <td data-label="Date / Fecha">
+                <span class="lang-en">Jan 14, 2026</span>
+                <span class="lang-es">14 ene 2026</span>
+              </td>
+              <td data-label="Instrument / Instrumento">BONTE 2027</td>
+              <td data-label="Amount Offered / Monto Ofrecido">ARS 80,000 M</td>
+              <td data-label="Amount Placed / Monto Colocado">ARS 92,000 M</td>
+              <td data-label="Cut-off Rate / Tasa de Corte">42.5% TNA</td>
+              <td data-label="Bid-to-Cover / Ratio">1.9x</td>
+            </tr>
+            <tr>
+              <td data-label="Date / Fecha">
+                <span class="lang-en">Dec 17, 2025</span>
+                <span class="lang-es">17 dic 2025</span>
+              </td>
+              <td data-label="Instrument / Instrumento">
+                <span class="lang-en">LETES 91d</span>
+                <span class="lang-es">LETES 91d</span>
+              </td>
+              <td data-label="Amount Offered / Monto Ofrecido">USD 400 M</td>
+              <td data-label="Amount Placed / Monto Colocado">USD 412 M</td>
+              <td data-label="Cut-off Rate / Tasa de Corte">3.95%</td>
+              <td data-label="Bid-to-Cover / Ratio">2.1x</td>
+            </tr>
+            <tr>
+              <td data-label="Date / Fecha">
+                <span class="lang-en">Dec 10, 2025</span>
+                <span class="lang-es">10 dic 2025</span>
+              </td>
+              <td data-label="Instrument / Instrumento">
+                <span class="lang-en">LECER 180d</span>
+                <span class="lang-es">LECER 180d</span>
+              </td>
+              <td data-label="Amount Offered / Monto Ofrecido">ARS 100,000 M</td>
+              <td data-label="Amount Placed / Monto Colocado">ARS 108,500 M</td>
+              <td data-label="Cut-off Rate / Tasa de Corte">CER+4.2%</td>
+              <td data-label="Bid-to-Cover / Ratio">2.4x</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="section-gray">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="lang-en">Downloads</span>
+        <span class="lang-es">Descargas</span>
+      </h2>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="download-card">
+            <i class="fa fa-file-excel-o"></i>
+            <h4>
+              <span class="lang-en">Full Operations Calendar</span>
+              <span class="lang-es">Calendario Completo de Operaciones</span>
+            </h4>
+            <p>
+              <span class="lang-en">Download the complete 2026 operations calendar with all scheduled auctions, tentative dates, and historical results in Excel format.</span>
+              <span class="lang-es">Descargue el calendario completo de operaciones 2026 con todas las subastas programadas, fechas tentativas y resultados históricos en formato Excel.</span>
+            </p>
+            <a href="#" class="btn btn-poncho btn-poncho-primary" onclick="alert('This is a prototype. The Excel file is not available for download.'); return false;">
+              <i class="fa fa-download"></i>&nbsp;
+              <span class="lang-en">Download Full Calendar (Excel)</span>
+              <span class="lang-es">Descargar Calendario Completo (Excel)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <section class="section-default" style="padding-bottom: 20px;">
+    <div class="container">
+      <div class="disclaimer">
+        <strong>
+          <span class="lang-en">Legal Disclaimer:</span>
+          <span class="lang-es">Aviso Legal:</span>
+        </strong>
+        <span class="lang-en">This calendar is provided for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. All dates, amounts, and terms are indicative and subject to change based on market conditions and government decisions. The Argentine Republic reserves the right to modify, postpone, or cancel any scheduled operation without prior notice. Investors should consult their own financial, legal, and tax advisors before making any investment decisions.</span>
+        <span class="lang-es">Este calendario se proporciona únicamente con fines informativos y no constituye una oferta de venta ni una solicitud de oferta de compra de valores. Todas las fechas, montos y condiciones son indicativos y están sujetos a cambios según las condiciones del mercado y decisiones gubernamentales. La República Argentina se reserva el derecho de modificar, posponer o cancelar cualquier operación programada sin previo aviso. Los inversores deben consultar a sus propios asesores financieros, legales y fiscales antes de tomar decisiones de inversión.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-poncho">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <h4>
+            <span class="lang-en">Investor Relations</span>
+            <span class="lang-es">Relaciones con Inversores</span>
+          </h4>
+          <ul>
+            <li><a href="debt-statistics.html"><span class="lang-en">Debt Statistics</span><span class="lang-es">Estadísticas de Deuda</span></a></li>
+            <li><a href="credit-ratings.html"><span class="lang-en">Credit Ratings</span><span class="lang-es">Calificaciones Crediticias</span></a></li>
+            <li><a href="calendar.html"><span class="lang-en">Operations Calendar</span><span class="lang-es">Calendario de Operaciones</span></a></li>
+            <li><a href="investor-presentation.html"><span class="lang-en">Presentations</span><span class="lang-es">Presentaciones</span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h4>
+            <span class="lang-en">About</span>
+            <span class="lang-es">Información</span>
+          </h4>
+          <ul>
+            <li><a href="about-argentina.html"><span class="lang-en">Argentina at a Glance</span><span class="lang-es">Argentina en Cifras</span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h4>
+            <span class="lang-en">Related Links</span>
+            <span class="lang-es">Enlaces Relacionados</span>
+          </h4>
+          <ul>
+            <li><a href="https://www.argentina.gob.ar/economia" target="_blank"><span class="lang-en">Ministry of Economy</span><span class="lang-es">Ministerio de Economía</span></a></li>
+            <li><a href="https://www.bcra.gob.ar" target="_blank"><span class="lang-en">Central Bank (BCRA)</span><span class="lang-es">Banco Central (BCRA)</span></a></li>
+            <li><a href="https://www.indec.gob.ar" target="_blank">INDEC</a></li>
+            <li><a href="https://www.argentina.gob.ar" target="_blank">argentina.gob.ar</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h4>
+            <span class="lang-en">Contact</span>
+            <span class="lang-es">Contacto</span>
+          </h4>
+          <p style="font-size:13px; color: var(--text-muted);">
+            <span class="lang-en">Secretariat of Finance</span>
+            <span class="lang-es">Secretaría de Finanzas</span><br>
+            Hipólito Yrigoyen 250, Piso 5<br>
+            C1086AAB – Buenos Aires<br>
+            <span class="lang-en">Argentine Republic</span>
+            <span class="lang-es">República Argentina</span>
+          </p>
+          <p style="font-size:13px;">
+            <i class="fa fa-envelope-o" style="color: var(--celeste);"></i> <a href="mailto:investor.relations@mecon.gob.ar">investor.relations@mecon.gob.ar</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sub-footer -->
+  <div class="subfooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <span class="lang-en">Last updated: February 2026 | Prototype with sample data</span>
+          <span class="lang-es">Última actualización: febrero 2026 | Prototipo con datos de muestra</span>
+        </div>
+        <div class="col-sm-6 text-right">
+          &copy; 2026
+          <span class="lang-en">Argentine Republic – Secretariat of Finance</span>
+          <span class="lang-es">República Argentina – Secretaría de Finanzas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
