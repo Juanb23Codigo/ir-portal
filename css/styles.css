@@ -923,6 +923,35 @@ body.lang-active-es span.lang-es {
 }
 .password-gate .pw-flag-white {
   background-color: var(--white);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.password-gate .pw-sun {
+  width: 22px;
+  height: 22px;
+  background: #F5C518;
+  border-radius: 50%;
+  position: relative;
+  box-shadow:
+    0 0 0 2px #D4A017,
+    0 -14px 0 -6px #F5C518,
+    0 14px 0 -6px #F5C518,
+    14px 0 0 -6px #F5C518,
+    -14px 0 0 -6px #F5C518,
+    10px -10px 0 -6px #F5C518,
+    -10px 10px 0 -6px #F5C518,
+    10px 10px 0 -6px #F5C518,
+    -10px -10px 0 -6px #F5C518,
+    7px -13px 0 -7px #F5C518,
+    -7px 13px 0 -7px #F5C518,
+    13px 7px 0 -7px #F5C518,
+    -13px -7px 0 -7px #F5C518,
+    -7px -13px 0 -7px #F5C518,
+    7px 13px 0 -7px #F5C518,
+    -13px 7px 0 -7px #F5C518,
+    13px -7px 0 -7px #F5C518;
 }
 .password-gate .pw-title {
   font-family: 'Montserrat', sans-serif;

@@ -24,7 +24,7 @@
     gate.id = 'password-gate';
     gate.innerHTML =
       '<div class="pw-box">' +
-        '<div class="pw-flag"><div class="pw-flag-stripe"></div><div class="pw-flag-stripe pw-flag-white"></div><div class="pw-flag-stripe"></div></div>' +
+        '<div class="pw-flag"><div class="pw-flag-stripe"></div><div class="pw-flag-stripe pw-flag-white"><div class="pw-sun"></div></div><div class="pw-flag-stripe"></div></div>' +
         '<div class="pw-title">Investor Relations Portal</div>' +
         '<input type="password" class="pw-input" id="pw-input" placeholder="Enter password">' +
         '<button class="pw-btn" id="pw-btn">Access</button>' +
