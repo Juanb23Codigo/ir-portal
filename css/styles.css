@@ -908,9 +908,21 @@ body.lang-active-es span.lang-es {
   text-align: center;
   box-shadow: 0 4px 24px rgba(0,0,0,0.2);
 }
-.password-gate .pw-logo {
-  max-width: 220px;
-  margin-bottom: 24px;
+.password-gate .pw-flag {
+  width: 160px;
+  height: 100px;
+  margin: 0 auto 24px;
+  border: 1px solid var(--border-gray);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.password-gate .pw-flag-stripe {
+  flex: 1;
+  background-color: var(--celeste);
+}
+.password-gate .pw-flag-white {
+  background-color: var(--white);
 }
 .password-gate .pw-title {
   font-family: 'Montserrat', sans-serif;

@@ -24,7 +24,7 @@
     gate.id = 'password-gate';
     gate.innerHTML =
       '<div class="pw-box">' +
-        '<img src="https://www.argentina.gob.ar/sites/default/files/economia_0.png" alt="Ministry of Economy" class="pw-logo">' +
+        '<div class="pw-flag"><div class="pw-flag-stripe"></div><div class="pw-flag-stripe pw-flag-white"></div><div class="pw-flag-stripe"></div></div>' +
         '<div class="pw-title">Investor Relations Portal</div>' +
         '<input type="password" class="pw-input" id="pw-input" placeholder="Enter password">' +
         '<button class="pw-btn" id="pw-btn">Access</button>' +
