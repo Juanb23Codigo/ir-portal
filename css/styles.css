@@ -913,7 +913,6 @@ body.lang-active-es span.lang-es {
   height: 100px;
   margin: 0 auto 24px;
   border: 1px solid var(--border-gray);
-  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -929,29 +928,29 @@ body.lang-active-es span.lang-es {
   justify-content: center;
 }
 .password-gate .pw-sun {
-  width: 22px;
-  height: 22px;
+  width: 14px;
+  height: 14px;
   background: #F5C518;
   border-radius: 50%;
   position: relative;
   box-shadow:
-    0 0 0 2px #D4A017,
-    0 -14px 0 -6px #F5C518,
-    0 14px 0 -6px #F5C518,
-    14px 0 0 -6px #F5C518,
-    -14px 0 0 -6px #F5C518,
-    10px -10px 0 -6px #F5C518,
-    -10px 10px 0 -6px #F5C518,
-    10px 10px 0 -6px #F5C518,
-    -10px -10px 0 -6px #F5C518,
-    7px -13px 0 -7px #F5C518,
-    -7px 13px 0 -7px #F5C518,
-    13px 7px 0 -7px #F5C518,
-    -13px -7px 0 -7px #F5C518,
-    -7px -13px 0 -7px #F5C518,
-    7px 13px 0 -7px #F5C518,
-    -13px 7px 0 -7px #F5C518,
-    13px -7px 0 -7px #F5C518;
+    0 0 0 1.5px #D4A017,
+    0 -10px 0 -5px #F5C518,
+    0 10px 0 -5px #F5C518,
+    10px 0 0 -5px #F5C518,
+    -10px 0 0 -5px #F5C518,
+    7px -7px 0 -5px #F5C518,
+    -7px 7px 0 -5px #F5C518,
+    7px 7px 0 -5px #F5C518,
+    -7px -7px 0 -5px #F5C518,
+    4px -9px 0 -5.5px #F5C518,
+    -4px 9px 0 -5.5px #F5C518,
+    9px 4px 0 -5.5px #F5C518,
+    -9px -4px 0 -5.5px #F5C518,
+    -4px -9px 0 -5.5px #F5C518,
+    4px 9px 0 -5.5px #F5C518,
+    -9px 4px 0 -5.5px #F5C518,
+    9px -4px 0 -5.5px #F5C518;
 }
 .password-gate .pw-title {
   font-family: 'Montserrat', sans-serif;
