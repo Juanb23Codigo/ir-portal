@@ -13,13 +13,13 @@
   --secondary: #3E5A7E;
   --info: #5A7290;
   --link: #0767A7;
-  --celeste: #75AADB;
+  --celeste: #039BE5;
   --footer-bg: #FAF8ED;
   --subfooter-bg: #232D4F;
   --white: #FFFFFF;
   --light-gray: #F5F5F5;
   --border-gray: #DDDDDD;
-  --text-dark: #333333;
+  --text-dark: #141414;
   --text-muted: #666666;
   --success: #2E7D32;
   --warning: #F9A825;
@@ -38,7 +38,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora', serif;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--text-dark);
 }
 
 h1 { font-size: 2.2em; margin-bottom: 20px; }
@@ -717,6 +717,16 @@ body.lang-active-es span.lang-es {
   .bar-chart {
     height: 160px;
   }
+}
+
+/* ---------- Licitaciones: legend dot ---------- */
+.legend-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
 }
 
 /* ---------- Licitaciones: subscription box ---------- */
