@@ -58,8 +58,8 @@
   <div class="container" style="margin-top: 20px;">
     <div class="sample-data-notice">
       <i class="fa fa-info-circle"></i>
-      <span class="lang-en"><strong>Note:</strong> Functional prototype. Content replicates the official Ministry of Economy page; downloads are placeholders.</span>
-      <span class="lang-es"><strong>Nota:</strong> Prototipo funcional. El contenido replica la página oficial del Ministerio de Economía; las descargas son de muestra.</span>
+      <span class="lang-en"><strong>Note:</strong> Functional prototype. Content replicates the official Ministry of Economy page; the schedule download links to the official Ministry of Economy PDF.</span>
+      <span class="lang-es"><strong>Nota:</strong> Prototipo funcional. El contenido replica la página oficial del Ministerio de Economía; la descarga del cronograma enlaza al PDF oficial del Ministerio de Economía.</span>
     </div>
   </div>
 
@@ -76,7 +76,7 @@
             <i class="fa fa-file-pdf-o" style="display:block;"></i>
             <h4><span class="lang-en">2026 Auction Schedule</span><span class="lang-es">Cronograma de Licitaciones 2026</span></h4>
             <p><span class="lang-en">Schedule of calls, auctions, and settlements for the year, in PDF format.</span><span class="lang-es">Cronograma de llamados, licitaciones y liquidaciones del año, en formato PDF.</span></p>
-            <a href="#" class="btn btn-poncho btn-poncho-primary" onclick="alert('Prototipo: archivo no disponible.'); return false;">
+            <a href="https://www.argentina.gob.ar/sites/default/files/calendario_prensa_0.pdf" target="_blank" rel="noopener" class="btn btn-poncho btn-poncho-primary">
               <i class="fa fa-download"></i>&nbsp;<span class="lang-en">Download Schedule (PDF)</span><span class="lang-es">Descargar Cronograma (PDF)</span>
             </a>
           </div>
@@ -84,15 +84,95 @@
         <div class="col-md-5">
           <div class="card-poncho">
             <h4 style="margin-top:0;"><span class="lang-en">Legend</span><span class="lang-es">Referencias</span></h4>
-            <p style="margin-bottom:8px;"><span class="legend-dot" style="background:var(--celeste);"></span> <strong>Llamado</strong> &mdash; <span class="lang-en">announcement of the auction call.</span><span class="lang-es">anuncio del llamado a licitación.</span></p>
-            <p style="margin-bottom:8px;"><span class="legend-dot" style="background:var(--primary);"></span> <strong>Licitación</strong> &mdash; <span class="lang-en">auction day.</span><span class="lang-es">día de la licitación.</span></p>
-            <p style="margin-bottom:0;"><span class="legend-dot" style="background:var(--secondary);"></span> <strong>Liquidación</strong> &mdash; <span class="lang-en">settlement of the operation.</span><span class="lang-es">liquidación de la operación.</span></p>
+            <p style="margin-bottom:8px;"><span class="legend-dot" style="background:var(--primary);"></span> <strong>Llamado</strong> &mdash; <span class="lang-en">announcement of the auction call.</span><span class="lang-es">anuncio del llamado a licitación.</span></p>
+            <p style="margin-bottom:8px;"><span class="legend-dot" style="background:var(--success);"></span> <strong>Licitación</strong> &mdash; <span class="lang-en">auction day.</span><span class="lang-es">día de la licitación.</span></p>
+            <p style="margin-bottom:0;"><span class="legend-dot" style="background:#C1C1C1;"></span> <strong>Liquidación</strong> &mdash; <span class="lang-en">settlement of the operation.</span><span class="lang-es">liquidación de la operación.</span></p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+
+  <section class="section-gray" id="calendario">
+    <div class="container">
+      <h2 class="section-title"><span class="lang-en">2026 Calendar</span><span class="lang-es">Calendario 2026</span></h2>
+      <p style="margin-bottom:24px;">
+        <span class="legend-dot" style="background:var(--primary);"></span> <strong>Llamado</strong>&nbsp;&nbsp;&nbsp;
+        <span class="legend-dot" style="background:var(--success);"></span> <strong>Licitación</strong>&nbsp;&nbsp;&nbsp;
+        <span class="legend-dot" style="background:#C1C1C1;"></span> <strong>Liquidación</strong>&nbsp;&nbsp;&nbsp;
+        <span class="legend-dot" style="background:transparent;"></span> <span style="color:var(--danger);font-weight:700;">Feriado</span>
+      </p>
+      <div class="row">
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Enero</span><span class="lang-en">January</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td><span class="cal-feriado">1</span></td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td><span class="cal-day cal-llamado">12</span></td><td>13</td><td><span class="cal-day cal-licitacion">14</span></td><td>15</td><td><span class="cal-day cal-liquidacion">16</span></td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td><span class="cal-day cal-llamado">26</span></td><td>27</td><td><span class="cal-day cal-licitacion">28</span></td><td>29</td><td><span class="cal-day cal-liquidacion">30</span></td><td>31</td></tr></tbody></table>
+          <p class="cal-notes">1. <b>Feriado</b> &middot; 12, 26. <b>Llamado</b> &middot; 14, 28. <b>Licitación</b> &middot; 16, 30. <b>Liquidación</b></p>
+        </div></div>
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Febrero</span><span class="lang-en">February</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td><span class="cal-day cal-llamado">9</span></td><td>10</td><td><span class="cal-day cal-licitacion">11</span></td><td>12</td><td><span class="cal-day cal-liquidacion">13</span></td><td>14</td></tr><tr><td>15</td><td><span class="cal-feriado">16</span></td><td><span class="cal-feriado">17</span></td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td><span class="cal-day cal-llamado">23</span></td><td>24</td><td><span class="cal-day cal-licitacion">25</span></td><td>26</td><td><span class="cal-day cal-liquidacion">27</span></td><td>28</td></tr></tbody></table>
+          <p class="cal-notes">16, 17. <b>Feriado</b> &middot; 9, 23. <b>Llamado</b> &middot; 11, 25. <b>Licitación</b> &middot; 13, 27. <b>Liquidación</b></p>
+        </div></div>
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Marzo</span><span class="lang-en">March</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td><span class="cal-day cal-llamado">10</span></td><td>11</td><td><span class="cal-day cal-licitacion">12</span></td><td>13</td><td>14</td></tr><tr><td>15</td><td><span class="cal-day cal-liquidacion">16</span></td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td><span class="cal-feriado">24</span></td><td><span class="cal-day cal-llamado">25</span></td><td>26</td><td><span class="cal-day cal-licitacion">27</span></td><td>28</td></tr><tr><td>29</td><td>30</td><td><span class="cal-day cal-liquidacion">31</span></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+          <p class="cal-notes">24. <b>Feriado</b> &middot; 10, 25. <b>Llamado</b> &middot; 12, 27. <b>Licitación</b> &middot; 16, 31. <b>Liquidación</b></p>
+        </div></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Abril</span><span class="lang-en">April</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td></td><td></td><td></td><td>1</td><td><span class="cal-feriado">2</span></td><td><span class="cal-feriado">3</span></td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>12</td><td><span class="cal-day cal-llamado">13</span></td><td>14</td><td><span class="cal-day cal-licitacion">15</span></td><td>16</td><td><span class="cal-day cal-liquidacion">17</span></td><td>18</td></tr><tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td><span class="cal-day cal-llamado">24</span></td><td>25</td></tr><tr><td>26</td><td>27</td><td><span class="cal-day cal-licitacion">28</span></td><td>29</td><td><span class="cal-day cal-liquidacion">30</span></td><td></td><td></td></tr></tbody></table>
+          <p class="cal-notes">2, 3. <b>Feriado</b> &middot; 13, 24. <b>Llamado</b> &middot; 15, 28. <b>Licitación</b> &middot; 17, 30. <b>Liquidación</b></p>
+        </div></div>
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Mayo</span><span class="lang-en">May</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td><span class="cal-feriado">1</span></td><td>2</td></tr><tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>10</td><td><span class="cal-day cal-llamado">11</span></td><td>12</td><td><span class="cal-day cal-licitacion">13</span></td><td>14</td><td><span class="cal-day cal-liquidacion">15</span></td><td>16</td></tr><tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td><span class="cal-day cal-llamado">22</span></td><td>23</td></tr><tr><td>24</td><td><span class="cal-feriado">25</span></td><td>26</td><td><span class="cal-day cal-licitacion">27</span></td><td>28</td><td><span class="cal-day cal-liquidacion">29</span></td><td>30</td></tr><tr><td>31</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+          <p class="cal-notes">1, 25. <b>Feriado</b> &middot; 11, 22. <b>Llamado</b> &middot; 13, 27. <b>Licitación</b> &middot; 15, 29. <b>Liquidación</b></p>
+        </div></div>
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Junio</span><span class="lang-en">June</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td><span class="cal-day cal-llamado">8</span></td><td>9</td><td><span class="cal-day cal-licitacion">10</span></td><td>11</td><td><span class="cal-day cal-liquidacion">12</span></td><td>13</td></tr><tr><td>14</td><td><span class="cal-feriado">15</span></td><td>16</td><td>17</td><td>18</td><td>19</td><td><span class="cal-feriado">20</span></td></tr><tr><td>21</td><td>22</td><td>23</td><td><span class="cal-day cal-llamado">24</span></td><td>25</td><td><span class="cal-day cal-licitacion">26</span></td><td>27</td></tr><tr><td>28</td><td>29</td><td><span class="cal-day cal-liquidacion">30</span></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+          <p class="cal-notes">15, 20. <b>Feriado</b> &middot; 8, 24. <b>Llamado</b> &middot; 10, 26. <b>Licitación</b> &middot; 12, 30. <b>Liquidación</b></p>
+        </div></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Julio</span><span class="lang-en">July</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td><span class="cal-feriado">9</span></td><td>10</td><td>11</td></tr><tr><td>12</td><td><span class="cal-day cal-llamado">13</span></td><td>14</td><td><span class="cal-day cal-licitacion">15</span></td><td>16</td><td><span class="cal-day cal-liquidacion">17</span></td><td>18</td></tr><tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>26</td><td><span class="cal-day cal-llamado">27</span></td><td>28</td><td><span class="cal-day cal-licitacion">29</span></td><td>30</td><td><span class="cal-day cal-liquidacion">31</span></td><td></td></tr></tbody></table>
+          <p class="cal-notes">9. <b>Feriado</b> &middot; 13, 27. <b>Llamado</b> &middot; 15, 29. <b>Licitación</b> &middot; 17, 31. <b>Liquidación</b></p>
+        </div></div>
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Agosto</span><span class="lang-en">August</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>9</td><td><span class="cal-day cal-llamado">10</span></td><td>11</td><td><span class="cal-day cal-licitacion">12</span></td><td>13</td><td><span class="cal-day cal-liquidacion">14</span></td><td>15</td></tr><tr><td>16</td><td><span class="cal-feriado">17</span></td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td><span class="cal-day cal-llamado">25</span></td><td>26</td><td><span class="cal-day cal-licitacion">27</span></td><td>28</td><td>29</td></tr><tr><td>30</td><td><span class="cal-day cal-liquidacion">31</span></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+          <p class="cal-notes">17. <b>Feriado</b> &middot; 10, 25. <b>Llamado</b> &middot; 12, 27. <b>Licitación</b> &middot; 14, 31. <b>Liquidación</b></p>
+        </div></div>
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Septiembre</span><span class="lang-en">September</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td><span class="cal-day cal-llamado">9</span></td><td>10</td><td><span class="cal-day cal-licitacion">11</span></td><td>12</td></tr><tr><td>13</td><td>14</td><td><span class="cal-day cal-liquidacion">15</span></td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td><span class="cal-day cal-llamado">24</span></td><td>25</td><td>26</td></tr><tr><td>27</td><td><span class="cal-day cal-licitacion">28</span></td><td>29</td><td><span class="cal-day cal-liquidacion">30</span></td><td></td><td></td><td></td></tr></tbody></table>
+          <p class="cal-notes">9, 24. <b>Llamado</b> &middot; 11, 28. <b>Licitación</b> &middot; 15, 30. <b>Liquidación</b></p>
+        </div></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Octubre</span><span class="lang-en">October</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td><span class="cal-day cal-llamado">9</span></td><td>10</td></tr><tr><td>11</td><td><span class="cal-feriado">12</span></td><td>13</td><td><span class="cal-day cal-licitacion">14</span></td><td>15</td><td><span class="cal-day cal-liquidacion">16</span></td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td><span class="cal-day cal-llamado">26</span></td><td>27</td><td><span class="cal-day cal-licitacion">28</span></td><td>29</td><td><span class="cal-day cal-liquidacion">30</span></td><td>31</td></tr></tbody></table>
+          <p class="cal-notes">12. <b>Feriado</b> &middot; 9, 26. <b>Llamado</b> &middot; 14, 28. <b>Licitación</b> &middot; 16, 30. <b>Liquidación</b></p>
+        </div></div>
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Noviembre</span><span class="lang-en">November</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td><span class="cal-day cal-llamado">9</span></td><td>10</td><td><span class="cal-day cal-licitacion">11</span></td><td>12</td><td><span class="cal-day cal-liquidacion">13</span></td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td><span class="cal-feriado">23</span></td><td><span class="cal-day cal-llamado">24</span></td><td>25</td><td><span class="cal-day cal-licitacion">26</span></td><td>27</td><td>28</td></tr><tr><td>29</td><td><span class="cal-day cal-liquidacion">30</span></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+          <p class="cal-notes">23. <b>Feriado</b> &middot; 9, 24. <b>Llamado</b> &middot; 11, 26. <b>Licitación</b> &middot; 13, 30. <b>Liquidación</b></p>
+        </div></div>
+        <div class="col-md-4 col-sm-6"><div class="cal-month">
+          <div class="cal-title"><span class="lang-es">Diciembre</span><span class="lang-en">December</span></div>
+          <table class="cal-table"><thead><tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr></thead><tbody><tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td><span class="cal-feriado">8</span></td><td><span class="cal-day cal-llamado">9</span></td><td>10</td><td><span class="cal-day cal-licitacion">11</span></td><td>12</td></tr><tr><td>13</td><td>14</td><td><span class="cal-day cal-liquidacion">15</span></td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td><span class="cal-feriado">25</span></td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td></tr></tbody></table>
+          <p class="cal-notes">8, 25. <b>Feriado</b> &middot; 9. <b>Llamado</b> &middot; 11. <b>Licitación</b> &middot; 15. <b>Liquidación</b></p>
+        </div></div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer-poncho">
     <div class="container">
