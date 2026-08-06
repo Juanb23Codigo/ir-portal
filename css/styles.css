@@ -729,6 +729,165 @@ body.lang-active-es span.lang-es {
   vertical-align: middle;
 }
 
+/* ---------- MECON-style landing ---------- */
+.mecon-masthead {
+  background: #fff;
+  border-bottom: 1px solid var(--border-gray);
+  padding: 12px 0;
+}
+.mecon-masthead .mecon-brand {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text-dark);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.mecon-masthead .mecon-brand img { height: 30px; }
+.mecon-masthead .mecon-search {
+  border: 1px solid var(--border-gray);
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 13px;
+  width: 100%;
+  max-width: 340px;
+}
+.btn-miarg {
+  background: #3526C3;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+.btn-miarg:hover { background: #2a1e9c; color: #fff; text-decoration: none; }
+.mecon-ministry-bar {
+  background: #141414;
+  color: #fff;
+  padding: 9px 0;
+  font-size: 13px;
+}
+.mecon-ministry-bar a { color: #fff; }
+.mecon-ministry-bar a:hover { color: var(--celeste); text-decoration: none; }
+
+/* Accesos (image-top cards) */
+.acceso-card {
+  border: 1px solid var(--border-gray);
+  background: #fff;
+  margin-bottom: 24px;
+  position: relative;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.acceso-card:hover { box-shadow: 0 6px 18px rgba(0,0,0,0.12); transform: translateY(-2px); }
+.acceso-card .acceso-top {
+  background: var(--primary);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.acceso-card .acceso-top i { font-size: 54px; color: #fff; }
+.acceso-card.acceso-new .acceso-top { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); }
+.acceso-card .acceso-body { padding: 18px 20px; }
+.acceso-card .acceso-body h3 {
+  color: var(--link);
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+.acceso-card .acceso-body p { color: var(--text-muted); font-size: 13px; margin: 0; }
+.acceso-card .acceso-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--celeste);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+/* Destacados */
+.destacado-item {
+  border: 1px solid var(--border-gray);
+  background: #fff;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.destacado-item .di-icon { font-size: 26px; color: var(--link); flex-shrink: 0; margin-top: 2px; }
+.destacado-item h4 { color: var(--link); margin: 0 0 4px; font-size: 15px; font-family: 'Lora', serif; }
+.destacado-item p { color: var(--text-muted); font-size: 13px; margin: 0; }
+
+/* Noticias */
+.noticia-card {
+  border: 1px solid var(--border-gray);
+  background: #fff;
+  margin-bottom: 24px;
+}
+.noticia-card .nc-top {
+  background: var(--primary);
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 10px;
+}
+.noticia-card .nc-top .nc-crest { font-size: 20px; margin-bottom: 5px; opacity: 0.9; }
+.noticia-card .nc-top .nc-label { font-size: 12px; font-style: italic; line-height: 1.2; }
+.noticia-card .nc-body { padding: 14px 16px; }
+.noticia-card .nc-date { font-size: 11px; color: var(--text-muted); }
+.noticia-card .nc-title {
+  font-size: 13px;
+  color: var(--link);
+  font-weight: 600;
+  margin-top: 5px;
+  display: block;
+  line-height: 1.4;
+}
+
+/* ---------- Licitaciones: left side menu ---------- */
+.side-menu {
+  border: 1px solid var(--border-gray);
+  margin-bottom: 26px;
+}
+.side-menu .side-menu-header {
+  background: var(--light-gray);
+  padding: 14px 16px;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.35;
+}
+.side-menu .side-menu-header a { color: var(--primary); }
+.side-menu .side-menu-header a:hover { color: var(--link); text-decoration: none; }
+.side-menu ul { list-style: none; margin: 0; padding: 0; }
+.side-menu li a {
+  display: block;
+  padding: 11px 16px;
+  border-top: 1px solid var(--border-gray);
+  color: var(--link);
+  font-size: 13px;
+  transition: background-color 0.15s;
+}
+.side-menu li a:hover { background: var(--light-gray); text-decoration: none; }
+.side-menu li.active a {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+
 /* ---------- Cronograma: year calendar ---------- */
 .legend-dot {
   display: inline-block;

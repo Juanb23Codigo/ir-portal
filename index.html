@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finanzas | Ministerio de Economía – Argentina</title>
+  <title>Finanzas | Argentina.gob.ar</title>
   <meta name="description" content="Secretaría de Finanzas de la República Argentina. Gestionamos la política financiera de la Argentina: deuda pública, licitaciones, inclusión financiera y relación con inversores.">
-  <!-- Bootstrap 3.4.1 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!-- Font Awesome 4.7.0 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,174 +14,95 @@
   <div id="loading-overlay" class="loading-overlay">
     <div class="loading-spinner"></div>
     <img src="https://www.argentina.gob.ar/sites/default/files/economia_0.png" alt="Ministerio de Economía" class="loading-logo">
-    <div class="loading-text">
-      <span class="lang-es">Cargando</span>
-      <span class="lang-en" style="display:none">Loading</span>
-    </div>
+    <div class="loading-text"><span class="lang-es">Cargando</span><span class="lang-en" style="display:none">Loading</span></div>
   </div>
 
-  <!-- Top Bar -->
-  <div class="top-bar">
+  <!-- Masthead (Argentina.gob.ar) -->
+  <div class="mecon-masthead">
     <div class="container">
-      <a href="https://www.argentina.gob.ar" target="_blank">argentina.gob.ar</a>
-      <a href="https://www.argentina.gob.ar/economia" target="_blank">
-        <span class="lang-es">Ministerio de Economía</span>
-        <span class="lang-en">Ministry of Economy</span>
-      </a>
-    </div>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-poncho navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">
-          <span class="lang-es">Secretaría de Finanzas</span>
-          <span class="lang-en">Secretariat of Finance</span>
-        </a>
-      </div>
-      <div class="collapse navbar-collapse" id="main-nav">
-        <ul class="nav navbar-nav">
-          <li><a href="https://www.argentina.gob.ar/economia/finanzas/deuda-publica" target="_blank">
-            <span class="lang-es">Deuda Pública</span>
-            <span class="lang-en">Public Debt</span>
-          </a></li>
-          <li><a href="licitaciones.html">
-            <span class="lang-es">Licitaciones</span>
-            <span class="lang-en">Auctions</span>
-          </a></li>
-          <li><a href="https://www.argentina.gob.ar/economia/finanzas/inclusionfinanciera" target="_blank">
-            <span class="lang-es">Inclusión Financiera</span>
-            <span class="lang-en">Financial Inclusion</span>
-          </a></li>
-          <li><a href="https://www.argentina.gob.ar/economia/finanzas" target="_blank">
-            <span class="lang-es">Institucional</span>
-            <span class="lang-en">About Us</span>
-          </a></li>
-          <li class="nav-highlight"><a href="inversores.html">
-            <span class="lang-es"><i class="fa fa-line-chart"></i>&nbsp; Relación con Inversores</span>
-            <span class="lang-en"><i class="fa fa-line-chart"></i>&nbsp; Investor Relations</span>
-          </a></li>
-        </ul>
-        <div class="nav navbar-nav navbar-right lang-toggle">
-          <button class="btn" id="lang-toggle-btn">EN</button>
+      <div class="row" style="display:flex; align-items:center; flex-wrap:wrap;">
+        <div class="col-md-4 col-sm-4">
+          <a href="https://www.argentina.gob.ar" target="_blank" class="mecon-brand" style="text-decoration:none;">
+            <img src="https://www.argentina.gob.ar/sites/default/files/logo-arg.png" alt="Argentina.gob.ar" onerror="this.style.display='none'">
+            Argentina.gob.ar
+          </a>
+        </div>
+        <div class="col-md-5 col-sm-4 text-center">
+          <input type="text" class="mecon-search" placeholder="Buscá en el sitio" aria-label="Buscar">
+        </div>
+        <div class="col-md-3 col-sm-4 text-right">
+          <button class="btn" id="lang-toggle-btn" style="border:2px solid var(--celeste); color:var(--primary); background:transparent; border-radius:20px; padding:4px 12px; font-size:12px; font-weight:600; margin-right:8px;">EN</button>
+          <a href="https://mi.argentina.gob.ar" target="_blank" class="btn-miarg">miArgentina</a>
         </div>
       </div>
     </div>
-  </nav>
+  </div>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
+  <!-- Ministry bar -->
+  <div class="mecon-ministry-bar">
     <div class="container">
-      <div class="celeste-line"></div>
-      <h1>
-        <span class="lang-es">Finanzas</span>
-        <span class="lang-en">Finance</span>
-      </h1>
-      <p>
+      <a href="https://www.argentina.gob.ar/economia" target="_blank">Ministerio de Economía</a> /
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero-section" style="padding:44px 0 40px;">
+    <div class="container">
+      <h1 style="margin-bottom:10px;"><span class="lang-es">Finanzas</span><span class="lang-en">Finance</span></h1>
+      <p style="margin-bottom:0;">
         <span class="lang-es">Gestionamos la política financiera de la Argentina.</span>
         <span class="lang-en">We manage Argentina's financial policy.</span>
       </p>
     </div>
   </section>
 
-  <!-- Breadcrumb -->
-  <div class="container">
-    <ol class="breadcrumb breadcrumb-poncho">
-      <li><a href="https://www.argentina.gob.ar" target="_blank">
-        <span class="lang-es">Inicio</span><span class="lang-en">Home</span>
-      </a></li>
-      <li><a href="https://www.argentina.gob.ar/economia" target="_blank">
-        <span class="lang-es">Ministerio de Economía</span><span class="lang-en">Ministry of Economy</span>
-      </a></li>
-      <li class="active">
-        <span class="lang-es">Finanzas</span><span class="lang-en">Finance</span>
-      </li>
-    </ol>
-  </div>
-
   <!-- Sample Data Notice -->
-  <div class="container">
+  <div class="container" style="margin-top:20px;">
     <div class="sample-data-notice">
       <i class="fa fa-info-circle"></i>
-      <span class="lang-es"><strong>Nota:</strong> Prototipo funcional con datos de muestra para fines demostrativos. Los accesos externos abren el sitio oficial; "Relación con Inversores" abre el portal en desarrollo.</span>
-      <span class="lang-en"><strong>Note:</strong> Functional prototype with sample data for demonstration purposes. External links open the official website; "Investor Relations" opens the portal under development.</span>
+      <span class="lang-es"><strong>Nota:</strong> Prototipo. Réplica de la página oficial del Ministerio de Economía; los accesos externos abren el sitio oficial y "Relación con Inversores" abre el portal en desarrollo.</span>
+      <span class="lang-en"><strong>Note:</strong> Prototype. Replica of the official Ministry of Economy page; external links open the official site and "Investor Relations" opens the portal under development.</span>
     </div>
   </div>
 
-  <!-- Quick Access -->
-  <section class="section-default">
+  <!-- Accesos -->
+  <section class="section-default" style="padding-top:30px;">
     <div class="container">
-      <h2 class="section-title">
-        <span class="lang-es">Accesos Rápidos</span>
-        <span class="lang-en">Quick Access</span>
-      </h2>
       <div class="row">
         <!-- Deuda Pública -->
         <div class="col-md-4 col-sm-6">
-          <a href="https://www.argentina.gob.ar/economia/finanzas/deuda-publica" target="_blank" style="text-decoration:none; color:inherit;">
-            <div class="card-poncho">
-              <div class="card-icon"><i class="fa fa-university"></i></div>
-              <div class="card-title">
-                <span class="lang-es">Deuda Pública</span>
-                <span class="lang-en">Public Debt</span>
+          <a href="https://www.argentina.gob.ar/economia/finanzas/deuda-publica" target="_blank" style="text-decoration:none; display:block;">
+            <div class="acceso-card">
+              <div class="acceso-top"><i class="fa fa-bar-chart"></i></div>
+              <div class="acceso-body">
+                <h3><span class="lang-es">Deuda Pública</span><span class="lang-en">Public Debt</span></h3>
+                <p><span class="lang-es">Principales medidas de gestión, datos y publicaciones para el financiamiento de los compromisos de deuda pública.</span><span class="lang-en">Key management measures, data, and publications for financing public debt commitments.</span></p>
               </div>
-              <div class="card-text">
-                <span class="lang-es">Información sobre el financiamiento y la gestión de los compromisos de la deuda pública nacional.</span>
-                <span class="lang-en">Information on the financing and management of national public debt commitments.</span>
-              </div>
-              <span class="card-link">
-                <span class="lang-es">Ir al sitio oficial <i class="fa fa-external-link"></i></span>
-                <span class="lang-en">Go to official site <i class="fa fa-external-link"></i></span>
-              </span>
             </div>
           </a>
         </div>
         <!-- Inclusión Financiera -->
         <div class="col-md-4 col-sm-6">
-          <a href="https://www.argentina.gob.ar/economia/finanzas/inclusionfinanciera" target="_blank" style="text-decoration:none; color:inherit;">
-            <div class="card-poncho">
-              <div class="card-icon"><i class="fa fa-users"></i></div>
-              <div class="card-title">
-                <span class="lang-es">Inclusión Financiera</span>
-                <span class="lang-en">Financial Inclusion</span>
+          <a href="https://www.argentina.gob.ar/economia/inclusion-financiera" target="_blank" style="text-decoration:none; display:block;">
+            <div class="acceso-card">
+              <div class="acceso-top"><i class="fa fa-users"></i></div>
+              <div class="acceso-body">
+                <h3><span class="lang-es">Inclusión Financiera</span><span class="lang-en">Financial Inclusion</span></h3>
+                <p><span class="lang-es">Información y herramientas para acceder a bienes y servicios financieros.</span><span class="lang-en">Information and tools to access financial goods and services.</span></p>
               </div>
-              <div class="card-text">
-                <span class="lang-es">Herramientas y políticas para ampliar el acceso a servicios financieros y la educación financiera.</span>
-                <span class="lang-en">Tools and policies to expand access to financial services and financial education.</span>
-              </div>
-              <span class="card-link">
-                <span class="lang-es">Ir al sitio oficial <i class="fa fa-external-link"></i></span>
-                <span class="lang-en">Go to official site <i class="fa fa-external-link"></i></span>
-              </span>
             </div>
           </a>
         </div>
-        <!-- Relación con Inversores (destacado) -->
+        <!-- Relación con Inversores (NUEVO) -->
         <div class="col-md-4 col-sm-6">
-          <a href="inversores.html" style="text-decoration:none; color:inherit;">
-            <div class="card-poncho card-celeste card-featured">
-              <div class="featured-badge">
-                <span class="lang-es">Nuevo</span><span class="lang-en">New</span>
+          <a href="inversores.html" style="text-decoration:none; display:block;">
+            <div class="acceso-card acceso-new">
+              <div class="acceso-badge"><span class="lang-es">Nuevo</span><span class="lang-en">New</span></div>
+              <div class="acceso-top"><i class="fa fa-line-chart"></i></div>
+              <div class="acceso-body">
+                <h3><span class="lang-es">Relación con Inversores</span><span class="lang-en">Investor Relations</span></h3>
+                <p><span class="lang-es">Portal para la comunidad inversora: estadísticas de deuda, calificaciones crediticias, licitaciones y presentaciones.</span><span class="lang-en">Portal for the investor community: debt statistics, credit ratings, auctions, and presentations.</span></p>
               </div>
-              <div class="card-icon"><i class="fa fa-line-chart"></i></div>
-              <div class="card-title">
-                <span class="lang-es">Relación con Inversores</span>
-                <span class="lang-en">Investor Relations</span>
-              </div>
-              <div class="card-text">
-                <span class="lang-es">Portal dedicado para la comunidad inversora: estadísticas de deuda, calificaciones crediticias, licitaciones y presentaciones.</span>
-                <span class="lang-en">Dedicated portal for the investor community: debt statistics, credit ratings, auctions, and presentations.</span>
-              </div>
-              <span class="card-link">
-                <span class="lang-es">Ingresar al portal <i class="fa fa-arrow-right"></i></span>
-                <span class="lang-en">Enter the portal <i class="fa fa-arrow-right"></i></span>
-              </span>
             </div>
           </a>
         </div>
@@ -192,115 +110,111 @@
     </div>
   </section>
 
-  <!-- Destacados + Noticias -->
-  <section class="section-gray">
+  <!-- Destacados -->
+  <section class="section-default" style="padding-top:0;">
     <div class="container">
+      <h2 class="section-title"><span class="lang-es">Destacados</span><span class="lang-en">Featured</span></h2>
       <div class="row">
-        <!-- Destacados -->
-        <div class="col-md-4">
-          <h2 class="section-title">
-            <span class="lang-es">Destacados</span>
-            <span class="lang-en">Featured</span>
-          </h2>
-          <div class="card-poncho card-info">
-            <div class="card-icon"><i class="fa fa-gavel"></i></div>
-            <div class="card-title">
-              <span class="lang-es">Licitaciones de Letras y Bonos del Tesoro</span>
-              <span class="lang-en">Treasury Bills &amp; Bonds Auctions</span>
+        <div class="col-md-6">
+          <a href="https://www.argentina.gob.ar/economia/licitaciones" target="_blank" style="text-decoration:none;">
+            <div class="destacado-item">
+              <div class="di-icon"><i class="fa fa-calendar-check-o"></i></div>
+              <div>
+                <h4><span class="lang-es">Licitaciones de Letras y Bonos del Tesoro</span><span class="lang-en">Treasury Bills &amp; Bonds Auctions</span></h4>
+                <p><span class="lang-es">Próximos llamados, resultados de las operaciones y datos anuales de colocaciones de deuda.</span><span class="lang-en">Upcoming calls, operation results, and annual debt placement data.</span></p>
+              </div>
             </div>
-            <div class="card-text">
-              <span class="lang-es">Llamados y resultados de las operaciones de deuda del Tesoro Nacional.</span>
-              <span class="lang-en">Calls and results of National Treasury debt operations.</span>
-            </div>
-            <a href="licitaciones.html" class="card-link">
-              <span class="lang-es">Ver más <i class="fa fa-arrow-right"></i></span>
-              <span class="lang-en">Learn more <i class="fa fa-arrow-right"></i></span>
-            </a>
-          </div>
-          <div class="card-poncho">
-            <div class="card-icon"><i class="fa fa-database"></i></div>
-            <div class="card-title">
-              <span class="lang-es">Datos</span>
-              <span class="lang-en">Data</span>
-            </div>
-            <div class="card-text">
-              <span class="lang-es">Información y series estadísticas sobre la deuda nacional.</span>
-              <span class="lang-en">Information and statistical series on national debt.</span>
-            </div>
-            <a href="https://www.argentina.gob.ar/economia/finanzas" target="_blank" class="card-link">
-              <span class="lang-es">Ir al sitio oficial <i class="fa fa-external-link"></i></span>
-              <span class="lang-en">Go to official site <i class="fa fa-external-link"></i></span>
-            </a>
-          </div>
+          </a>
         </div>
-
-        <!-- Noticias -->
-        <div class="col-md-8">
-          <h2 class="section-title">
-            <span class="lang-es">Noticias</span>
-            <span class="lang-en">News</span>
-          </h2>
-          <div class="news-item">
-            <div class="news-date"><span class="lang-es">28 de julio de 2026</span><span class="lang-en">July 28, 2026</span></div>
-            <div class="news-title"><span class="lang-es">Resultados de la licitación de Letras del Tesoro</span><span class="lang-en">Treasury Bills Auction Results</span></div>
-            <div class="news-excerpt"><span class="lang-es">La Secretaría de Finanzas informa los resultados de la última licitación de instrumentos del Tesoro Nacional.</span><span class="lang-en">The Secretariat of Finance announces the results of the latest National Treasury instruments auction.</span></div>
-          </div>
-          <div class="news-item">
-            <div class="news-date"><span class="lang-es">21 de julio de 2026</span><span class="lang-en">July 21, 2026</span></div>
-            <div class="news-title"><span class="lang-es">Moody's mejora la calificación soberana de Argentina a B3</span><span class="lang-en">Moody's Upgrades Argentina's Sovereign Rating to B3</span></div>
-            <div class="news-excerpt"><span class="lang-es">La agencia elevó la calificación de Caa1 a B3 con perspectiva positiva, citando la consolidación fiscal y la desinflación.</span><span class="lang-en">The agency raised the rating from Caa1 to B3 with a positive outlook, citing fiscal consolidation and disinflation.</span></div>
-          </div>
-          <div class="news-item">
-            <div class="news-date"><span class="lang-es">15 de julio de 2026</span><span class="lang-en">July 15, 2026</span></div>
-            <div class="news-title"><span class="lang-es">Cronograma de licitaciones del Tesoro – Segundo semestre 2026</span><span class="lang-en">Treasury Auction Schedule – Second Half 2026</span></div>
-            <div class="news-excerpt"><span class="lang-es">Se publica el cronograma de próximos llamados a licitación de letras y bonos del Tesoro Nacional.</span><span class="lang-en">The schedule of upcoming Treasury bills and bonds auction calls is published.</span></div>
-          </div>
-          <div class="news-item">
-            <div class="news-date"><span class="lang-es">10 de julio de 2026</span><span class="lang-en">July 10, 2026</span></div>
-            <div class="news-title"><span class="lang-es">Colocación de bonos del Tesoro en el mercado local</span><span class="lang-en">Treasury Bond Placement in the Local Market</span></div>
-            <div class="news-excerpt"><span class="lang-es">La Secretaría de Finanzas concretó una nueva colocación de bonos en pesos en el mercado doméstico.</span><span class="lang-en">The Secretariat of Finance completed a new peso-denominated bond placement in the domestic market.</span></div>
-          </div>
-          <a href="https://www.argentina.gob.ar/economia/finanzas" target="_blank" class="card-link" style="display:block; margin-top:10px;">
-            <span class="lang-es">Ver todo <i class="fa fa-arrow-right"></i></span>
-            <span class="lang-en">See all <i class="fa fa-arrow-right"></i></span>
+        <div class="col-md-6">
+          <a href="https://www.argentina.gob.ar/economia/finanzas/datos" target="_blank" style="text-decoration:none;">
+            <div class="destacado-item">
+              <div class="di-icon"><i class="fa fa-table"></i></div>
+              <div>
+                <h4><span class="lang-es">Datos</span><span class="lang-en">Data</span></h4>
+                <p><span class="lang-es">Datos e información sobre la deuda nacional.</span><span class="lang-en">Data and information on national debt.</span></p>
+              </div>
+            </div>
           </a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Noticias -->
+  <section class="section-gray">
+    <div class="container">
+      <h2 class="section-title"><span class="lang-es">Noticias</span><span class="lang-en">News</span></h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="https://www.argentina.gob.ar/noticias/resultado-de-la-segunda-vuelta-de-la-licitacion-de-bonar-2029-ao29" target="_blank" style="text-decoration:none;">
+            <div class="noticia-card">
+              <div class="nc-top"><div class="nc-crest"><i class="fa fa-certificate"></i></div><div class="nc-label"><span class="lang-es">Resultado de licitación</span><span class="lang-en">Auction result</span></div></div>
+              <div class="nc-body">
+                <div class="nc-date">30 <span class="lang-es">de julio de</span><span class="lang-en">July</span> 2026</div>
+                <span class="nc-title">Resultado de la segunda vuelta de la licitación de BONAR 2029 (AO29)</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="https://www.argentina.gob.ar/noticias/resultado-de-la-licitacion-por-efectivo-de-instrumentos-del-tesoro-nacional-denominados-8" target="_blank" style="text-decoration:none;">
+            <div class="noticia-card">
+              <div class="nc-top"><div class="nc-crest"><i class="fa fa-certificate"></i></div><div class="nc-label"><span class="lang-es">Resultado de licitación</span><span class="lang-en">Auction result</span></div></div>
+              <div class="nc-body">
+                <div class="nc-date">29 <span class="lang-es">de julio de</span><span class="lang-en">July</span> 2026</div>
+                <span class="nc-title">Resultado de la licitación por efectivo de instrumentos del Tesoro Nacional denominados en pesos, dólar linked y dólar estadounidenses</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="https://www.argentina.gob.ar/noticias/comunicacion-de-cambio-en-la-fecha-de-vencimiento-del-bono-del-tesoro-nacional-en-moneda" target="_blank" style="text-decoration:none;">
+            <div class="noticia-card">
+              <div class="nc-top"><div class="nc-crest"><i class="fa fa-bullhorn"></i></div><div class="nc-label"><span class="lang-es">Comunicado</span><span class="lang-en">Announcement</span></div></div>
+              <div class="nc-body">
+                <div class="nc-date">28 <span class="lang-es">de julio de</span><span class="lang-en">July</span> 2026</div>
+                <span class="nc-title">Comunicación de cambio en la fecha de vencimiento del BONO DEL TESORO NACIONAL EN MONEDA DUAL TAMAR / DÓLAR LINKED</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="https://www.argentina.gob.ar/noticias/llamado-licitacion-de-instrumentos-del-tesoro-nacional-denominados-en-pesos-y-en-dolares-8" target="_blank" style="text-decoration:none;">
+            <div class="noticia-card">
+              <div class="nc-top"><div class="nc-crest"><i class="fa fa-gavel"></i></div><div class="nc-label"><span class="lang-es">Llamado a licitación</span><span class="lang-en">Auction call</span></div></div>
+              <div class="nc-body">
+                <div class="nc-date">27 <span class="lang-es">de julio de</span><span class="lang-en">July</span> 2026</div>
+                <span class="nc-title">Llamado a licitación de instrumentos del Tesoro Nacional denominados en pesos y en dólares estadounidenses</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="https://www.argentina.gob.ar/economia/finanzas" target="_blank" class="card-link"><span class="lang-es">Ver todo <i class="fa fa-arrow-right"></i></span><span class="lang-en">See all <i class="fa fa-arrow-right"></i></span></a>
     </div>
   </section>
 
   <!-- Institucional -->
   <section class="section-default">
     <div class="container">
-      <h2 class="section-title">
-        <span class="lang-es">Institucional</span>
-        <span class="lang-en">Institutional</span>
-      </h2>
+      <h2 class="section-title"><span class="lang-es">Institucional</span><span class="lang-en">Institutional</span></h2>
       <div class="row">
         <div class="col-md-4">
-          <div class="card-poncho">
-            <div class="card-icon"><i class="fa fa-user"></i></div>
-            <div class="card-title">
-              <span class="lang-es">Autoridades</span>
-              <span class="lang-en">Authorities</span>
-            </div>
-            <div class="card-text">
-              <strong>Lic. Federico Matías Furiase</strong><br>
-              <span class="lang-es">Secretario de Finanzas</span>
-              <span class="lang-en">Secretary of Finance</span>
+          <div class="acceso-card" style="margin-bottom:0;">
+            <div class="acceso-body">
+              <h3 style="margin-bottom:4px;">Lic. Federico Matías Furiase</h3>
+              <p><span class="lang-es">Secretario de Finanzas</span><span class="lang-en">Secretary of Finance</span></p>
             </div>
           </div>
         </div>
         <div class="col-md-8">
-          <h4 style="margin-top:0;">
-            <span class="lang-es">Áreas dependientes</span>
-            <span class="lang-en">Reporting Areas</span>
-          </h4>
+          <h4 style="margin-top:0;"><span class="lang-es">Áreas</span><span class="lang-en">Areas</span></h4>
           <ul style="font-size:14px; line-height:2; color:var(--text-muted);">
-            <li><span class="lang-es">Subsecretaría de Servicios Financieros</span><span class="lang-en">Undersecretariat of Financial Services</span></li>
-            <li><span class="lang-es">Subsecretaría de Financiamiento</span><span class="lang-en">Undersecretariat of Financing</span></li>
-            <li><span class="lang-es">Subsecretaría de Relaciones Financieras Internacionales</span><span class="lang-en">Undersecretariat of International Financial Relations</span></li>
-            <li><span class="lang-es">Subsecretaría de Coordinación y Gestión Internacional</span><span class="lang-en">Undersecretariat of International Coordination and Management</span></li>
+            <li><a href="https://www.argentina.gob.ar/economia/finanzas/serviciosfinancieros" target="_blank">Subsecretaría de Servicios Financieros</a></li>
+            <li><a href="https://www.argentina.gob.ar/economia/finanzas/financiamiento" target="_blank">Subsecretaría de Financiamiento</a></li>
+            <li><a href="https://www.argentina.gob.ar/economia/finanzas/subsecretaria-de-relaciones-financieras-internacionales" target="_blank">Subsecretaría de Relaciones Financieras Internacionales</a></li>
+            <li><a href="https://www.argentina.gob.ar/economia/finanzas/subsecretaria-de-coordinacion-y-gestion-internacional" target="_blank">Subsecretaría de Coordinación y Gestión Internacional</a></li>
           </ul>
         </div>
       </div>
@@ -315,15 +229,14 @@
           <h4><span class="lang-es">Finanzas</span><span class="lang-en">Finance</span></h4>
           <ul>
             <li><a href="https://www.argentina.gob.ar/economia/finanzas/deuda-publica" target="_blank"><span class="lang-es">Deuda Pública</span><span class="lang-en">Public Debt</span></a></li>
-            <li><a href="licitaciones.html"><span class="lang-es">Licitaciones</span><span class="lang-en">Auctions</span></a></li>
-            <li><a href="https://www.argentina.gob.ar/economia/finanzas/inclusionfinanciera" target="_blank"><span class="lang-es">Inclusión Financiera</span><span class="lang-en">Financial Inclusion</span></a></li>
+            <li><a href="https://www.argentina.gob.ar/economia/licitaciones" target="_blank"><span class="lang-es">Licitaciones</span><span class="lang-en">Auctions</span></a></li>
+            <li><a href="https://www.argentina.gob.ar/economia/inclusion-financiera" target="_blank"><span class="lang-es">Inclusión Financiera</span><span class="lang-en">Financial Inclusion</span></a></li>
           </ul>
         </div>
         <div class="col-md-3 col-sm-6">
           <h4><span class="lang-es">Inversores</span><span class="lang-en">Investors</span></h4>
           <ul>
             <li><a href="inversores.html"><span class="lang-es">Relación con Inversores</span><span class="lang-en">Investor Relations</span></a></li>
-            <li><a href="debt-statistics.html"><span class="lang-es">Deuda Pública</span><span class="lang-en">Public Debt</span></a></li>
             <li><a href="credit-ratings.html"><span class="lang-es">Calificaciones Crediticias</span><span class="lang-en">Credit Ratings</span></a></li>
             <li><a href="investor-presentation.html"><span class="lang-es">Presentaciones</span><span class="lang-en">Presentations</span></a></li>
           </ul>
@@ -339,41 +252,22 @@
         </div>
         <div class="col-md-3 col-sm-6">
           <h4><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></h4>
-          <p style="font-size:13px; color: var(--text-muted);">
-            <span class="lang-es">Secretaría de Finanzas</span>
-            <span class="lang-en">Secretariat of Finance</span><br>
-            Hipólito Yrigoyen 250, Piso 5<br>
-            C1086AAB – Buenos Aires<br>
-            <span class="lang-es">República Argentina</span>
-            <span class="lang-en">Argentine Republic</span>
-          </p>
-          <p style="font-size:13px;">
-            <i class="fa fa-envelope-o" style="color: var(--celeste);"></i> <a href="mailto:finanzas@mecon.gob.ar">finanzas@mecon.gob.ar</a><br>
-            <i class="fa fa-envelope-o" style="color: var(--celeste);"></i> <a href="mailto:oncp@mecon.gob.ar">oncp@mecon.gob.ar</a>
-          </p>
+          <p style="font-size:13px; color: var(--text-muted);"><span class="lang-es">Secretaría de Finanzas</span><span class="lang-en">Secretariat of Finance</span><br>Hipólito Yrigoyen 250, Piso 5<br>C1086AAB – Buenos Aires<br><span class="lang-es">República Argentina</span><span class="lang-en">Argentine Republic</span></p>
+          <p style="font-size:13px;"><i class="fa fa-envelope-o" style="color: var(--celeste);"></i> <a href="mailto:finanzas@mecon.gob.ar">finanzas@mecon.gob.ar</a><br><i class="fa fa-envelope-o" style="color: var(--celeste);"></i> <a href="mailto:oncp@mecon.gob.ar">oncp@mecon.gob.ar</a></p>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Sub-footer -->
   <div class="subfooter">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          <span class="lang-es">Última actualización: julio 2026 | Prototipo con datos de muestra</span>
-          <span class="lang-en">Last updated: July 2026 | Prototype with sample data</span>
-        </div>
-        <div class="col-sm-6 text-right">
-          &copy; 2026
-          <span class="lang-es">República Argentina – Secretaría de Finanzas</span>
-          <span class="lang-en">Argentine Republic – Secretariat of Finance</span>
-        </div>
+        <div class="col-sm-6"><span class="lang-es">Última actualización: julio 2026 | Prototipo</span><span class="lang-en">Last updated: July 2026 | Prototype</span></div>
+        <div class="col-sm-6 text-right">&copy; 2026 <span class="lang-es">República Argentina – Secretaría de Finanzas</span><span class="lang-en">Argentine Republic – Secretariat of Finance</span></div>
       </div>
     </div>
   </div>
 
-  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
