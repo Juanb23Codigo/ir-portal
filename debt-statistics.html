@@ -116,8 +116,8 @@
   <section class="section-default" style="padding-bottom:10px;">
     <div class="container">
       <p class="rating-lead">
-        <span class="lang-en">Gross debt comprises all financial liabilities of the National Central Government under any instrument, currency, or creditor. Below is a summary based on the Secretariat's official taxonomy: by legislation, by currency and rate type, monthly flows and variations, and debt service payments — as published in the <a href="https://www.argentina.gob.ar/economia/finanzas/datos" target="_blank">Monthly Debt Bulletin</a>.</span>
-        <span class="lang-es">La deuda bruta comprende todos los pasivos financieros de la Administración Central Nacional, bajo cualquier instrumento, moneda o acreedor. A continuación, un resumen según la taxonomía oficial de la Secretaría: por legislación, por moneda y tipo de tasa, flujos y variaciones del mes, y pagos de servicio de deuda — tal como se publican en el <a href="https://www.argentina.gob.ar/economia/finanzas/datos" target="_blank">Boletín Mensual de Deuda</a>.</span>
+        <span class="lang-en">Gross debt comprises all financial liabilities of the National Central Government under any instrument, currency, or creditor. Below is a summary based on the Secretariat's official taxonomy: by legislation and by currency and rate type — as published in the <a href="https://www.argentina.gob.ar/economia/finanzas/datos" target="_blank">Monthly Debt Bulletin</a>.</span>
+        <span class="lang-es">La deuda bruta comprende todos los pasivos financieros de la Administración Central Nacional, bajo cualquier instrumento, moneda o acreedor. A continuación, un resumen según la taxonomía oficial de la Secretaría: por legislación y por moneda y tipo de tasa — tal como se publican en el <a href="https://www.argentina.gob.ar/economia/finanzas/datos" target="_blank">Boletín Mensual de Deuda</a>.</span>
       </p>
     </div>
   </section>
@@ -132,36 +132,65 @@
       <div class="row">
         <div class="col-md-6 col-sm-6">
           <div class="card-poncho metric-card">
-            <div class="metric-value">USD 474.2<span style="font-size:0.42em;"> bn</span></div>
+            <div class="metric-value">71.4%</div>
             <div class="metric-label">
-              <span class="lang-en">Total Gross Debt</span>
-              <span class="lang-es">Deuda Bruta Total</span>
+              <span class="lang-en">Gross Debt / GDP</span>
+              <span class="lang-es">Deuda Bruta / PIB</span>
             </div>
-            <div class="metric-change up">
-              <i class="fa fa-arrow-up"></i>
-              <span class="lang-en">+1.9% YoY (Jun-25: USD 465.4 bn)</span>
-              <span class="lang-es">+1,9% i.a. (jun-25: USD 465,4 mm)</span>
+            <div class="metric-change down">
+              <i class="fa fa-arrow-down"></i>
+              <span class="lang-en">−5.0 pp YoY (Jun-25: 76.4%)</span>
+              <span class="lang-es">−5,0 pp i.a. (jun-25: 76,4%)</span>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-sm-6">
           <div class="card-poncho metric-card card-secondary">
-            <div class="metric-value">65.6%</div>
+            <div class="metric-value">40.9%</div>
             <div class="metric-label">
-              <span class="lang-en">Argentine Law</span>
-              <span class="lang-es">Legislación Argentina</span>
+              <span class="lang-en">Debt with Private Sector &amp; IFIs / GDP</span>
+              <span class="lang-es">Deuda con Privados y OI / PIB</span>
             </div>
             <div class="metric-change neutral">
-              <i class="fa fa-balance-scale"></i>
-              <span class="lang-en">34.4% under foreign law</span>
-              <span class="lang-es">34,4% bajo legislación extranjera</span>
+              <i class="fa fa-info-circle"></i>
+              <span class="lang-en">Excludes intra-public-sector holdings</span>
+              <span class="lang-es">Excluye tenencias intra-sector público</span>
             </div>
           </div>
         </div>
       </div>
-      <p style="font-size:11px; color:#999; margin-top:0;">
-        <span class="lang-en">As of June 30, 2026 · Source: Monthly Debt Bulletin, Secretariat of Finance</span>
-        <span class="lang-es">Al 30 de junio de 2026 · Fuente: Boletín Mensual de Deuda, Secretaría de Finanzas</span>
+      <p style="font-size:11px; color:#999; margin-top:0; margin-bottom:24px;">
+        <span class="lang-en">As of June 30, 2026 · Source: Secretariat of Finance, Debt/GDP series</span>
+        <span class="lang-es">Al 30 de junio de 2026 · Fuente: Secretaría de Finanzas, serie Deuda/PIB</span>
+      </p>
+
+      <h3 style="font-size:1.1em;"><span class="lang-en">Gross Debt / GDP — Monthly Evolution</span><span class="lang-es">Deuda Bruta / PIB — Evolución Mensual</span></h3>
+      <p style="font-size:13px; color:var(--text-muted); margin-bottom:20px;">
+        <span class="lang-en">The Dec-2023 peak (156.6% of GDP) reflects the mechanical effect of the FX devaluation on USD-GDP conversion at the start of the current administration; the ratio has declined steadily since.</span>
+        <span class="lang-es">El pico de dic-2023 (156,6% del PIB) refleja el efecto mecánico de la devaluación cambiaria sobre la conversión PIB en USD al inicio de la gestión actual; desde entonces el ratio bajó de forma sostenida.</span>
+      </p>
+      <div class="trend-chart-wrap">
+        <svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deuda Bruta / PIB, evolución mensual nov-2023 a jun-2026">
+          <path d="M4.0,190.0 L4.0,145.6 L31.5,16.5 L59.0,33.6 L86.5,54.0 L113.9,66.9 L141.4,81.8 L168.9,90.5 L196.4,103.8 L223.9,114.1 L251.4,123.8 L278.8,134.1 L306.3,142.6 L333.8,149.9 L361.3,155.5 L388.8,159.7 L416.3,163.2 L443.7,166.8 L471.2,159.4 L498.7,165.3 L526.2,168.4 L553.7,160.3 L581.2,165.2 L608.6,164.9 L636.1,164.8 L663.6,166.2 L691.1,166.0 L718.6,168.9 L746.1,172.2 L773.5,174.6 L801.0,174.3 L828.5,179.6 L856.0,177.9 L856.0,190.0 Z" fill="rgba(117,170,219,0.18)" stroke="none"></path>
+          <polyline points="4.0,145.6 31.5,16.5 59.0,33.6 86.5,54.0 113.9,66.9 141.4,81.8 168.9,90.5 196.4,103.8 223.9,114.1 251.4,123.8 278.8,134.1 306.3,142.6 333.8,149.9 361.3,155.5 388.8,159.7 416.3,163.2 443.7,166.8 471.2,159.4 498.7,165.3 526.2,168.4 553.7,160.3 581.2,165.2 608.6,164.9 636.1,164.8 663.6,166.2 691.1,166.0 718.6,168.9 746.1,172.2 773.5,174.6 801.0,174.3 828.5,179.6 856.0,177.9" fill="none" stroke="var(--primary)" stroke-width="2"></polyline>
+          <circle cx="856.0" cy="177.9" r="4" fill="var(--celeste)" stroke="var(--primary)" stroke-width="1.5"></circle>
+          <!-- gridlines: Dec-23, Jun-24, Dec-24, Jun-25, Dec-25, Jun-26 -->
+          <g stroke="var(--border-gray)" stroke-width="1">
+            <line x1="31.5" y1="0" x2="31.5" y2="190"></line>
+            <line x1="196.4" y1="0" x2="196.4" y2="190"></line>
+            <line x1="361.3" y1="0" x2="361.3" y2="190"></line>
+            <line x1="526.2" y1="0" x2="526.2" y2="190"></line>
+            <line x1="691.1" y1="0" x2="691.1" y2="190"></line>
+            <line x1="856.0" y1="0" x2="856.0" y2="190"></line>
+          </g>
+        </svg>
+        <div class="trend-year-labels">
+          <span>Dic-23</span><span>Jun-24</span><span>Dic-24</span><span>Jun-25</span><span>Dic-25</span><span>Jun-26</span>
+        </div>
+      </div>
+      <p class="trend-caption">
+        <span class="lang-en">Source: Secretariat of Finance, Debt/GDP series. Gross debt of the National Central Government as % of monthly GDP. Longer-run reference points: 2011: 37.5% · 2015: 52.6% · 2019: 89.5%.</span>
+        <span class="lang-es">Fuente: Secretaría de Finanzas, serie Deuda/PIB. Deuda bruta de la Administración Central Nacional como % del PIB mensual. Puntos de referencia de largo plazo: 2011: 37,5% · 2015: 52,6% · 2019: 89,5%.</span>
       </p>
     </div>
   </section>
@@ -340,83 +369,6 @@
             <span class="lang-en">"Zero Rate" mainly reflects CER-adjusted discount instruments and SDR-denominated IMF debt.</span>
             <span class="lang-es">"Tasa Cero" refleja principalmente instrumentos a descuento ajustables por CER y deuda con el FMI denominada en DEG.</span>
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Flows & Payments -->
-  <section class="section-gray">
-    <div class="container">
-      <h2 class="section-title">
-        <span class="lang-en">Monthly Flows &amp; Debt Service</span>
-        <span class="lang-es">Flujos del Mes y Servicio de Deuda</span>
-      </h2>
-      <p style="font-size:13px; color:var(--text-muted); margin-bottom:24px;">
-        <span class="lang-en">June 2026 — new financing vs. amortizations, valuation adjustments, and debt service payments.</span>
-        <span class="lang-es">Junio 2026 — nuevo financiamiento vs. amortizaciones, ajustes de valuación y pagos de servicio de deuda.</span>
-      </p>
-      <div class="row">
-        <!-- Flujos y variaciones -->
-        <div class="col-md-6">
-          <div class="card-poncho">
-            <h4 style="margin-top:0;"><span class="lang-en">Flows &amp; Variations (A.4)</span><span class="lang-es">Flujos y Variaciones (A.4)</span></h4>
-            <div class="flow-row">
-              <span class="flow-label"><span class="lang-en">New financing, exchanges &amp; issuances</span><span class="lang-es">Financiamiento, canjes y emisiones</span></span>
-              <span class="flow-value pos">+28,910.9</span>
-            </div>
-            <div class="flow-row">
-              <span class="flow-label"><span class="lang-en">Amortizations, exchanges &amp; cancellations</span><span class="lang-es">Amortizaciones, canjes y cancelaciones</span></span>
-              <span class="flow-value neg">−27,186.5</span>
-            </div>
-            <div class="flow-row">
-              <span class="flow-label"><span class="lang-en">Net operations of the period</span><span class="lang-es">Operaciones netas del período</span></span>
-              <span class="flow-value pos">+1,724.4</span>
-            </div>
-            <div class="flow-row">
-              <span class="flow-label"><span class="lang-en">Valuation adjustments (FX &amp; CER)</span><span class="lang-es">Ajustes de valuación (T.C. y CER)</span></span>
-              <span class="flow-value neg">−6,771.4</span>
-            </div>
-            <div class="flow-row flow-total">
-              <span class="flow-label"><strong><span class="lang-en">Total monthly variation</span><span class="lang-es">Variación total del mes</span></strong></span>
-              <span class="flow-value neg">−5,080.4</span>
-            </div>
-            <p style="font-size:11px; color:#999; margin-top:10px; margin-bottom:0;">
-              <span class="lang-en">USD million. May-26 stock (USD 479,272.6 mm) + monthly variation = Jun-26 stock (USD 474,192.2 mm).</span>
-              <span class="lang-es">Millones de USD. Stock may-26 (USD 479.272,6 mm) + variación del mes = stock jun-26 (USD 474.192,2 mm).</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Pagos -->
-        <div class="col-md-6">
-          <div class="card-poncho card-celeste">
-            <h4 style="margin-top:0;"><span class="lang-en">Debt Service Payments (A.5)</span><span class="lang-es">Pagos de Deuda (A.5)</span></h4>
-            <div class="flow-row">
-              <span class="flow-label"><span class="lang-en">Local currency (ARS)</span><span class="lang-es">Moneda nacional</span></span>
-              <span class="flow-value">16,864.4 <span style="font-weight:400; color:var(--text-muted);">(97.9%)</span></span>
-            </div>
-            <div class="flow-row">
-              <span class="flow-label"><span class="lang-en">Foreign currency</span><span class="lang-es">Moneda extranjera</span></span>
-              <span class="flow-value">362.3 <span style="font-weight:400; color:var(--text-muted);">(2.1%)</span></span>
-            </div>
-            <div class="flow-row">
-              <span class="flow-label"><span class="lang-en">Public Securities (Bonds)</span><span class="lang-es">Títulos Públicos</span></span>
-              <span class="flow-value">11,918.9</span>
-            </div>
-            <div class="flow-row">
-              <span class="flow-label"><span class="lang-en">Treasury Bills</span><span class="lang-es">Letras del Tesoro</span></span>
-              <span class="flow-value">4,549.4</span>
-            </div>
-            <div class="flow-row flow-total">
-              <span class="flow-label"><strong><span class="lang-en">Total debt service paid</span><span class="lang-es">Total pagado</span></strong></span>
-              <span class="flow-value">17,226.7</span>
-            </div>
-            <p style="font-size:11px; color:#999; margin-top:10px; margin-bottom:0;">
-              <span class="lang-en">USD million. Also includes BCRA transitory advances (452.7) and loans (305.8).</span>
-              <span class="lang-es">Millones de USD. Incluye además Adelantos Transitorios BCRA (452,7) y Préstamos (305,8).</span>
-            </p>
-          </div>
         </div>
       </div>
     </div>
