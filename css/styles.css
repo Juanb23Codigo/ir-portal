@@ -729,6 +729,78 @@ body.lang-active-es span.lang-es {
   vertical-align: middle;
 }
 
+/* ---------- Debt Statistics: trend chart ---------- */
+.trend-chart-wrap {
+  border: 1px solid var(--border-gray);
+  background: #fff;
+  padding: 20px 20px 8px;
+}
+.trend-chart-wrap svg { width: 100%; height: auto; display: block; }
+.trend-year-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  padding: 0 2px;
+}
+.trend-caption {
+  font-size: 11px;
+  color: #999;
+  margin-top: 10px;
+}
+
+/* ---------- Debt Statistics: source callout ---------- */
+.source-official {
+  border: 1px solid var(--border-gray);
+  border-left: 6px solid var(--celeste);
+  background: #fff;
+  padding: 22px 24px;
+  margin-bottom: 30px;
+}
+.source-official h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+.source-sublinks {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.source-sublinks li a {
+  display: block;
+  padding: 10px 14px;
+  border: 1px solid var(--border-gray);
+  font-size: 13px;
+  color: var(--link);
+  background: var(--light-gray);
+  transition: background-color 0.15s;
+}
+.source-sublinks li a:hover { background: #eef2f6; text-decoration: none; }
+.source-sublinks li a i { color: var(--celeste); margin-right: 6px; }
+@media (max-width: 767px) {
+  .source-sublinks { grid-template-columns: 1fr; }
+}
+
+/* ---------- Debt Statistics: flow / payments mini-tables ---------- */
+.flow-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+}
+.flow-row:last-child { border-bottom: none; }
+.flow-row .flow-label { color: var(--text-dark); }
+.flow-row .flow-value { font-weight: 700; color: var(--primary); }
+.flow-row.flow-total { border-top: 2px solid var(--primary); margin-top: 4px; padding-top: 12px; }
+.flow-value.neg { color: var(--danger); }
+.flow-value.pos { color: var(--success); }
+
 /* ---------- MECON-style landing ---------- */
 .mecon-masthead {
   background: #fff;
