@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Public Debt Statistics | Secretariat of Finance – Argentina</title>
-  <meta name="description" content="Public debt statistics of the Argentine Republic sourced from the official Monthly Debt Bulletin: debt stock, composition by legislation, currency and rate, monthly flows and payments.">
+  <meta name="description" content="Public debt statistics of the Argentine Republic: gross debt as a share of GDP, monthly evolution, and links to the official public-debt data of the Secretariat of Finance.">
   <!-- Bootstrap 3.4.1 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <!-- Font Awesome 4.7.0 -->
@@ -113,18 +113,8 @@
     </div>
   </div>
 
-  <!-- Intro -->
-  <section class="section-default" style="padding-bottom:10px;">
-    <div class="container">
-      <p class="rating-lead">
-        <span class="lang-en">Gross debt comprises all financial liabilities of the National Central Government under any instrument, currency, or creditor. Below is a summary based on the Secretariat's official taxonomy: by legislation and by currency and rate type — as published in the <a href="https://www.argentina.gob.ar/economia/finanzas/datos" target="_blank">Monthly Debt Bulletin</a>.</span>
-        <span class="lang-es">La deuda bruta comprende todos los pasivos financieros de la Administración Central Nacional, bajo cualquier instrumento, moneda o acreedor. A continuación, un resumen según la taxonomía oficial de la Secretaría: por legislación y por moneda y tipo de tasa — tal como se publican en el <a href="https://www.argentina.gob.ar/economia/finanzas/datos" target="_blank">Boletín Mensual de Deuda</a>.</span>
-      </p>
-    </div>
-  </section>
-
   <!-- Key Metrics -->
-  <section class="section-default" style="padding-top:10px;">
+  <section class="section-default" style="padding-top:24px;">
     <div class="container">
       <h2 class="section-title">
         <span class="lang-en">Key Metrics</span>
@@ -170,8 +160,8 @@
         <span class="lang-es">Deuda / PIB &mdash; Evoluci&oacute;n Mensual</span>
       </h3>
       <p style="font-size:13px; color:var(--text-muted); margin-bottom:16px;">
-        <span class="lang-en">Choose a series below. Hover (or tap) any point to see the exact month and value.</span>
-        <span class="lang-es">Eleg&iacute; una serie. Pas&aacute; el mouse (o toc&aacute;) sobre cada punto para ver el mes y el valor exacto.</span>
+        <span class="lang-en">Select a series and move the pointer across the chart to read any month.</span>
+        <span class="lang-es">Eleg&iacute; una serie y desplaz&aacute; el puntero sobre el gr&aacute;fico para leer cualquier mes.</span>
       </p>
 
       <div class="chart-tabs" role="tablist">
@@ -183,86 +173,151 @@
           <span class="lang-en">Debt w/ Private Sector &amp; IFIs / GDP</span>
           <span class="lang-es">Deuda c/ Privados y OI / PIB</span>
         </button>
-        <button type="button" class="chart-tab" data-chart-target="chart-panel-currency" role="tab" aria-selected="false">
-          <span class="lang-en">Local-Currency Share</span>
-          <span class="lang-es">Participaci&oacute;n en Pesos</span>
-        </button>
       </div>
 
       <div class="chart-panel active" id="chart-panel-gross">
-        <p style="font-size:13px; color:var(--text-muted); margin:14px 0 12px;">
-          <span class="lang-en">The Dec-2023 peak (156.6% of GDP) reflects the mechanical effect of the FX devaluation on USD-GDP conversion at the start of the current administration; the ratio has declined steadily since.</span>
-          <span class="lang-es">El pico de dic-2023 (156,6% del PIB) refleja el efecto mec&aacute;nico de la devaluaci&oacute;n cambiaria sobre la conversi&oacute;n PIB en USD al inicio de la gesti&oacute;n actual; desde entonces el ratio baj&oacute; de forma sostenida.</span>
+        <div class="cg-head">
+          <div class="cg-stat">
+            <span class="cg-stat-label"><span class="lang-en">Latest (Jun-26)</span><span class="lang-es">&Uacute;ltimo (jun-26)</span></span>
+            <span class="cg-stat-value">71.4%</span>
+          </div>
+          <div class="cg-stat">
+            <span class="cg-stat-label"><span class="lang-en">Peak (Dec-23)</span><span class="lang-es">M&aacute;ximo (dic-23)</span></span>
+            <span class="cg-stat-value muted">156.6%</span>
+          </div>
+          <div class="cg-stat">
+            <span class="cg-stat-label"><span class="lang-en">Change from peak</span><span class="lang-es">Variaci&oacute;n desde el pico</span></span>
+            <span class="cg-stat-value down">-85.2 pp</span>
+          </div>
+        </div>
+        <p style="font-size:13px; color:var(--text-muted); margin:0 0 14px;">
+          <span class="lang-en">The Dec-2023 peak reflects the mechanical effect of the FX devaluation on USD-GDP conversion at the start of the current administration; the ratio has declined steadily since.</span>
+          <span class="lang-es">El pico de dic-2023 refleja el efecto mec&aacute;nico de la devaluaci&oacute;n cambiaria sobre la conversi&oacute;n PIB en USD al inicio de la gesti&oacute;n actual; desde entonces el ratio baj&oacute; de forma sostenida.</span>
         </p>
-        <div class="trend-chart-wrap">
-          <svg viewBox="0 0 860 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deuda Bruta / PIB, evoluci&oacute;n mensual nov-2023 a jun-2026, con marcador en cada mes">
-            <path d="M4.0,190.0 L4.0,145.6 L31.5,16.5 L59.0,33.6 L86.5,54.0 L113.9,66.9 L141.4,81.8 L168.9,90.5 L196.4,103.8 L223.9,114.1 L251.4,123.8 L278.8,134.1 L306.3,142.6 L333.8,149.9 L361.3,155.5 L388.8,159.7 L416.3,163.2 L443.7,166.8 L471.2,159.4 L498.7,165.3 L526.2,168.4 L553.7,160.3 L581.2,165.2 L608.6,164.9 L636.1,164.8 L663.6,166.2 L691.1,166.0 L718.6,168.9 L746.1,172.2 L773.5,174.6 L801.0,174.3 L828.5,179.6 L856.0,177.9 L856.0,190.0 Z" fill="rgba(117,170,219,0.18)" stroke="none"></path>
-            <polyline points="4.0,145.6 31.5,16.5 59.0,33.6 86.5,54.0 113.9,66.9 141.4,81.8 168.9,90.5 196.4,103.8 223.9,114.1 251.4,123.8 278.8,134.1 306.3,142.6 333.8,149.9 361.3,155.5 388.8,159.7 416.3,163.2 443.7,166.8 471.2,159.4 498.7,165.3 526.2,168.4 553.7,160.3 581.2,165.2 608.6,164.9 636.1,164.8 663.6,166.2 691.1,166.0 718.6,168.9 746.1,172.2 773.5,174.6 801.0,174.3 828.5,179.6 856.0,177.9" fill="none" stroke="var(--primary)" stroke-width="2"></polyline>
-          <circle cx="4.0" cy="145.6" r="3" class="chart-pt"><title>nov-23: 88.4%</title></circle>
-          <circle cx="31.5" cy="16.5" r="3" class="chart-pt"><title>dic-23: 156.6%</title></circle>
-          <circle cx="59.0" cy="33.6" r="3" class="chart-pt"><title>ene-24: 147.5%</title></circle>
-          <circle cx="86.5" cy="54.0" r="3" class="chart-pt"><title>feb-24: 136.8%</title></circle>
-          <circle cx="113.9" cy="66.9" r="3" class="chart-pt"><title>mar-24: 130.0%</title></circle>
-          <circle cx="141.4" cy="81.8" r="3" class="chart-pt"><title>abr-24: 122.1%</title></circle>
-          <circle cx="168.9" cy="90.5" r="3" class="chart-pt"><title>may-24: 117.5%</title></circle>
-          <circle cx="196.4" cy="103.8" r="3" class="chart-pt"><title>jun-24: 110.5%</title></circle>
-          <circle cx="223.9" cy="114.1" r="3" class="chart-pt"><title>jul-24: 105.1%</title></circle>
-          <circle cx="251.4" cy="123.8" r="3" class="chart-pt"><title>ago-24: 99.9%</title></circle>
-          <circle cx="278.8" cy="134.1" r="3" class="chart-pt"><title>sep-24: 94.5%</title></circle>
-          <circle cx="306.3" cy="142.6" r="3" class="chart-pt"><title>oct-24: 90.0%</title></circle>
-          <circle cx="333.8" cy="149.9" r="3" class="chart-pt"><title>nov-24: 86.2%</title></circle>
-          <circle cx="361.3" cy="155.5" r="3" class="chart-pt"><title>dic-24: 83.2%</title></circle>
-          <circle cx="388.8" cy="159.7" r="3" class="chart-pt"><title>ene-25: 81.0%</title></circle>
-          <circle cx="416.3" cy="163.2" r="3" class="chart-pt"><title>feb-25: 79.2%</title></circle>
-          <circle cx="443.7" cy="166.8" r="3" class="chart-pt"><title>mar-25: 77.2%</title></circle>
-          <circle cx="471.2" cy="159.4" r="3" class="chart-pt"><title>abr-25: 81.2%</title></circle>
-          <circle cx="498.7" cy="165.3" r="3" class="chart-pt"><title>may-25: 78.0%</title></circle>
-          <circle cx="526.2" cy="168.4" r="3" class="chart-pt"><title>jun-25: 76.4%</title></circle>
-          <circle cx="553.7" cy="160.3" r="3" class="chart-pt"><title>jul-25: 80.7%</title></circle>
-          <circle cx="581.2" cy="165.2" r="3" class="chart-pt"><title>ago-25: 78.1%</title></circle>
-          <circle cx="608.6" cy="164.9" r="3" class="chart-pt"><title>sep-25: 78.2%</title></circle>
-          <circle cx="636.1" cy="164.8" r="3" class="chart-pt"><title>oct-25: 78.3%</title></circle>
-          <circle cx="663.6" cy="166.2" r="3" class="chart-pt"><title>nov-25: 77.6%</title></circle>
-          <circle cx="691.1" cy="166.0" r="3" class="chart-pt"><title>dic-25: 77.7%</title></circle>
-          <circle cx="718.6" cy="168.9" r="3" class="chart-pt"><title>ene-26: 76.2%</title></circle>
-          <circle cx="746.1" cy="172.2" r="3" class="chart-pt"><title>feb-26: 74.4%</title></circle>
-          <circle cx="773.5" cy="174.6" r="3" class="chart-pt"><title>mar-26: 73.1%</title></circle>
-          <circle cx="801.0" cy="174.3" r="3" class="chart-pt"><title>abr-26: 73.3%</title></circle>
-          <circle cx="828.5" cy="179.6" r="3" class="chart-pt"><title>may-26: 70.5%</title></circle>
-          <circle cx="856.0" cy="177.9" r="3" class="chart-pt"><title>jun-26: 71.4%</title></circle>
-          <text class="chart-x-label" x="4.0" y="198" text-anchor="end" transform="rotate(-60 4.0,198)">nov-23</text>
-          <text class="chart-x-label" x="31.5" y="198" text-anchor="end" transform="rotate(-60 31.5,198)">dic-23</text>
-          <text class="chart-x-label" x="59.0" y="198" text-anchor="end" transform="rotate(-60 59.0,198)">ene-24</text>
-          <text class="chart-x-label" x="86.5" y="198" text-anchor="end" transform="rotate(-60 86.5,198)">feb-24</text>
-          <text class="chart-x-label" x="113.9" y="198" text-anchor="end" transform="rotate(-60 113.9,198)">mar-24</text>
-          <text class="chart-x-label" x="141.4" y="198" text-anchor="end" transform="rotate(-60 141.4,198)">abr-24</text>
-          <text class="chart-x-label" x="168.9" y="198" text-anchor="end" transform="rotate(-60 168.9,198)">may-24</text>
-          <text class="chart-x-label" x="196.4" y="198" text-anchor="end" transform="rotate(-60 196.4,198)">jun-24</text>
-          <text class="chart-x-label" x="223.9" y="198" text-anchor="end" transform="rotate(-60 223.9,198)">jul-24</text>
-          <text class="chart-x-label" x="251.4" y="198" text-anchor="end" transform="rotate(-60 251.4,198)">ago-24</text>
-          <text class="chart-x-label" x="278.8" y="198" text-anchor="end" transform="rotate(-60 278.8,198)">sep-24</text>
-          <text class="chart-x-label" x="306.3" y="198" text-anchor="end" transform="rotate(-60 306.3,198)">oct-24</text>
-          <text class="chart-x-label" x="333.8" y="198" text-anchor="end" transform="rotate(-60 333.8,198)">nov-24</text>
-          <text class="chart-x-label" x="361.3" y="198" text-anchor="end" transform="rotate(-60 361.3,198)">dic-24</text>
-          <text class="chart-x-label" x="388.8" y="198" text-anchor="end" transform="rotate(-60 388.8,198)">ene-25</text>
-          <text class="chart-x-label" x="416.3" y="198" text-anchor="end" transform="rotate(-60 416.3,198)">feb-25</text>
-          <text class="chart-x-label" x="443.7" y="198" text-anchor="end" transform="rotate(-60 443.7,198)">mar-25</text>
-          <text class="chart-x-label" x="471.2" y="198" text-anchor="end" transform="rotate(-60 471.2,198)">abr-25</text>
-          <text class="chart-x-label" x="498.7" y="198" text-anchor="end" transform="rotate(-60 498.7,198)">may-25</text>
-          <text class="chart-x-label" x="526.2" y="198" text-anchor="end" transform="rotate(-60 526.2,198)">jun-25</text>
-          <text class="chart-x-label" x="553.7" y="198" text-anchor="end" transform="rotate(-60 553.7,198)">jul-25</text>
-          <text class="chart-x-label" x="581.2" y="198" text-anchor="end" transform="rotate(-60 581.2,198)">ago-25</text>
-          <text class="chart-x-label" x="608.6" y="198" text-anchor="end" transform="rotate(-60 608.6,198)">sep-25</text>
-          <text class="chart-x-label" x="636.1" y="198" text-anchor="end" transform="rotate(-60 636.1,198)">oct-25</text>
-          <text class="chart-x-label" x="663.6" y="198" text-anchor="end" transform="rotate(-60 663.6,198)">nov-25</text>
-          <text class="chart-x-label" x="691.1" y="198" text-anchor="end" transform="rotate(-60 691.1,198)">dic-25</text>
-          <text class="chart-x-label" x="718.6" y="198" text-anchor="end" transform="rotate(-60 718.6,198)">ene-26</text>
-          <text class="chart-x-label" x="746.1" y="198" text-anchor="end" transform="rotate(-60 746.1,198)">feb-26</text>
-          <text class="chart-x-label" x="773.5" y="198" text-anchor="end" transform="rotate(-60 773.5,198)">mar-26</text>
-          <text class="chart-x-label" x="801.0" y="198" text-anchor="end" transform="rotate(-60 801.0,198)">abr-26</text>
-          <text class="chart-x-label" x="828.5" y="198" text-anchor="end" transform="rotate(-60 828.5,198)">may-26</text>
-          <text class="chart-x-label" x="856.0" y="198" text-anchor="end" transform="rotate(-60 856.0,198)">jun-26</text>
-            <text class="chart-value-badge" x="850" y="24" text-anchor="end">jun-26: 71.4%</text>
+        <div class="cg-wrap">
+          <div class="cg-tooltip" aria-hidden="true"></div>
+          <svg class="cg-svg" viewBox="0 0 960.0 330.0" xmlns="http://www.w3.org/2000/svg" role="img">
+            <defs>
+              <linearGradient id="cgGradA" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--primary)" stop-opacity="0.30"></stop>
+                <stop offset="100%" stop-color="var(--primary)" stop-opacity="0.02"></stop>
+              </linearGradient>
+            </defs>
+        <line class="cg-grid" x1="54.0" y1="244.0" x2="940.0" y2="244.0"></line>
+        <line class="cg-grid" x1="54.0" y1="209.6" x2="940.0" y2="209.6"></line>
+        <line class="cg-grid" x1="54.0" y1="175.2" x2="940.0" y2="175.2"></line>
+        <line class="cg-grid" x1="54.0" y1="140.7" x2="940.0" y2="140.7"></line>
+        <line class="cg-grid" x1="54.0" y1="106.3" x2="940.0" y2="106.3"></line>
+        <line class="cg-grid" x1="54.0" y1="71.9" x2="940.0" y2="71.9"></line>
+        <line class="cg-grid" x1="54.0" y1="37.5" x2="940.0" y2="37.5"></line>
+            <line class="cg-axis" x1="54.0" y1="244.0" x2="940.0" y2="244.0"></line>
+        <text class="cg-ylabel" x="44.0" y="248.0">65%</text>
+        <text class="cg-ylabel" x="44.0" y="213.6">80%</text>
+        <text class="cg-ylabel" x="44.0" y="179.2">95%</text>
+        <text class="cg-ylabel" x="44.0" y="144.7">110%</text>
+        <text class="cg-ylabel" x="44.0" y="110.3">125%</text>
+        <text class="cg-ylabel" x="44.0" y="75.9">140%</text>
+        <text class="cg-ylabel" x="44.0" y="41.5">155%</text>
+            <path class="cg-area" d="M54.0,244.0 L54.0,190.3 L82.6,33.9 L111.2,54.6 L139.7,79.2 L168.3,95.0 L196.9,113.0 L225.5,123.5 L254.1,139.6 L282.6,152.0 L311.2,163.9 L339.8,176.3 L368.4,186.5 L397.0,195.4 L425.5,202.2 L454.1,207.3 L482.7,211.5 L511.3,215.9 L539.9,206.9 L568.5,214.1 L597.0,217.9 L625.6,208.0 L654.2,214.0 L682.8,213.6 L711.4,213.5 L739.9,215.2 L768.5,215.0 L797.1,218.4 L825.7,222.4 L854.3,225.4 L882.8,225.0 L911.4,231.5 L940.0,229.4 L940.0,244.0 Z" fill="url(#cgGradA)"></path>
+            <polyline class="cg-line" points="54.0,190.3 82.6,33.9 111.2,54.6 139.7,79.2 168.3,95.0 196.9,113.0 225.5,123.5 254.1,139.6 282.6,152.0 311.2,163.9 339.8,176.3 368.4,186.5 397.0,195.4 425.5,202.2 454.1,207.3 482.7,211.5 511.3,215.9 539.9,206.9 568.5,214.1 597.0,217.9 625.6,208.0 654.2,214.0 682.8,213.6 711.4,213.5 739.9,215.2 768.5,215.0 797.1,218.4 825.7,222.4 854.3,225.4 882.8,225.0 911.4,231.5 940.0,229.4"></polyline>
+            <line class="cg-cross" x1="0" y1="26.0" x2="0" y2="244.0" style="display:none"></line>
+        <circle class="cg-dot" data-i="0" cx="54.0" cy="190.3" r="3.5"></circle>
+        <circle class="cg-dot" data-i="1" cx="82.6" cy="33.9" r="3.5"></circle>
+        <circle class="cg-dot" data-i="2" cx="111.2" cy="54.6" r="3.5"></circle>
+        <circle class="cg-dot" data-i="3" cx="139.7" cy="79.2" r="3.5"></circle>
+        <circle class="cg-dot" data-i="4" cx="168.3" cy="95.0" r="3.5"></circle>
+        <circle class="cg-dot" data-i="5" cx="196.9" cy="113.0" r="3.5"></circle>
+        <circle class="cg-dot" data-i="6" cx="225.5" cy="123.5" r="3.5"></circle>
+        <circle class="cg-dot" data-i="7" cx="254.1" cy="139.6" r="3.5"></circle>
+        <circle class="cg-dot" data-i="8" cx="282.6" cy="152.0" r="3.5"></circle>
+        <circle class="cg-dot" data-i="9" cx="311.2" cy="163.9" r="3.5"></circle>
+        <circle class="cg-dot" data-i="10" cx="339.8" cy="176.3" r="3.5"></circle>
+        <circle class="cg-dot" data-i="11" cx="368.4" cy="186.5" r="3.5"></circle>
+        <circle class="cg-dot" data-i="12" cx="397.0" cy="195.4" r="3.5"></circle>
+        <circle class="cg-dot" data-i="13" cx="425.5" cy="202.2" r="3.5"></circle>
+        <circle class="cg-dot" data-i="14" cx="454.1" cy="207.3" r="3.5"></circle>
+        <circle class="cg-dot" data-i="15" cx="482.7" cy="211.5" r="3.5"></circle>
+        <circle class="cg-dot" data-i="16" cx="511.3" cy="215.9" r="3.5"></circle>
+        <circle class="cg-dot" data-i="17" cx="539.9" cy="206.9" r="3.5"></circle>
+        <circle class="cg-dot" data-i="18" cx="568.5" cy="214.1" r="3.5"></circle>
+        <circle class="cg-dot" data-i="19" cx="597.0" cy="217.9" r="3.5"></circle>
+        <circle class="cg-dot" data-i="20" cx="625.6" cy="208.0" r="3.5"></circle>
+        <circle class="cg-dot" data-i="21" cx="654.2" cy="214.0" r="3.5"></circle>
+        <circle class="cg-dot" data-i="22" cx="682.8" cy="213.6" r="3.5"></circle>
+        <circle class="cg-dot" data-i="23" cx="711.4" cy="213.5" r="3.5"></circle>
+        <circle class="cg-dot" data-i="24" cx="739.9" cy="215.2" r="3.5"></circle>
+        <circle class="cg-dot" data-i="25" cx="768.5" cy="215.0" r="3.5"></circle>
+        <circle class="cg-dot" data-i="26" cx="797.1" cy="218.4" r="3.5"></circle>
+        <circle class="cg-dot" data-i="27" cx="825.7" cy="222.4" r="3.5"></circle>
+        <circle class="cg-dot" data-i="28" cx="854.3" cy="225.4" r="3.5"></circle>
+        <circle class="cg-dot" data-i="29" cx="882.8" cy="225.0" r="3.5"></circle>
+        <circle class="cg-dot" data-i="30" cx="911.4" cy="231.5" r="3.5"></circle>
+        <circle class="cg-dot" data-i="31" cx="940.0" cy="229.4" r="3.5"></circle>
+            <circle class="cg-focus" r="6" style="display:none"></circle>
+        <text class="cg-xlabel" x="54.0" y="260.0" text-anchor="end" transform="rotate(-60 54.0,260.0)">nov-23</text>
+        <text class="cg-xlabel" x="82.6" y="260.0" text-anchor="end" transform="rotate(-60 82.6,260.0)">dic-23</text>
+        <text class="cg-xlabel" x="111.2" y="260.0" text-anchor="end" transform="rotate(-60 111.2,260.0)">ene-24</text>
+        <text class="cg-xlabel" x="139.7" y="260.0" text-anchor="end" transform="rotate(-60 139.7,260.0)">feb-24</text>
+        <text class="cg-xlabel" x="168.3" y="260.0" text-anchor="end" transform="rotate(-60 168.3,260.0)">mar-24</text>
+        <text class="cg-xlabel" x="196.9" y="260.0" text-anchor="end" transform="rotate(-60 196.9,260.0)">abr-24</text>
+        <text class="cg-xlabel" x="225.5" y="260.0" text-anchor="end" transform="rotate(-60 225.5,260.0)">may-24</text>
+        <text class="cg-xlabel" x="254.1" y="260.0" text-anchor="end" transform="rotate(-60 254.1,260.0)">jun-24</text>
+        <text class="cg-xlabel" x="282.6" y="260.0" text-anchor="end" transform="rotate(-60 282.6,260.0)">jul-24</text>
+        <text class="cg-xlabel" x="311.2" y="260.0" text-anchor="end" transform="rotate(-60 311.2,260.0)">ago-24</text>
+        <text class="cg-xlabel" x="339.8" y="260.0" text-anchor="end" transform="rotate(-60 339.8,260.0)">sep-24</text>
+        <text class="cg-xlabel" x="368.4" y="260.0" text-anchor="end" transform="rotate(-60 368.4,260.0)">oct-24</text>
+        <text class="cg-xlabel" x="397.0" y="260.0" text-anchor="end" transform="rotate(-60 397.0,260.0)">nov-24</text>
+        <text class="cg-xlabel" x="425.5" y="260.0" text-anchor="end" transform="rotate(-60 425.5,260.0)">dic-24</text>
+        <text class="cg-xlabel" x="454.1" y="260.0" text-anchor="end" transform="rotate(-60 454.1,260.0)">ene-25</text>
+        <text class="cg-xlabel" x="482.7" y="260.0" text-anchor="end" transform="rotate(-60 482.7,260.0)">feb-25</text>
+        <text class="cg-xlabel" x="511.3" y="260.0" text-anchor="end" transform="rotate(-60 511.3,260.0)">mar-25</text>
+        <text class="cg-xlabel" x="539.9" y="260.0" text-anchor="end" transform="rotate(-60 539.9,260.0)">abr-25</text>
+        <text class="cg-xlabel" x="568.5" y="260.0" text-anchor="end" transform="rotate(-60 568.5,260.0)">may-25</text>
+        <text class="cg-xlabel" x="597.0" y="260.0" text-anchor="end" transform="rotate(-60 597.0,260.0)">jun-25</text>
+        <text class="cg-xlabel" x="625.6" y="260.0" text-anchor="end" transform="rotate(-60 625.6,260.0)">jul-25</text>
+        <text class="cg-xlabel" x="654.2" y="260.0" text-anchor="end" transform="rotate(-60 654.2,260.0)">ago-25</text>
+        <text class="cg-xlabel" x="682.8" y="260.0" text-anchor="end" transform="rotate(-60 682.8,260.0)">sep-25</text>
+        <text class="cg-xlabel" x="711.4" y="260.0" text-anchor="end" transform="rotate(-60 711.4,260.0)">oct-25</text>
+        <text class="cg-xlabel" x="739.9" y="260.0" text-anchor="end" transform="rotate(-60 739.9,260.0)">nov-25</text>
+        <text class="cg-xlabel" x="768.5" y="260.0" text-anchor="end" transform="rotate(-60 768.5,260.0)">dic-25</text>
+        <text class="cg-xlabel" x="797.1" y="260.0" text-anchor="end" transform="rotate(-60 797.1,260.0)">ene-26</text>
+        <text class="cg-xlabel" x="825.7" y="260.0" text-anchor="end" transform="rotate(-60 825.7,260.0)">feb-26</text>
+        <text class="cg-xlabel" x="854.3" y="260.0" text-anchor="end" transform="rotate(-60 854.3,260.0)">mar-26</text>
+        <text class="cg-xlabel" x="882.8" y="260.0" text-anchor="end" transform="rotate(-60 882.8,260.0)">abr-26</text>
+        <text class="cg-xlabel" x="911.4" y="260.0" text-anchor="end" transform="rotate(-60 911.4,260.0)">may-26</text>
+        <text class="cg-xlabel" x="940.0" y="260.0" text-anchor="end" transform="rotate(-60 940.0,260.0)">jun-26</text>
+        <rect class="cg-hit" data-i="0" data-x="54.0" data-y="190.3" data-label="nov-23" data-value="88.4" x="39.7" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="1" data-x="82.6" data-y="33.9" data-label="dic-23" data-value="156.6" x="68.3" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="2" data-x="111.2" data-y="54.6" data-label="ene-24" data-value="147.5" x="96.9" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="3" data-x="139.7" data-y="79.2" data-label="feb-24" data-value="136.8" x="125.4" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="4" data-x="168.3" data-y="95.0" data-label="mar-24" data-value="130.0" x="154.0" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="5" data-x="196.9" data-y="113.0" data-label="abr-24" data-value="122.1" x="182.6" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="6" data-x="225.5" data-y="123.5" data-label="may-24" data-value="117.5" x="211.2" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="7" data-x="254.1" data-y="139.6" data-label="jun-24" data-value="110.5" x="239.8" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="8" data-x="282.6" data-y="152.0" data-label="jul-24" data-value="105.1" x="268.3" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="9" data-x="311.2" data-y="163.9" data-label="ago-24" data-value="99.9" x="296.9" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="10" data-x="339.8" data-y="176.3" data-label="sep-24" data-value="94.5" x="325.5" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="11" data-x="368.4" data-y="186.5" data-label="oct-24" data-value="90.0" x="354.1" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="12" data-x="397.0" data-y="195.4" data-label="nov-24" data-value="86.2" x="382.7" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="13" data-x="425.5" data-y="202.2" data-label="dic-24" data-value="83.2" x="411.2" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="14" data-x="454.1" data-y="207.3" data-label="ene-25" data-value="81.0" x="439.8" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="15" data-x="482.7" data-y="211.5" data-label="feb-25" data-value="79.2" x="468.4" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="16" data-x="511.3" data-y="215.9" data-label="mar-25" data-value="77.2" x="497.0" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="17" data-x="539.9" data-y="206.9" data-label="abr-25" data-value="81.2" x="525.6" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="18" data-x="568.5" data-y="214.1" data-label="may-25" data-value="78.0" x="554.2" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="19" data-x="597.0" data-y="217.9" data-label="jun-25" data-value="76.4" x="582.7" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="20" data-x="625.6" data-y="208.0" data-label="jul-25" data-value="80.7" x="611.3" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="21" data-x="654.2" data-y="214.0" data-label="ago-25" data-value="78.1" x="639.9" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="22" data-x="682.8" data-y="213.6" data-label="sep-25" data-value="78.2" x="668.5" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="23" data-x="711.4" data-y="213.5" data-label="oct-25" data-value="78.3" x="697.1" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="24" data-x="739.9" data-y="215.2" data-label="nov-25" data-value="77.6" x="725.6" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="25" data-x="768.5" data-y="215.0" data-label="dic-25" data-value="77.7" x="754.2" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="26" data-x="797.1" data-y="218.4" data-label="ene-26" data-value="76.2" x="782.8" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="27" data-x="825.7" data-y="222.4" data-label="feb-26" data-value="74.4" x="811.4" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="28" data-x="854.3" data-y="225.4" data-label="mar-26" data-value="73.1" x="840.0" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="29" data-x="882.8" data-y="225.0" data-label="abr-26" data-value="73.3" x="868.5" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="30" data-x="911.4" data-y="231.5" data-label="may-26" data-value="70.5" x="897.1" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="31" data-x="940.0" data-y="229.4" data-label="jun-26" data-value="71.4" x="925.7" y="26.0" width="28.6" height="218.0"></rect>
           </svg>
         </div>
         <p class="trend-caption">
@@ -272,293 +327,156 @@
       </div>
 
       <div class="chart-panel series-b" id="chart-panel-priv" style="display:none;">
-        <p style="font-size:13px; color:var(--text-muted); margin:14px 0 12px;">
-          <span class="lang-en">Debt held by the private sector and international financial institutions, excluding intra-public-sector holdings &mdash; a narrower measure of debt actually financed by markets and external creditors. It also spiked in Dec-2023 (99.4% of GDP) and has since fallen to around 40%.</span>
-          <span class="lang-es">Deuda en manos del sector privado y organismos internacionales, excluyendo tenencias intra-sector p&uacute;blico &mdash; una medida m&aacute;s acotada de la deuda efectivamente financiada por el mercado y acreedores externos. Tambi&eacute;n tuvo un pico en dic-2023 (99,4% del PIB) y desde entonces baj&oacute; a valores cercanos al 40%.</span>
+        <div class="cg-head">
+          <div class="cg-stat">
+            <span class="cg-stat-label"><span class="lang-en">Latest (Jun-26)</span><span class="lang-es">&Uacute;ltimo (jun-26)</span></span>
+            <span class="cg-stat-value">40.9%</span>
+          </div>
+          <div class="cg-stat">
+            <span class="cg-stat-label"><span class="lang-en">Peak (Dec-23)</span><span class="lang-es">M&aacute;ximo (dic-23)</span></span>
+            <span class="cg-stat-value muted">99.4%</span>
+          </div>
+          <div class="cg-stat">
+            <span class="cg-stat-label"><span class="lang-en">Change from peak</span><span class="lang-es">Variaci&oacute;n desde el pico</span></span>
+            <span class="cg-stat-value down">-58.6 pp</span>
+          </div>
+        </div>
+        <p style="font-size:13px; color:var(--text-muted); margin:0 0 14px;">
+          <span class="lang-en">Debt held by the private sector and international financial institutions, excluding intra-public-sector holdings &mdash; a narrower measure of debt actually financed by markets and external creditors.</span>
+          <span class="lang-es">Deuda en manos del sector privado y organismos internacionales, excluyendo tenencias intra-sector p&uacute;blico &mdash; una medida m&aacute;s acotada de la deuda efectivamente financiada por el mercado y acreedores externos.</span>
         </p>
-        <div class="trend-chart-wrap">
-          <svg viewBox="0 0 860 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deuda con privados y organismos internacionales / PIB, evoluci&oacute;n mensual nov-2023 a jun-2026, con marcador en cada mes">
-            <path d="M4.0,190.0 L4.0,134.8 L31.5,24.3 L59.0,38.2 L86.5,56.9 L113.9,71.4 L141.4,87.0 L168.9,114.2 L196.4,126.8 L223.9,144.3 L251.4,150.1 L278.8,156.8 L306.3,161.7 L333.8,166.3 L361.3,171.0 L388.8,168.9 L416.3,175.8 L443.7,178.4 L471.2,177.7 L498.7,171.6 L526.2,175.9 L553.7,170.2 L581.2,172.0 L608.6,170.9 L636.1,166.4 L663.6,167.6 L691.1,170.7 L718.6,172.2 L746.1,175.2 L773.5,178.7 L801.0,178.9 L828.5,177.9 L856.0,174.8 L856.0,190.0 Z" fill="rgba(62,90,126,0.15)" stroke="none"></path>
-            <polyline points="4.0,134.8 31.5,24.3 59.0,38.2 86.5,56.9 113.9,71.4 141.4,87.0 168.9,114.2 196.4,126.8 223.9,144.3 251.4,150.1 278.8,156.8 306.3,161.7 333.8,166.3 361.3,171.0 388.8,168.9 416.3,175.8 443.7,178.4 471.2,177.7 498.7,171.6 526.2,175.9 553.7,170.2 581.2,172.0 608.6,170.9 636.1,166.4 663.6,167.6 691.1,170.7 718.6,172.2 746.1,175.2 773.5,178.7 801.0,178.9 828.5,177.9 856.0,174.8" fill="none" stroke="var(--secondary)" stroke-width="2"></polyline>
-          <circle cx="4.0" cy="134.8" r="3" class="chart-pt"><title>nov-23: 56.5%</title></circle>
-          <circle cx="31.5" cy="24.3" r="3" class="chart-pt"><title>dic-23: 99.4%</title></circle>
-          <circle cx="59.0" cy="38.2" r="3" class="chart-pt"><title>ene-24: 94.0%</title></circle>
-          <circle cx="86.5" cy="56.9" r="3" class="chart-pt"><title>feb-24: 86.8%</title></circle>
-          <circle cx="113.9" cy="71.4" r="3" class="chart-pt"><title>mar-24: 81.1%</title></circle>
-          <circle cx="141.4" cy="87.0" r="3" class="chart-pt"><title>abr-24: 75.0%</title></circle>
-          <circle cx="168.9" cy="114.2" r="3" class="chart-pt"><title>may-24: 64.5%</title></circle>
-          <circle cx="196.4" cy="126.8" r="3" class="chart-pt"><title>jun-24: 59.6%</title></circle>
-          <circle cx="223.9" cy="144.3" r="3" class="chart-pt"><title>jul-24: 52.8%</title></circle>
-          <circle cx="251.4" cy="150.1" r="3" class="chart-pt"><title>ago-24: 50.5%</title></circle>
-          <circle cx="278.8" cy="156.8" r="3" class="chart-pt"><title>sep-24: 47.9%</title></circle>
-          <circle cx="306.3" cy="161.7" r="3" class="chart-pt"><title>oct-24: 46.0%</title></circle>
-          <circle cx="333.8" cy="166.3" r="3" class="chart-pt"><title>nov-24: 44.2%</title></circle>
-          <circle cx="361.3" cy="171.0" r="3" class="chart-pt"><title>dic-24: 42.4%</title></circle>
-          <circle cx="388.8" cy="168.9" r="3" class="chart-pt"><title>ene-25: 43.2%</title></circle>
-          <circle cx="416.3" cy="175.8" r="3" class="chart-pt"><title>feb-25: 40.5%</title></circle>
-          <circle cx="443.7" cy="178.4" r="3" class="chart-pt"><title>mar-25: 39.5%</title></circle>
-          <circle cx="471.2" cy="177.7" r="3" class="chart-pt"><title>abr-25: 39.8%</title></circle>
-          <circle cx="498.7" cy="171.6" r="3" class="chart-pt"><title>may-25: 42.2%</title></circle>
-          <circle cx="526.2" cy="175.9" r="3" class="chart-pt"><title>jun-25: 40.5%</title></circle>
-          <circle cx="553.7" cy="170.2" r="3" class="chart-pt"><title>jul-25: 42.7%</title></circle>
-          <circle cx="581.2" cy="172.0" r="3" class="chart-pt"><title>ago-25: 42.0%</title></circle>
-          <circle cx="608.6" cy="170.9" r="3" class="chart-pt"><title>sep-25: 42.4%</title></circle>
-          <circle cx="636.1" cy="166.4" r="3" class="chart-pt"><title>oct-25: 44.2%</title></circle>
-          <circle cx="663.6" cy="167.6" r="3" class="chart-pt"><title>nov-25: 43.7%</title></circle>
-          <circle cx="691.1" cy="170.7" r="3" class="chart-pt"><title>dic-25: 42.5%</title></circle>
-          <circle cx="718.6" cy="172.2" r="3" class="chart-pt"><title>ene-26: 41.9%</title></circle>
-          <circle cx="746.1" cy="175.2" r="3" class="chart-pt"><title>feb-26: 40.7%</title></circle>
-          <circle cx="773.5" cy="178.7" r="3" class="chart-pt"><title>mar-26: 39.4%</title></circle>
-          <circle cx="801.0" cy="178.9" r="3" class="chart-pt"><title>abr-26: 39.3%</title></circle>
-          <circle cx="828.5" cy="177.9" r="3" class="chart-pt"><title>may-26: 39.7%</title></circle>
-          <circle cx="856.0" cy="174.8" r="3" class="chart-pt"><title>jun-26: 40.9%</title></circle>
-          <text class="chart-x-label" x="4.0" y="198" text-anchor="end" transform="rotate(-60 4.0,198)">nov-23</text>
-          <text class="chart-x-label" x="31.5" y="198" text-anchor="end" transform="rotate(-60 31.5,198)">dic-23</text>
-          <text class="chart-x-label" x="59.0" y="198" text-anchor="end" transform="rotate(-60 59.0,198)">ene-24</text>
-          <text class="chart-x-label" x="86.5" y="198" text-anchor="end" transform="rotate(-60 86.5,198)">feb-24</text>
-          <text class="chart-x-label" x="113.9" y="198" text-anchor="end" transform="rotate(-60 113.9,198)">mar-24</text>
-          <text class="chart-x-label" x="141.4" y="198" text-anchor="end" transform="rotate(-60 141.4,198)">abr-24</text>
-          <text class="chart-x-label" x="168.9" y="198" text-anchor="end" transform="rotate(-60 168.9,198)">may-24</text>
-          <text class="chart-x-label" x="196.4" y="198" text-anchor="end" transform="rotate(-60 196.4,198)">jun-24</text>
-          <text class="chart-x-label" x="223.9" y="198" text-anchor="end" transform="rotate(-60 223.9,198)">jul-24</text>
-          <text class="chart-x-label" x="251.4" y="198" text-anchor="end" transform="rotate(-60 251.4,198)">ago-24</text>
-          <text class="chart-x-label" x="278.8" y="198" text-anchor="end" transform="rotate(-60 278.8,198)">sep-24</text>
-          <text class="chart-x-label" x="306.3" y="198" text-anchor="end" transform="rotate(-60 306.3,198)">oct-24</text>
-          <text class="chart-x-label" x="333.8" y="198" text-anchor="end" transform="rotate(-60 333.8,198)">nov-24</text>
-          <text class="chart-x-label" x="361.3" y="198" text-anchor="end" transform="rotate(-60 361.3,198)">dic-24</text>
-          <text class="chart-x-label" x="388.8" y="198" text-anchor="end" transform="rotate(-60 388.8,198)">ene-25</text>
-          <text class="chart-x-label" x="416.3" y="198" text-anchor="end" transform="rotate(-60 416.3,198)">feb-25</text>
-          <text class="chart-x-label" x="443.7" y="198" text-anchor="end" transform="rotate(-60 443.7,198)">mar-25</text>
-          <text class="chart-x-label" x="471.2" y="198" text-anchor="end" transform="rotate(-60 471.2,198)">abr-25</text>
-          <text class="chart-x-label" x="498.7" y="198" text-anchor="end" transform="rotate(-60 498.7,198)">may-25</text>
-          <text class="chart-x-label" x="526.2" y="198" text-anchor="end" transform="rotate(-60 526.2,198)">jun-25</text>
-          <text class="chart-x-label" x="553.7" y="198" text-anchor="end" transform="rotate(-60 553.7,198)">jul-25</text>
-          <text class="chart-x-label" x="581.2" y="198" text-anchor="end" transform="rotate(-60 581.2,198)">ago-25</text>
-          <text class="chart-x-label" x="608.6" y="198" text-anchor="end" transform="rotate(-60 608.6,198)">sep-25</text>
-          <text class="chart-x-label" x="636.1" y="198" text-anchor="end" transform="rotate(-60 636.1,198)">oct-25</text>
-          <text class="chart-x-label" x="663.6" y="198" text-anchor="end" transform="rotate(-60 663.6,198)">nov-25</text>
-          <text class="chart-x-label" x="691.1" y="198" text-anchor="end" transform="rotate(-60 691.1,198)">dic-25</text>
-          <text class="chart-x-label" x="718.6" y="198" text-anchor="end" transform="rotate(-60 718.6,198)">ene-26</text>
-          <text class="chart-x-label" x="746.1" y="198" text-anchor="end" transform="rotate(-60 746.1,198)">feb-26</text>
-          <text class="chart-x-label" x="773.5" y="198" text-anchor="end" transform="rotate(-60 773.5,198)">mar-26</text>
-          <text class="chart-x-label" x="801.0" y="198" text-anchor="end" transform="rotate(-60 801.0,198)">abr-26</text>
-          <text class="chart-x-label" x="828.5" y="198" text-anchor="end" transform="rotate(-60 828.5,198)">may-26</text>
-          <text class="chart-x-label" x="856.0" y="198" text-anchor="end" transform="rotate(-60 856.0,198)">jun-26</text>
-            <text class="chart-value-badge" x="850" y="24" text-anchor="end">jun-26: 40.9%</text>
+        <div class="cg-wrap">
+          <div class="cg-tooltip" aria-hidden="true"></div>
+          <svg class="cg-svg" viewBox="0 0 960.0 330.0" xmlns="http://www.w3.org/2000/svg" role="img">
+            <defs>
+              <linearGradient id="cgGradB" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--secondary)" stop-opacity="0.30"></stop>
+                <stop offset="100%" stop-color="var(--secondary)" stop-opacity="0.02"></stop>
+              </linearGradient>
+            </defs>
+        <line class="cg-grid" x1="54.0" y1="244.0" x2="940.0" y2="244.0"></line>
+        <line class="cg-grid" x1="54.0" y1="212.9" x2="940.0" y2="212.9"></line>
+        <line class="cg-grid" x1="54.0" y1="181.7" x2="940.0" y2="181.7"></line>
+        <line class="cg-grid" x1="54.0" y1="150.6" x2="940.0" y2="150.6"></line>
+        <line class="cg-grid" x1="54.0" y1="119.4" x2="940.0" y2="119.4"></line>
+        <line class="cg-grid" x1="54.0" y1="88.3" x2="940.0" y2="88.3"></line>
+        <line class="cg-grid" x1="54.0" y1="57.1" x2="940.0" y2="57.1"></line>
+        <line class="cg-grid" x1="54.0" y1="26.0" x2="940.0" y2="26.0"></line>
+            <line class="cg-axis" x1="54.0" y1="244.0" x2="940.0" y2="244.0"></line>
+        <text class="cg-ylabel" x="44.0" y="248.0">35%</text>
+        <text class="cg-ylabel" x="44.0" y="216.9">45%</text>
+        <text class="cg-ylabel" x="44.0" y="185.7">55%</text>
+        <text class="cg-ylabel" x="44.0" y="154.6">65%</text>
+        <text class="cg-ylabel" x="44.0" y="123.4">75%</text>
+        <text class="cg-ylabel" x="44.0" y="92.3">85%</text>
+        <text class="cg-ylabel" x="44.0" y="61.1">95%</text>
+        <text class="cg-ylabel" x="44.0" y="30.0">105%</text>
+            <path class="cg-area" d="M54.0,244.0 L54.0,177.1 L82.6,43.3 L111.2,60.1 L139.7,82.7 L168.3,100.3 L196.9,119.3 L225.5,152.2 L254.1,167.4 L282.6,188.7 L311.2,195.7 L339.8,203.8 L368.4,209.7 L397.0,215.2 L425.5,221.0 L454.1,218.5 L482.7,226.8 L511.3,230.0 L539.9,229.1 L568.5,221.7 L597.0,226.9 L625.6,220.1 L654.2,222.1 L682.8,220.9 L711.4,215.5 L739.9,216.8 L768.5,220.7 L797.1,222.5 L825.7,226.1 L854.3,230.3 L882.8,230.6 L911.4,229.4 L940.0,225.6 L940.0,244.0 Z" fill="url(#cgGradB)"></path>
+            <polyline class="cg-line" points="54.0,177.1 82.6,43.3 111.2,60.1 139.7,82.7 168.3,100.3 196.9,119.3 225.5,152.2 254.1,167.4 282.6,188.7 311.2,195.7 339.8,203.8 368.4,209.7 397.0,215.2 425.5,221.0 454.1,218.5 482.7,226.8 511.3,230.0 539.9,229.1 568.5,221.7 597.0,226.9 625.6,220.1 654.2,222.1 682.8,220.9 711.4,215.5 739.9,216.8 768.5,220.7 797.1,222.5 825.7,226.1 854.3,230.3 882.8,230.6 911.4,229.4 940.0,225.6"></polyline>
+            <line class="cg-cross" x1="0" y1="26.0" x2="0" y2="244.0" style="display:none"></line>
+        <circle class="cg-dot" data-i="0" cx="54.0" cy="177.1" r="3.5"></circle>
+        <circle class="cg-dot" data-i="1" cx="82.6" cy="43.3" r="3.5"></circle>
+        <circle class="cg-dot" data-i="2" cx="111.2" cy="60.1" r="3.5"></circle>
+        <circle class="cg-dot" data-i="3" cx="139.7" cy="82.7" r="3.5"></circle>
+        <circle class="cg-dot" data-i="4" cx="168.3" cy="100.3" r="3.5"></circle>
+        <circle class="cg-dot" data-i="5" cx="196.9" cy="119.3" r="3.5"></circle>
+        <circle class="cg-dot" data-i="6" cx="225.5" cy="152.2" r="3.5"></circle>
+        <circle class="cg-dot" data-i="7" cx="254.1" cy="167.4" r="3.5"></circle>
+        <circle class="cg-dot" data-i="8" cx="282.6" cy="188.7" r="3.5"></circle>
+        <circle class="cg-dot" data-i="9" cx="311.2" cy="195.7" r="3.5"></circle>
+        <circle class="cg-dot" data-i="10" cx="339.8" cy="203.8" r="3.5"></circle>
+        <circle class="cg-dot" data-i="11" cx="368.4" cy="209.7" r="3.5"></circle>
+        <circle class="cg-dot" data-i="12" cx="397.0" cy="215.2" r="3.5"></circle>
+        <circle class="cg-dot" data-i="13" cx="425.5" cy="221.0" r="3.5"></circle>
+        <circle class="cg-dot" data-i="14" cx="454.1" cy="218.5" r="3.5"></circle>
+        <circle class="cg-dot" data-i="15" cx="482.7" cy="226.8" r="3.5"></circle>
+        <circle class="cg-dot" data-i="16" cx="511.3" cy="230.0" r="3.5"></circle>
+        <circle class="cg-dot" data-i="17" cx="539.9" cy="229.1" r="3.5"></circle>
+        <circle class="cg-dot" data-i="18" cx="568.5" cy="221.7" r="3.5"></circle>
+        <circle class="cg-dot" data-i="19" cx="597.0" cy="226.9" r="3.5"></circle>
+        <circle class="cg-dot" data-i="20" cx="625.6" cy="220.1" r="3.5"></circle>
+        <circle class="cg-dot" data-i="21" cx="654.2" cy="222.1" r="3.5"></circle>
+        <circle class="cg-dot" data-i="22" cx="682.8" cy="220.9" r="3.5"></circle>
+        <circle class="cg-dot" data-i="23" cx="711.4" cy="215.5" r="3.5"></circle>
+        <circle class="cg-dot" data-i="24" cx="739.9" cy="216.8" r="3.5"></circle>
+        <circle class="cg-dot" data-i="25" cx="768.5" cy="220.7" r="3.5"></circle>
+        <circle class="cg-dot" data-i="26" cx="797.1" cy="222.5" r="3.5"></circle>
+        <circle class="cg-dot" data-i="27" cx="825.7" cy="226.1" r="3.5"></circle>
+        <circle class="cg-dot" data-i="28" cx="854.3" cy="230.3" r="3.5"></circle>
+        <circle class="cg-dot" data-i="29" cx="882.8" cy="230.6" r="3.5"></circle>
+        <circle class="cg-dot" data-i="30" cx="911.4" cy="229.4" r="3.5"></circle>
+        <circle class="cg-dot" data-i="31" cx="940.0" cy="225.6" r="3.5"></circle>
+            <circle class="cg-focus" r="6" style="display:none"></circle>
+        <text class="cg-xlabel" x="54.0" y="260.0" text-anchor="end" transform="rotate(-60 54.0,260.0)">nov-23</text>
+        <text class="cg-xlabel" x="82.6" y="260.0" text-anchor="end" transform="rotate(-60 82.6,260.0)">dic-23</text>
+        <text class="cg-xlabel" x="111.2" y="260.0" text-anchor="end" transform="rotate(-60 111.2,260.0)">ene-24</text>
+        <text class="cg-xlabel" x="139.7" y="260.0" text-anchor="end" transform="rotate(-60 139.7,260.0)">feb-24</text>
+        <text class="cg-xlabel" x="168.3" y="260.0" text-anchor="end" transform="rotate(-60 168.3,260.0)">mar-24</text>
+        <text class="cg-xlabel" x="196.9" y="260.0" text-anchor="end" transform="rotate(-60 196.9,260.0)">abr-24</text>
+        <text class="cg-xlabel" x="225.5" y="260.0" text-anchor="end" transform="rotate(-60 225.5,260.0)">may-24</text>
+        <text class="cg-xlabel" x="254.1" y="260.0" text-anchor="end" transform="rotate(-60 254.1,260.0)">jun-24</text>
+        <text class="cg-xlabel" x="282.6" y="260.0" text-anchor="end" transform="rotate(-60 282.6,260.0)">jul-24</text>
+        <text class="cg-xlabel" x="311.2" y="260.0" text-anchor="end" transform="rotate(-60 311.2,260.0)">ago-24</text>
+        <text class="cg-xlabel" x="339.8" y="260.0" text-anchor="end" transform="rotate(-60 339.8,260.0)">sep-24</text>
+        <text class="cg-xlabel" x="368.4" y="260.0" text-anchor="end" transform="rotate(-60 368.4,260.0)">oct-24</text>
+        <text class="cg-xlabel" x="397.0" y="260.0" text-anchor="end" transform="rotate(-60 397.0,260.0)">nov-24</text>
+        <text class="cg-xlabel" x="425.5" y="260.0" text-anchor="end" transform="rotate(-60 425.5,260.0)">dic-24</text>
+        <text class="cg-xlabel" x="454.1" y="260.0" text-anchor="end" transform="rotate(-60 454.1,260.0)">ene-25</text>
+        <text class="cg-xlabel" x="482.7" y="260.0" text-anchor="end" transform="rotate(-60 482.7,260.0)">feb-25</text>
+        <text class="cg-xlabel" x="511.3" y="260.0" text-anchor="end" transform="rotate(-60 511.3,260.0)">mar-25</text>
+        <text class="cg-xlabel" x="539.9" y="260.0" text-anchor="end" transform="rotate(-60 539.9,260.0)">abr-25</text>
+        <text class="cg-xlabel" x="568.5" y="260.0" text-anchor="end" transform="rotate(-60 568.5,260.0)">may-25</text>
+        <text class="cg-xlabel" x="597.0" y="260.0" text-anchor="end" transform="rotate(-60 597.0,260.0)">jun-25</text>
+        <text class="cg-xlabel" x="625.6" y="260.0" text-anchor="end" transform="rotate(-60 625.6,260.0)">jul-25</text>
+        <text class="cg-xlabel" x="654.2" y="260.0" text-anchor="end" transform="rotate(-60 654.2,260.0)">ago-25</text>
+        <text class="cg-xlabel" x="682.8" y="260.0" text-anchor="end" transform="rotate(-60 682.8,260.0)">sep-25</text>
+        <text class="cg-xlabel" x="711.4" y="260.0" text-anchor="end" transform="rotate(-60 711.4,260.0)">oct-25</text>
+        <text class="cg-xlabel" x="739.9" y="260.0" text-anchor="end" transform="rotate(-60 739.9,260.0)">nov-25</text>
+        <text class="cg-xlabel" x="768.5" y="260.0" text-anchor="end" transform="rotate(-60 768.5,260.0)">dic-25</text>
+        <text class="cg-xlabel" x="797.1" y="260.0" text-anchor="end" transform="rotate(-60 797.1,260.0)">ene-26</text>
+        <text class="cg-xlabel" x="825.7" y="260.0" text-anchor="end" transform="rotate(-60 825.7,260.0)">feb-26</text>
+        <text class="cg-xlabel" x="854.3" y="260.0" text-anchor="end" transform="rotate(-60 854.3,260.0)">mar-26</text>
+        <text class="cg-xlabel" x="882.8" y="260.0" text-anchor="end" transform="rotate(-60 882.8,260.0)">abr-26</text>
+        <text class="cg-xlabel" x="911.4" y="260.0" text-anchor="end" transform="rotate(-60 911.4,260.0)">may-26</text>
+        <text class="cg-xlabel" x="940.0" y="260.0" text-anchor="end" transform="rotate(-60 940.0,260.0)">jun-26</text>
+        <rect class="cg-hit" data-i="0" data-x="54.0" data-y="177.1" data-label="nov-23" data-value="56.5" x="39.7" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="1" data-x="82.6" data-y="43.3" data-label="dic-23" data-value="99.4" x="68.3" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="2" data-x="111.2" data-y="60.1" data-label="ene-24" data-value="94.0" x="96.9" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="3" data-x="139.7" data-y="82.7" data-label="feb-24" data-value="86.8" x="125.4" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="4" data-x="168.3" data-y="100.3" data-label="mar-24" data-value="81.1" x="154.0" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="5" data-x="196.9" data-y="119.3" data-label="abr-24" data-value="75.0" x="182.6" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="6" data-x="225.5" data-y="152.2" data-label="may-24" data-value="64.5" x="211.2" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="7" data-x="254.1" data-y="167.4" data-label="jun-24" data-value="59.6" x="239.8" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="8" data-x="282.6" data-y="188.7" data-label="jul-24" data-value="52.8" x="268.3" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="9" data-x="311.2" data-y="195.7" data-label="ago-24" data-value="50.5" x="296.9" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="10" data-x="339.8" data-y="203.8" data-label="sep-24" data-value="47.9" x="325.5" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="11" data-x="368.4" data-y="209.7" data-label="oct-24" data-value="46.0" x="354.1" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="12" data-x="397.0" data-y="215.2" data-label="nov-24" data-value="44.2" x="382.7" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="13" data-x="425.5" data-y="221.0" data-label="dic-24" data-value="42.4" x="411.2" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="14" data-x="454.1" data-y="218.5" data-label="ene-25" data-value="43.2" x="439.8" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="15" data-x="482.7" data-y="226.8" data-label="feb-25" data-value="40.5" x="468.4" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="16" data-x="511.3" data-y="230.0" data-label="mar-25" data-value="39.5" x="497.0" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="17" data-x="539.9" data-y="229.1" data-label="abr-25" data-value="39.8" x="525.6" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="18" data-x="568.5" data-y="221.7" data-label="may-25" data-value="42.2" x="554.2" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="19" data-x="597.0" data-y="226.9" data-label="jun-25" data-value="40.5" x="582.7" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="20" data-x="625.6" data-y="220.1" data-label="jul-25" data-value="42.7" x="611.3" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="21" data-x="654.2" data-y="222.1" data-label="ago-25" data-value="42.0" x="639.9" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="22" data-x="682.8" data-y="220.9" data-label="sep-25" data-value="42.4" x="668.5" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="23" data-x="711.4" data-y="215.5" data-label="oct-25" data-value="44.2" x="697.1" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="24" data-x="739.9" data-y="216.8" data-label="nov-25" data-value="43.7" x="725.6" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="25" data-x="768.5" data-y="220.7" data-label="dic-25" data-value="42.5" x="754.2" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="26" data-x="797.1" data-y="222.5" data-label="ene-26" data-value="41.9" x="782.8" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="27" data-x="825.7" data-y="226.1" data-label="feb-26" data-value="40.7" x="811.4" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="28" data-x="854.3" data-y="230.3" data-label="mar-26" data-value="39.4" x="840.0" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="29" data-x="882.8" data-y="230.6" data-label="abr-26" data-value="39.3" x="868.5" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="30" data-x="911.4" data-y="229.4" data-label="may-26" data-value="39.7" x="897.1" y="26.0" width="28.6" height="218.0"></rect>
+        <rect class="cg-hit" data-i="31" data-x="940.0" data-y="225.6" data-label="jun-26" data-value="40.9" x="925.7" y="26.0" width="28.6" height="218.0"></rect>
           </svg>
         </div>
         <p class="trend-caption">
           <span class="lang-en">Source: Secretariat of Finance, Debt/GDP series. Debt with private sector &amp; international financial institutions, excluding intra-public-sector debt, as % of monthly GDP. Nov-2023 to Jun-2026 (32 monthly data points).</span>
           <span class="lang-es">Fuente: Secretar&iacute;a de Finanzas, serie Deuda/PIB. Deuda con el sector privado y organismos internacionales, excluyendo deuda intra-sector p&uacute;blico, como % del PIB mensual. Nov-2023 a jun-2026 (32 datos mensuales).</span>
         </p>
-      </div>
-
-      <div class="chart-panel series-c" id="chart-panel-currency" style="display:none;">
-        <p style="font-size:13px; color:var(--text-muted); margin:14px 0 12px;">
-          <span class="lang-en">Share of gross debt denominated in local currency (ARS), from the Monthly Debt Bulletin. The peso share has risen steadily &mdash; from 43.5% in Jul-2024 to 48.5% in Jul-2026 &mdash; reducing the government's exposure to FX risk. Over the same period, the share of debt at floating rates also declined, from 36.1% to 32.7%.</span>
-          <span class="lang-es">Participaci&oacute;n de la deuda bruta denominada en moneda local (pesos), seg&uacute;n el Bolet&iacute;n Mensual de Deuda. La participaci&oacute;n en pesos subi&oacute; de forma sostenida &mdash; de 43,5% en jul-2024 a 48,5% en jul-2026 &mdash; reduciendo la exposici&oacute;n del Estado al riesgo cambiario. En el mismo per&iacute;odo, la participaci&oacute;n de deuda a tasa variable tambi&eacute;n baj&oacute;, de 36,1% a 32,7%.</span>
-        </p>
-        <div class="trend-chart-wrap">
-          <svg viewBox="0 0 860 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Participaci&oacute;n de la deuda en moneda local, evoluci&oacute;n mensual jul-2024 a jul-2026, con marcador en cada mes">
-            <path d="M4.0,190.0 L4.0,137.1 L39.5,129.7 L75.0,127.3 L110.5,118.6 L146.0,115.3 L181.5,114.5 L217.0,103.4 L252.5,97.9 L288.0,95.4 L323.5,144.2 L359.0,123.7 L394.5,115.3 L430.0,140.7 L465.5,126.2 L501.0,125.5 L536.5,143.7 L572.0,136.3 L607.5,157.2 L643.0,139.9 L678.5,119.2 L714.0,97.0 L749.5,81.5 L785.0,45.7 L820.5,74.0 L856.0,62.9 L856.0,190.0 Z" fill="rgba(46,125,50,0.14)" stroke="none"></path>
-            <polyline points="4.0,137.1 39.5,129.7 75.0,127.3 110.5,118.6 146.0,115.3 181.5,114.5 217.0,103.4 252.5,97.9 288.0,95.4 323.5,144.2 359.0,123.7 394.5,115.3 430.0,140.7 465.5,126.2 501.0,125.5 536.5,143.7 572.0,136.3 607.5,157.2 643.0,139.9 678.5,119.2 714.0,97.0 749.5,81.5 785.0,45.7 820.5,74.0 856.0,62.9" fill="none" stroke="var(--success)" stroke-width="2"></polyline>
-          <circle cx="4.0" cy="137.1" r="3" class="chart-pt"><title>jul-24: 43.5%</title></circle>
-          <circle cx="39.5" cy="129.7" r="3" class="chart-pt"><title>ago-24: 44.0%</title></circle>
-          <circle cx="75.0" cy="127.3" r="3" class="chart-pt"><title>sep-24: 44.2%</title></circle>
-          <circle cx="110.5" cy="118.6" r="3" class="chart-pt"><title>oct-24: 44.8%</title></circle>
-          <circle cx="146.0" cy="115.3" r="3" class="chart-pt"><title>nov-24: 45.0%</title></circle>
-          <circle cx="181.5" cy="114.5" r="3" class="chart-pt"><title>dic-24: 45.0%</title></circle>
-          <circle cx="217.0" cy="103.4" r="3" class="chart-pt"><title>ene-25: 45.8%</title></circle>
-          <circle cx="252.5" cy="97.9" r="3" class="chart-pt"><title>feb-25: 46.1%</title></circle>
-          <circle cx="288.0" cy="95.4" r="3" class="chart-pt"><title>mar-25: 46.3%</title></circle>
-          <circle cx="323.5" cy="144.2" r="3" class="chart-pt"><title>abr-25: 43.1%</title></circle>
-          <circle cx="359.0" cy="123.7" r="3" class="chart-pt"><title>may-25: 44.4%</title></circle>
-          <circle cx="394.5" cy="115.3" r="3" class="chart-pt"><title>jun-25: 45.0%</title></circle>
-          <circle cx="430.0" cy="140.7" r="3" class="chart-pt"><title>jul-25: 43.3%</title></circle>
-          <circle cx="465.5" cy="126.2" r="3" class="chart-pt"><title>ago-25: 44.3%</title></circle>
-          <circle cx="501.0" cy="125.5" r="3" class="chart-pt"><title>sep-25: 44.3%</title></circle>
-          <circle cx="536.5" cy="143.7" r="3" class="chart-pt"><title>oct-25: 43.1%</title></circle>
-          <circle cx="572.0" cy="136.3" r="3" class="chart-pt"><title>nov-25: 43.6%</title></circle>
-          <circle cx="607.5" cy="157.2" r="3" class="chart-pt"><title>dic-25: 42.2%</title></circle>
-          <circle cx="643.0" cy="139.9" r="3" class="chart-pt"><title>ene-26: 43.3%</title></circle>
-          <circle cx="678.5" cy="119.2" r="3" class="chart-pt"><title>feb-26: 44.7%</title></circle>
-          <circle cx="714.0" cy="97.0" r="3" class="chart-pt"><title>mar-26: 46.2%</title></circle>
-          <circle cx="749.5" cy="81.5" r="3" class="chart-pt"><title>abr-26: 47.2%</title></circle>
-          <circle cx="785.0" cy="45.7" r="3" class="chart-pt"><title>may-26: 49.6%</title></circle>
-          <circle cx="820.5" cy="74.0" r="3" class="chart-pt"><title>jun-26: 47.7%</title></circle>
-          <circle cx="856.0" cy="62.9" r="3" class="chart-pt"><title>jul-26: 48.5%</title></circle>
-          <text class="chart-x-label" x="4.0" y="198" text-anchor="end" transform="rotate(-60 4.0,198)">jul-24</text>
-          <text class="chart-x-label" x="39.5" y="198" text-anchor="end" transform="rotate(-60 39.5,198)">ago-24</text>
-          <text class="chart-x-label" x="75.0" y="198" text-anchor="end" transform="rotate(-60 75.0,198)">sep-24</text>
-          <text class="chart-x-label" x="110.5" y="198" text-anchor="end" transform="rotate(-60 110.5,198)">oct-24</text>
-          <text class="chart-x-label" x="146.0" y="198" text-anchor="end" transform="rotate(-60 146.0,198)">nov-24</text>
-          <text class="chart-x-label" x="181.5" y="198" text-anchor="end" transform="rotate(-60 181.5,198)">dic-24</text>
-          <text class="chart-x-label" x="217.0" y="198" text-anchor="end" transform="rotate(-60 217.0,198)">ene-25</text>
-          <text class="chart-x-label" x="252.5" y="198" text-anchor="end" transform="rotate(-60 252.5,198)">feb-25</text>
-          <text class="chart-x-label" x="288.0" y="198" text-anchor="end" transform="rotate(-60 288.0,198)">mar-25</text>
-          <text class="chart-x-label" x="323.5" y="198" text-anchor="end" transform="rotate(-60 323.5,198)">abr-25</text>
-          <text class="chart-x-label" x="359.0" y="198" text-anchor="end" transform="rotate(-60 359.0,198)">may-25</text>
-          <text class="chart-x-label" x="394.5" y="198" text-anchor="end" transform="rotate(-60 394.5,198)">jun-25</text>
-          <text class="chart-x-label" x="430.0" y="198" text-anchor="end" transform="rotate(-60 430.0,198)">jul-25</text>
-          <text class="chart-x-label" x="465.5" y="198" text-anchor="end" transform="rotate(-60 465.5,198)">ago-25</text>
-          <text class="chart-x-label" x="501.0" y="198" text-anchor="end" transform="rotate(-60 501.0,198)">sep-25</text>
-          <text class="chart-x-label" x="536.5" y="198" text-anchor="end" transform="rotate(-60 536.5,198)">oct-25</text>
-          <text class="chart-x-label" x="572.0" y="198" text-anchor="end" transform="rotate(-60 572.0,198)">nov-25</text>
-          <text class="chart-x-label" x="607.5" y="198" text-anchor="end" transform="rotate(-60 607.5,198)">dic-25</text>
-          <text class="chart-x-label" x="643.0" y="198" text-anchor="end" transform="rotate(-60 643.0,198)">ene-26</text>
-          <text class="chart-x-label" x="678.5" y="198" text-anchor="end" transform="rotate(-60 678.5,198)">feb-26</text>
-          <text class="chart-x-label" x="714.0" y="198" text-anchor="end" transform="rotate(-60 714.0,198)">mar-26</text>
-          <text class="chart-x-label" x="749.5" y="198" text-anchor="end" transform="rotate(-60 749.5,198)">abr-26</text>
-          <text class="chart-x-label" x="785.0" y="198" text-anchor="end" transform="rotate(-60 785.0,198)">may-26</text>
-          <text class="chart-x-label" x="820.5" y="198" text-anchor="end" transform="rotate(-60 820.5,198)">jun-26</text>
-          <text class="chart-x-label" x="856.0" y="198" text-anchor="end" transform="rotate(-60 856.0,198)">jul-26</text>
-            <text class="chart-value-badge" x="850" y="24" text-anchor="end">jul-26: 48.5%</text>
-          </svg>
-        </div>
-        <p class="trend-caption">
-          <span class="lang-en">Source: Monthly Debt Bulletin (sheet A.3), Secretariat of Finance. Local-currency (ARS) share of gross debt, as % of the corresponding subtotal. Jul-2024 to Jul-2026 (25 monthly data points).</span>
-          <span class="lang-es">Fuente: Bolet&iacute;n Mensual de Deuda (hoja A.3), Secretar&iacute;a de Finanzas. Participaci&oacute;n de la deuda en pesos sobre el subtotal correspondiente. Jul-2024 a jul-2026 (25 datos mensuales).</span>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Composition: Legislation -->
-  <section class="section-default">
-    <div class="container">
-      <h2 class="section-title">
-        <span class="lang-en">Debt Composition</span>
-        <span class="lang-es">Composición de la Deuda</span>
-      </h2>
-
-      <div class="row">
-        <!-- By Legislation -->
-        <div class="col-md-6">
-          <h3><span class="lang-en">By Governing Law</span><span class="lang-es">Por Legislación</span></h3>
-          <div class="table-responsive">
-            <table class="table table-poncho">
-              <thead>
-                <tr>
-                  <th><span class="lang-en">Legislation</span><span class="lang-es">Legislación</span></th>
-                  <th style="text-align:right;"><span class="lang-en">Amount (USD mm)</span><span class="lang-es">Monto (USD mm)</span></th>
-                  <th style="text-align:right;"><span class="lang-en">Share</span><span class="lang-es">Participación</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="lang-en">Argentine Law</span><span class="lang-es">Ley Argentina</span></td>
-                  <td style="text-align:right; font-weight:600;">319,926.7</td>
-                  <td style="text-align:right;">66.0%</td>
-                </tr>
-                <tr>
-                  <td><span class="lang-en">Foreign Law</span><span class="lang-es">Ley Extranjera</span></td>
-                  <td style="text-align:right; font-weight:600;">164,795.7</td>
-                  <td style="text-align:right;">34.0%</td>
-                </tr>
-                <tr style="font-weight:700; background-color:#f0f4f8;">
-                  <td>Total</td>
-                  <td style="text-align:right;">484,722.4</td>
-                  <td style="text-align:right;">100.0%</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- By Currency -->
-        <div class="col-md-6">
-          <h3><span class="lang-en">By Currency</span><span class="lang-es">Por Moneda</span></h3>
-          <div class="table-responsive">
-            <table class="table table-poncho">
-              <thead>
-                <tr>
-                  <th><span class="lang-en">Currency</span><span class="lang-es">Moneda</span></th>
-                  <th style="text-align:right;"><span class="lang-en">Amount (USD mm)</span><span class="lang-es">Monto (USD mm)</span></th>
-                  <th style="text-align:right;"><span class="lang-en">Share</span><span class="lang-es">Participación</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="lang-en">ARS – non CER-adjusted</span><span class="lang-es">Pesos – no ajustable por CER</span></td>
-                  <td style="text-align:right; font-weight:600;">106,649.4</td>
-                  <td style="text-align:right;">22.1%</td>
-                </tr>
-                <tr>
-                  <td><span class="lang-en">ARS – CER-adjusted</span><span class="lang-es">Pesos – ajustable por CER</span></td>
-                  <td style="text-align:right; font-weight:600;">127,098.4</td>
-                  <td style="text-align:right;">26.4%</td>
-                </tr>
-                <tr>
-                  <td><span class="lang-en">US Dollar</span><span class="lang-es">Dólar Estadounidense</span></td>
-                  <td style="text-align:right; font-weight:600;">184,417.6</td>
-                  <td style="text-align:right;">38.2%</td>
-                </tr>
-                <tr>
-                  <td><span class="lang-en">SDR (IMF)</span><span class="lang-es">DEG (FMI)</span></td>
-                  <td style="text-align:right; font-weight:600;">58,028.1</td>
-                  <td style="text-align:right;">12.0%</td>
-                </tr>
-                <tr>
-                  <td><span class="lang-en">Euro</span><span class="lang-es">Euro</span></td>
-                  <td style="text-align:right; font-weight:600;">5,674.2</td>
-                  <td style="text-align:right;">1.2%</td>
-                </tr>
-                <tr>
-                  <td><span class="lang-en">Yen &amp; other currencies</span><span class="lang-es">Yenes y otras monedas</span></td>
-                  <td style="text-align:right; font-weight:600;">335.8</td>
-                  <td style="text-align:right;">0.1%</td>
-                </tr>
-                <tr style="font-weight:700; background-color:#f0f4f8;">
-                  <td>Total</td>
-                  <td style="text-align:right;">482,203.5</td>
-                  <td style="text-align:right;">100.0%</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- By Rate Type -->
-        <div class="col-md-6 col-md-offset-3">
-          <h3><span class="lang-en">By Rate Type</span><span class="lang-es">Por Tipo de Tasa</span></h3>
-          <div class="table-responsive">
-            <table class="table table-poncho">
-              <thead>
-                <tr>
-                  <th><span class="lang-en">Rate Type</span><span class="lang-es">Tipo de Tasa</span></th>
-                  <th style="text-align:right;"><span class="lang-en">Amount (USD mm)</span><span class="lang-es">Monto (USD mm)</span></th>
-                  <th style="text-align:right;"><span class="lang-en">Share</span><span class="lang-es">Participación</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="lang-en">Fixed Rate</span><span class="lang-es">Tasa Fija</span></td>
-                  <td style="text-align:right; font-weight:600;">193,487.6</td>
-                  <td style="text-align:right;">40.1%</td>
-                </tr>
-                <tr>
-                  <td><span class="lang-en">Zero Rate</span><span class="lang-es">Tasa Cero</span></td>
-                  <td style="text-align:right; font-weight:600;">131,127.4</td>
-                  <td style="text-align:right;">27.2%</td>
-                </tr>
-                <tr>
-                  <td><span class="lang-en">Floating Rate</span><span class="lang-es">Tasa Variable</span></td>
-                  <td style="text-align:right; font-weight:600;">157,588.5</td>
-                  <td style="text-align:right;">32.7%</td>
-                </tr>
-                <tr style="font-weight:700; background-color:#f0f4f8;">
-                  <td>Total</td>
-                  <td style="text-align:right;">482,203.5</td>
-                  <td style="text-align:right;">100.0%</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p style="font-size:11px; color:#999;">
-            <span class="lang-en">"Zero Rate" mainly reflects CER-adjusted discount instruments and SDR-denominated IMF debt.</span>
-            <span class="lang-es">"Tasa Cero" refleja principalmente instrumentos a descuento ajustables por CER y deuda con el FMI denominada en DEG.</span>
-          </p>
-        </div>
       </div>
     </div>
   </section>
@@ -573,8 +491,8 @@
       <div class="source-official">
         <h3><i class="fa fa-database" style="color:var(--celeste); margin-right:8px;"></i><span class="lang-en">All figures on this page are drawn from the official public-debt data hub of the Secretariat of Finance.</span><span class="lang-es">Todas las cifras de esta página provienen del centro de datos oficial de deuda pública de la Secretaría de Finanzas.</span></h3>
         <p style="margin-bottom:0; font-size:13px; color:var(--text-muted);">
-          <span class="lang-en">Visit the official page for the current Monthly Debt Bulletin, quarterly data, the financial structure of outstanding public securities, and historical graphical visualizations.</span>
-          <span class="lang-es">Visitá la página oficial para acceder al Boletín Mensual de Deuda vigente, datos trimestrales, la estructura financiera de los títulos públicos vigentes y visualizaciones gráficas históricas.</span>
+          <span class="lang-en">Visit the official page for the current Monthly Debt Bulletin, quarterly data, and the financial structure of outstanding public securities.</span>
+          <span class="lang-es">Visitá la página oficial para acceder al Boletín Mensual de Deuda vigente, datos trimestrales y la estructura financiera de los títulos públicos vigentes.</span>
         </p>
         <div style="margin-top:16px;">
           <a href="https://www.argentina.gob.ar/economia/finanzas/datos" target="_blank" rel="noopener" class="btn btn-poncho btn-poncho-primary">
@@ -587,7 +505,6 @@
           <li><a href="https://www.argentina.gob.ar/economia/finanzas/datos-mensuales-de-la-deuda" target="_blank" rel="noopener"><i class="fa fa-file-text-o"></i><span class="lang-en">Monthly Data — Debt Bulletin</span><span class="lang-es">Datos Mensuales — Boletín de Deuda</span></a></li>
           <li><a href="https://www.argentina.gob.ar/economia/finanzas/datos-trimestrales-de-la-deuda" target="_blank" rel="noopener"><i class="fa fa-calendar"></i><span class="lang-en">Quarterly Data</span><span class="lang-es">Datos Trimestrales</span></a></li>
           <li><a href="https://www.argentina.gob.ar/economia/finanzas/estructura-financiera-de-titulos-publicos" target="_blank" rel="noopener"><i class="fa fa-list-alt"></i><span class="lang-en">Financial Structure of Public Securities</span><span class="lang-es">Estructura Financiera de Títulos Públicos</span></a></li>
-          <li><a href="https://www.argentina.gob.ar/economia/finanzas/graficos-deuda" target="_blank" rel="noopener"><i class="fa fa-bar-chart"></i><span class="lang-en">Graphical Debt Visualization (2004–2023)</span><span class="lang-es">Visualización Gráfica de la Deuda (2004–2023)</span></a></li>
         </ul>
       </div>
     </div>
@@ -685,6 +602,7 @@
   <script src="js/main.js"></script>
   <script>
     (function () {
+      // ---- Tab switching ----
       var tabs = document.querySelectorAll('.chart-tab');
       tabs.forEach(function (btn) {
         btn.addEventListener('click', function () {
@@ -704,6 +622,54 @@
             target.classList.add('active');
           }
         });
+      });
+
+      // ---- Interactive crosshair + tooltip ----
+      document.querySelectorAll('.cg-wrap').forEach(function (wrap) {
+        var svg = wrap.querySelector('.cg-svg');
+        var tip = wrap.querySelector('.cg-tooltip');
+        var cross = svg.querySelector('.cg-cross');
+        var focus = svg.querySelector('.cg-focus');
+        var hits = svg.querySelectorAll('.cg-hit');
+        if (!svg || !tip || !hits.length) return;
+
+        function show(rect) {
+          var x = parseFloat(rect.getAttribute('data-x'));
+          var y = parseFloat(rect.getAttribute('data-y'));
+          var label = rect.getAttribute('data-label');
+          var value = rect.getAttribute('data-value');
+
+          cross.setAttribute('x1', x);
+          cross.setAttribute('x2', x);
+          cross.style.display = '';
+          focus.setAttribute('cx', x);
+          focus.setAttribute('cy', y);
+          focus.style.display = '';
+
+          tip.innerHTML = '<span class="cg-tt-month">' + label + '</span>' +
+                          '<span class="cg-tt-value">' + value + '%</span>';
+          // Convert SVG viewBox coords -> pixels relative to .cg-wrap
+          var svgBox = svg.getBoundingClientRect();
+          var wrapBox = wrap.getBoundingClientRect();
+          var vb = svg.viewBox.baseVal;
+          var scale = svgBox.width / vb.width;
+          tip.style.left = ((svgBox.left - wrapBox.left) + x * scale) + 'px';
+          tip.style.top = ((svgBox.top - wrapBox.top) + y * scale) + 'px';
+          tip.style.display = 'block';
+        }
+
+        function hide() {
+          cross.style.display = 'none';
+          focus.style.display = 'none';
+          tip.style.display = 'none';
+        }
+
+        hits.forEach(function (rect) {
+          rect.addEventListener('mouseenter', function () { show(rect); });
+          rect.addEventListener('touchstart', function (e) { show(rect); }, { passive: true });
+        });
+        svg.addEventListener('mouseleave', hide);
+        wrap.addEventListener('touchend', hide);
       });
     })();
   </script>
