@@ -83,6 +83,7 @@
   <section class="page-header-section">
     <div class="container">
       <ol class="breadcrumb breadcrumb-poncho">
+        <li><a href="index.html" style="color: rgba(255,255,255,0.7);"><span class="lang-en">Finance</span><span class="lang-es">Finanzas</span></a></li>
         <li><a href="inversores.html" style="color: rgba(255,255,255,0.7);">
           <span class="lang-en">Investor Relations</span>
           <span class="lang-es">Relaciones con Inversores</span>
@@ -107,8 +108,8 @@
   <div class="container" style="margin-top: 20px;">
     <div class="sample-data-notice">
       <i class="fa fa-info-circle"></i>
-      <span class="lang-en"><strong>Note:</strong> Figures on this page are real data compiled from the Monthly Debt Bulletin as of 06/30/2026, integrated into this prototype as a static snapshot — they will not update automatically. For the current, live bulletin always refer to the official source linked below.</span>
-      <span class="lang-es"><strong>Nota:</strong> Las cifras de esta página son datos reales, compilados del Boletín Mensual de Deuda al 30/06/2026 e incorporados a este prototipo como una foto estática — no se actualizan automáticamente. Para el boletín vigente y actualizado, consultar siempre la fuente oficial enlazada más abajo.</span>
+      <span class="lang-en"><strong>Note:</strong> Figures on this page are real data compiled from the Monthly Debt Bulletin as of 07/31/2026, integrated into this prototype as a static snapshot — they will not update automatically. For the current, live bulletin always refer to the official source linked below.</span>
+      <span class="lang-es"><strong>Nota:</strong> Las cifras de esta página son datos reales, compilados del Boletín Mensual de Deuda al 31/07/2026 e incorporados a este prototipo como una foto estática — no se actualizan automáticamente. Para el boletín vigente y actualizado, consultar siempre la fuente oficial enlazada más abajo.</span>
     </div>
   </div>
 
@@ -181,6 +182,10 @@
         <button type="button" class="chart-tab" data-chart-target="chart-panel-priv" role="tab" aria-selected="false">
           <span class="lang-en">Debt w/ Private Sector &amp; IFIs / GDP</span>
           <span class="lang-es">Deuda c/ Privados y OI / PIB</span>
+        </button>
+        <button type="button" class="chart-tab" data-chart-target="chart-panel-currency" role="tab" aria-selected="false">
+          <span class="lang-en">Local-Currency Share</span>
+          <span class="lang-es">Participaci&oacute;n en Pesos</span>
         </button>
       </div>
 
@@ -347,6 +352,74 @@
           <span class="lang-es">Fuente: Secretar&iacute;a de Finanzas, serie Deuda/PIB. Deuda con el sector privado y organismos internacionales, excluyendo deuda intra-sector p&uacute;blico, como % del PIB mensual. Nov-2023 a jun-2026 (32 datos mensuales).</span>
         </p>
       </div>
+
+      <div class="chart-panel series-c" id="chart-panel-currency" style="display:none;">
+        <p style="font-size:13px; color:var(--text-muted); margin:14px 0 12px;">
+          <span class="lang-en">Share of gross debt denominated in local currency (ARS), from the Monthly Debt Bulletin. The peso share has risen steadily &mdash; from 43.5% in Jul-2024 to 48.5% in Jul-2026 &mdash; reducing the government's exposure to FX risk. Over the same period, the share of debt at floating rates also declined, from 36.1% to 32.7%.</span>
+          <span class="lang-es">Participaci&oacute;n de la deuda bruta denominada en moneda local (pesos), seg&uacute;n el Bolet&iacute;n Mensual de Deuda. La participaci&oacute;n en pesos subi&oacute; de forma sostenida &mdash; de 43,5% en jul-2024 a 48,5% en jul-2026 &mdash; reduciendo la exposici&oacute;n del Estado al riesgo cambiario. En el mismo per&iacute;odo, la participaci&oacute;n de deuda a tasa variable tambi&eacute;n baj&oacute;, de 36,1% a 32,7%.</span>
+        </p>
+        <div class="trend-chart-wrap">
+          <svg viewBox="0 0 860 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Participaci&oacute;n de la deuda en moneda local, evoluci&oacute;n mensual jul-2024 a jul-2026, con marcador en cada mes">
+            <path d="M4.0,190.0 L4.0,137.1 L39.5,129.7 L75.0,127.3 L110.5,118.6 L146.0,115.3 L181.5,114.5 L217.0,103.4 L252.5,97.9 L288.0,95.4 L323.5,144.2 L359.0,123.7 L394.5,115.3 L430.0,140.7 L465.5,126.2 L501.0,125.5 L536.5,143.7 L572.0,136.3 L607.5,157.2 L643.0,139.9 L678.5,119.2 L714.0,97.0 L749.5,81.5 L785.0,45.7 L820.5,74.0 L856.0,62.9 L856.0,190.0 Z" fill="rgba(46,125,50,0.14)" stroke="none"></path>
+            <polyline points="4.0,137.1 39.5,129.7 75.0,127.3 110.5,118.6 146.0,115.3 181.5,114.5 217.0,103.4 252.5,97.9 288.0,95.4 323.5,144.2 359.0,123.7 394.5,115.3 430.0,140.7 465.5,126.2 501.0,125.5 536.5,143.7 572.0,136.3 607.5,157.2 643.0,139.9 678.5,119.2 714.0,97.0 749.5,81.5 785.0,45.7 820.5,74.0 856.0,62.9" fill="none" stroke="var(--success)" stroke-width="2"></polyline>
+          <circle cx="4.0" cy="137.1" r="3" class="chart-pt"><title>jul-24: 43.5%</title></circle>
+          <circle cx="39.5" cy="129.7" r="3" class="chart-pt"><title>ago-24: 44.0%</title></circle>
+          <circle cx="75.0" cy="127.3" r="3" class="chart-pt"><title>sep-24: 44.2%</title></circle>
+          <circle cx="110.5" cy="118.6" r="3" class="chart-pt"><title>oct-24: 44.8%</title></circle>
+          <circle cx="146.0" cy="115.3" r="3" class="chart-pt"><title>nov-24: 45.0%</title></circle>
+          <circle cx="181.5" cy="114.5" r="3" class="chart-pt"><title>dic-24: 45.0%</title></circle>
+          <circle cx="217.0" cy="103.4" r="3" class="chart-pt"><title>ene-25: 45.8%</title></circle>
+          <circle cx="252.5" cy="97.9" r="3" class="chart-pt"><title>feb-25: 46.1%</title></circle>
+          <circle cx="288.0" cy="95.4" r="3" class="chart-pt"><title>mar-25: 46.3%</title></circle>
+          <circle cx="323.5" cy="144.2" r="3" class="chart-pt"><title>abr-25: 43.1%</title></circle>
+          <circle cx="359.0" cy="123.7" r="3" class="chart-pt"><title>may-25: 44.4%</title></circle>
+          <circle cx="394.5" cy="115.3" r="3" class="chart-pt"><title>jun-25: 45.0%</title></circle>
+          <circle cx="430.0" cy="140.7" r="3" class="chart-pt"><title>jul-25: 43.3%</title></circle>
+          <circle cx="465.5" cy="126.2" r="3" class="chart-pt"><title>ago-25: 44.3%</title></circle>
+          <circle cx="501.0" cy="125.5" r="3" class="chart-pt"><title>sep-25: 44.3%</title></circle>
+          <circle cx="536.5" cy="143.7" r="3" class="chart-pt"><title>oct-25: 43.1%</title></circle>
+          <circle cx="572.0" cy="136.3" r="3" class="chart-pt"><title>nov-25: 43.6%</title></circle>
+          <circle cx="607.5" cy="157.2" r="3" class="chart-pt"><title>dic-25: 42.2%</title></circle>
+          <circle cx="643.0" cy="139.9" r="3" class="chart-pt"><title>ene-26: 43.3%</title></circle>
+          <circle cx="678.5" cy="119.2" r="3" class="chart-pt"><title>feb-26: 44.7%</title></circle>
+          <circle cx="714.0" cy="97.0" r="3" class="chart-pt"><title>mar-26: 46.2%</title></circle>
+          <circle cx="749.5" cy="81.5" r="3" class="chart-pt"><title>abr-26: 47.2%</title></circle>
+          <circle cx="785.0" cy="45.7" r="3" class="chart-pt"><title>may-26: 49.6%</title></circle>
+          <circle cx="820.5" cy="74.0" r="3" class="chart-pt"><title>jun-26: 47.7%</title></circle>
+          <circle cx="856.0" cy="62.9" r="3" class="chart-pt"><title>jul-26: 48.5%</title></circle>
+          <text class="chart-x-label" x="4.0" y="198" text-anchor="end" transform="rotate(-60 4.0,198)">jul-24</text>
+          <text class="chart-x-label" x="39.5" y="198" text-anchor="end" transform="rotate(-60 39.5,198)">ago-24</text>
+          <text class="chart-x-label" x="75.0" y="198" text-anchor="end" transform="rotate(-60 75.0,198)">sep-24</text>
+          <text class="chart-x-label" x="110.5" y="198" text-anchor="end" transform="rotate(-60 110.5,198)">oct-24</text>
+          <text class="chart-x-label" x="146.0" y="198" text-anchor="end" transform="rotate(-60 146.0,198)">nov-24</text>
+          <text class="chart-x-label" x="181.5" y="198" text-anchor="end" transform="rotate(-60 181.5,198)">dic-24</text>
+          <text class="chart-x-label" x="217.0" y="198" text-anchor="end" transform="rotate(-60 217.0,198)">ene-25</text>
+          <text class="chart-x-label" x="252.5" y="198" text-anchor="end" transform="rotate(-60 252.5,198)">feb-25</text>
+          <text class="chart-x-label" x="288.0" y="198" text-anchor="end" transform="rotate(-60 288.0,198)">mar-25</text>
+          <text class="chart-x-label" x="323.5" y="198" text-anchor="end" transform="rotate(-60 323.5,198)">abr-25</text>
+          <text class="chart-x-label" x="359.0" y="198" text-anchor="end" transform="rotate(-60 359.0,198)">may-25</text>
+          <text class="chart-x-label" x="394.5" y="198" text-anchor="end" transform="rotate(-60 394.5,198)">jun-25</text>
+          <text class="chart-x-label" x="430.0" y="198" text-anchor="end" transform="rotate(-60 430.0,198)">jul-25</text>
+          <text class="chart-x-label" x="465.5" y="198" text-anchor="end" transform="rotate(-60 465.5,198)">ago-25</text>
+          <text class="chart-x-label" x="501.0" y="198" text-anchor="end" transform="rotate(-60 501.0,198)">sep-25</text>
+          <text class="chart-x-label" x="536.5" y="198" text-anchor="end" transform="rotate(-60 536.5,198)">oct-25</text>
+          <text class="chart-x-label" x="572.0" y="198" text-anchor="end" transform="rotate(-60 572.0,198)">nov-25</text>
+          <text class="chart-x-label" x="607.5" y="198" text-anchor="end" transform="rotate(-60 607.5,198)">dic-25</text>
+          <text class="chart-x-label" x="643.0" y="198" text-anchor="end" transform="rotate(-60 643.0,198)">ene-26</text>
+          <text class="chart-x-label" x="678.5" y="198" text-anchor="end" transform="rotate(-60 678.5,198)">feb-26</text>
+          <text class="chart-x-label" x="714.0" y="198" text-anchor="end" transform="rotate(-60 714.0,198)">mar-26</text>
+          <text class="chart-x-label" x="749.5" y="198" text-anchor="end" transform="rotate(-60 749.5,198)">abr-26</text>
+          <text class="chart-x-label" x="785.0" y="198" text-anchor="end" transform="rotate(-60 785.0,198)">may-26</text>
+          <text class="chart-x-label" x="820.5" y="198" text-anchor="end" transform="rotate(-60 820.5,198)">jun-26</text>
+          <text class="chart-x-label" x="856.0" y="198" text-anchor="end" transform="rotate(-60 856.0,198)">jul-26</text>
+            <text class="chart-value-badge" x="850" y="24" text-anchor="end">jul-26: 48.5%</text>
+          </svg>
+        </div>
+        <p class="trend-caption">
+          <span class="lang-en">Source: Monthly Debt Bulletin (sheet A.3), Secretariat of Finance. Local-currency (ARS) share of gross debt, as % of the corresponding subtotal. Jul-2024 to Jul-2026 (25 monthly data points).</span>
+          <span class="lang-es">Fuente: Bolet&iacute;n Mensual de Deuda (hoja A.3), Secretar&iacute;a de Finanzas. Participaci&oacute;n de la deuda en pesos sobre el subtotal correspondiente. Jul-2024 a jul-2026 (25 datos mensuales).</span>
+        </p>
+      </div>
     </div>
   </section>
 
@@ -374,17 +447,17 @@
               <tbody>
                 <tr>
                   <td><span class="lang-en">Argentine Law</span><span class="lang-es">Ley Argentina</span></td>
-                  <td style="text-align:right; font-weight:600;">311,328.7</td>
-                  <td style="text-align:right;">65.6%</td>
+                  <td style="text-align:right; font-weight:600;">319,926.7</td>
+                  <td style="text-align:right;">66.0%</td>
                 </tr>
                 <tr>
                   <td><span class="lang-en">Foreign Law</span><span class="lang-es">Ley Extranjera</span></td>
-                  <td style="text-align:right; font-weight:600;">162,863.5</td>
-                  <td style="text-align:right;">34.4%</td>
+                  <td style="text-align:right; font-weight:600;">164,795.7</td>
+                  <td style="text-align:right;">34.0%</td>
                 </tr>
                 <tr style="font-weight:700; background-color:#f0f4f8;">
                   <td>Total</td>
-                  <td style="text-align:right;">474,192.2</td>
+                  <td style="text-align:right;">484,722.4</td>
                   <td style="text-align:right;">100.0%</td>
                 </tr>
               </tbody>
@@ -407,37 +480,37 @@
               <tbody>
                 <tr>
                   <td><span class="lang-en">ARS – non CER-adjusted</span><span class="lang-es">Pesos – no ajustable por CER</span></td>
-                  <td style="text-align:right; font-weight:600;">96,606.2</td>
-                  <td style="text-align:right;">20.5%</td>
+                  <td style="text-align:right; font-weight:600;">106,649.4</td>
+                  <td style="text-align:right;">22.1%</td>
                 </tr>
                 <tr>
                   <td><span class="lang-en">ARS – CER-adjusted</span><span class="lang-es">Pesos – ajustable por CER</span></td>
-                  <td style="text-align:right; font-weight:600;">126,505.6</td>
-                  <td style="text-align:right;">26.8%</td>
+                  <td style="text-align:right; font-weight:600;">127,098.4</td>
+                  <td style="text-align:right;">26.4%</td>
                 </tr>
                 <tr>
                   <td><span class="lang-en">US Dollar</span><span class="lang-es">Dólar Estadounidense</span></td>
-                  <td style="text-align:right; font-weight:600;">184,797.6</td>
-                  <td style="text-align:right;">39.2%</td>
+                  <td style="text-align:right; font-weight:600;">184,417.6</td>
+                  <td style="text-align:right;">38.2%</td>
                 </tr>
                 <tr>
                   <td><span class="lang-en">SDR (IMF)</span><span class="lang-es">DEG (FMI)</span></td>
-                  <td style="text-align:right; font-weight:600;">57,705.5</td>
-                  <td style="text-align:right;">12.2%</td>
+                  <td style="text-align:right; font-weight:600;">58,028.1</td>
+                  <td style="text-align:right;">12.0%</td>
                 </tr>
                 <tr>
                   <td><span class="lang-en">Euro</span><span class="lang-es">Euro</span></td>
-                  <td style="text-align:right; font-weight:600;">5,742.5</td>
+                  <td style="text-align:right; font-weight:600;">5,674.2</td>
                   <td style="text-align:right;">1.2%</td>
                 </tr>
                 <tr>
                   <td><span class="lang-en">Yen &amp; other currencies</span><span class="lang-es">Yenes y otras monedas</span></td>
-                  <td style="text-align:right; font-weight:600;">326.6</td>
+                  <td style="text-align:right; font-weight:600;">335.8</td>
                   <td style="text-align:right;">0.1%</td>
                 </tr>
                 <tr style="font-weight:700; background-color:#f0f4f8;">
                   <td>Total</td>
-                  <td style="text-align:right;">471,684.0</td>
+                  <td style="text-align:right;">482,203.5</td>
                   <td style="text-align:right;">100.0%</td>
                 </tr>
               </tbody>
@@ -460,22 +533,22 @@
               <tbody>
                 <tr>
                   <td><span class="lang-en">Fixed Rate</span><span class="lang-es">Tasa Fija</span></td>
-                  <td style="text-align:right; font-weight:600;">193,278.6</td>
-                  <td style="text-align:right;">41.0%</td>
+                  <td style="text-align:right; font-weight:600;">193,487.6</td>
+                  <td style="text-align:right;">40.1%</td>
                 </tr>
                 <tr>
                   <td><span class="lang-en">Zero Rate</span><span class="lang-es">Tasa Cero</span></td>
-                  <td style="text-align:right; font-weight:600;">125,276.0</td>
-                  <td style="text-align:right;">26.6%</td>
+                  <td style="text-align:right; font-weight:600;">131,127.4</td>
+                  <td style="text-align:right;">27.2%</td>
                 </tr>
                 <tr>
                   <td><span class="lang-en">Floating Rate</span><span class="lang-es">Tasa Variable</span></td>
-                  <td style="text-align:right; font-weight:600;">153,129.4</td>
-                  <td style="text-align:right;">32.5%</td>
+                  <td style="text-align:right; font-weight:600;">157,588.5</td>
+                  <td style="text-align:right;">32.7%</td>
                 </tr>
                 <tr style="font-weight:700; background-color:#f0f4f8;">
                   <td>Total</td>
-                  <td style="text-align:right;">471,684.0</td>
+                  <td style="text-align:right;">482,203.5</td>
                   <td style="text-align:right;">100.0%</td>
                 </tr>
               </tbody>

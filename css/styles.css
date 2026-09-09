@@ -793,6 +793,8 @@ body.lang-active-es span.lang-es {
 .chart-pt:hover { r: 5; fill: var(--celeste); }
 .chart-panel.series-b .chart-pt { stroke: var(--secondary); }
 .chart-panel.series-b .chart-pt:hover { fill: var(--warning); }
+.chart-panel.series-c .chart-pt { stroke: var(--success); }
+.chart-panel.series-c .chart-pt:hover { fill: var(--celeste); }
 
 .chart-x-label {
   font-family: 'Montserrat', sans-serif;
@@ -806,6 +808,7 @@ body.lang-active-es span.lang-es {
   fill: var(--primary);
 }
 .chart-panel.series-b .chart-value-badge { fill: var(--secondary); }
+.chart-panel.series-c .chart-value-badge { fill: var(--success); }
 
 /* ---------- Debt Statistics: source callout ---------- */
 .source-official {
