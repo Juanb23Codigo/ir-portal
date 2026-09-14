@@ -729,6 +729,29 @@ body.lang-active-es span.lang-es {
   vertical-align: middle;
 }
 
+/* ---------- Card grid: equal-height cards, stable wrapping ----------
+   Bootstrap 3 rows use floats, so cards of unequal height snag on each
+   other and break the grid flow. Flex keeps every card in a row the same
+   height and makes wrapping predictable at any width. */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-grid > div[class*="col-"] {
+  display: flex;
+}
+.card-grid .card-poncho,
+.card-grid .indicator-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+/* Push the trailing link to the bottom so links align across a row */
+.card-grid .card-text {
+  flex: 1 0 auto;
+}
+
 /* ---------- Debt Statistics: chart tabs ---------- */
 .chart-tabs {
   display: flex;
