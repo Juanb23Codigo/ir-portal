@@ -46,6 +46,7 @@ index.html          ← Landing "Finanzas": réplica de la página real del MECO
   └── inversores.html  ← Home del portal IR. Se entra desde la tarjeta
                          "Relación con Inversores" de la landing.
         ├── debt-statistics.html       Deuda Pública
+        ├── programa-financiero.html   Programa Financiero
         ├── credit-ratings.html        Calificaciones Crediticias
         ├── licitaciones.html          Licitaciones (sección con 4 subpáginas)
         │     ├── cronograma-2026.html
@@ -111,6 +112,8 @@ lugar vacío. Inventar un número plausible no es una opción.
 | Deuda / PIB y Deuda con Privados y OI / PIB | `06. Stock Deuda <Mes> <Año>.xlsx`, hoja `salida`, columnas 9 y 52 |
 | Calificaciones crediticias | Comunicados oficiales de S&P, Moody's y Fitch |
 | Cronogramas y PDFs de licitaciones | argentina.gob.ar (se enlaza el archivo oficial, no se copia) |
+| Programa Financiero 2026 y 2027 | Presentación oficial del MECON del 6/7/2026, publicada en argentina.gob.ar (se enlaza el PDF oficial, no se copia) |
+| Indicadores de Sobre Argentina | INDEC (IPC, EMAE, ICA) y MECON (resultado fiscal), cada tile enlazado a su informe de prensa |
 
 **Los excels los provee Juan y no están en el repo** (ver el aviso del principio).
 Si hacen falta y no los tenés a mano, pedírselos — no avanzar con valores
@@ -179,6 +182,14 @@ agregás una grilla de tarjetas, ponele la clase.
 **No** poner `card-grid` en filas que contengan el menú lateral de Licitaciones
 (rompe ese layout).
 
+### Separador decimal
+
+Todo el sitio escribe los números en formato inglés (`71.4%`, `19.2`), en un solo
+`div` sin duplicar por idioma. Es inconsistente con la versión en castellano, donde
+correspondería `71,4%`. Está así en todas las páginas: **no lo cambies en una sola**,
+porque la inconsistencia entre secciones es peor que la actual. Si se arregla, se
+arregla en todo el sitio de una vez.
+
 ### Gráficos
 
 Los de Deuda/PIB son **SVG hechos a mano**, sin librería. Las coordenadas se
@@ -212,6 +223,22 @@ Si cambiás el ángulo o el tamaño de las etiquetas, **medí el solapamiento** 
   aproximación: las fuentes no coincidían sobre su color oficial.
 - **Moody's se llama "Moody's Ratings"** (se renombró en 2024, antes era Investors
   Service).
+- **Sin riesgo país**: no va ninguna serie de riesgo país en el portal, ni un
+  gráfico ni una comparación entre gestiones. Dos razones: el EMBI+ es propietario
+  de JP Morgan y ningún organismo argentino lo publica, así que no hay fuente
+  oficial verificable; y el emisor es la República, no una administración — un
+  argumento construido como "esta gestión contra la anterior" le recuerda al
+  tenedor de bonos que acá la política se da vuelta con cada elección, que es
+  justamente el riesgo que está pricear. Decisión de Juan, 14/09/2026.
+- **La caja de supuestos del ejercicio de sostenibilidad no se saca nunca.** Es lo
+  que lo convierte en un ejercicio auditable en vez de una promesa del emisor. El
+  HTML de `programa-financiero.html` tiene un comentario interno que explica la
+  brecha entre los supuestos (sp 1,3% y g 4,5%) y los datos corrientes que el
+  propio portal publica en Sobre Argentina (+0,6% y +1,9% en el 1er sem. 2026).
+  Leerlo antes de tocar esa sección.
+- **La presentación del programa no se aloja en el repo.** El `.pptx` (V7, versión
+  interna) y el PDF van a `datos/`. La página enlaza el PDF oficial del MECON,
+  misma regla que los PDFs de licitaciones.
 
 ---
 

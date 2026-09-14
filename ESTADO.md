@@ -15,15 +15,16 @@ Ministerio, hero, tres accesos (Deuda Pública, Inclusión Financiera y **Relaci
 con Inversores**, que es el agregado), Destacados, Noticias reales de julio 2026,
 Institucional y footer.
 
-### Portal IR (`inversores.html` + 5 secciones)
+### Portal IR (`inversores.html` + 6 secciones)
 
 | Sección | Estado |
 |---|---|
+| **Programa Financiero** | Sección nueva. Lineamientos, tablas de necesidades y fuentes 2026 y 2027 (cifras del PDF oficial del MECON del 6/7/2026, sumas validadas), ejercicio de sostenibilidad con su caja de supuestos, y enlaces al PDF y al comunicado oficiales. |
 | **Deuda Pública** | Dos gráficos interactivos de Deuda/PIB con datos reales (nov-23 a jun-26). Métricas clave arriba. Links a los datos oficiales. |
 | **Calificaciones Crediticias** | Las tres agencias con ratings vigentes (S&P B-, Moody's B3, Fitch B-), logos, y comunicados enlazados a las páginas oficiales. |
 | **Licitaciones** | Réplica de la sección oficial, con menú lateral y 4 subpáginas. Los cronogramas 2025/2026 muestran el calendario visual completo del año y descargan el PDF oficial del MECON. |
 | **Presentaciones** | Estructura armada, PDFs son placeholders. |
-| **Sobre Argentina** | Indicadores económicos y enlaces útiles. |
+| **Sobre Argentina** | Seis indicadores con fuente oficial verificada (INDEC y MECON), cada uno con período de referencia y link a su informe de prensa. Reemplazan los ocho tiles ilustrativos que traía el prototipo. |
 
 El fix de grilla de tarjetas (`card-grid`) está aplicado y publicado en las cinco
 páginas con grilla: `inversores`, `credit-ratings`, `licitaciones`,
@@ -65,28 +66,32 @@ Ojo: pasar de 14px a 18px agranda todo y va a requerir reajustar tarjetas, tabla
 y probablemente los gráficos. No es cosmético, y obliga a re-verificar el layout
 a los tres anchos. Rinde recién cuando esto pase de maqueta a construcción real.
 
-### 3. Archivos descargables
+### 3. Reservas internacionales sin fuente oficial
+El tile de reservas se sacó de Sobre Argentina porque no se consiguió el dato de
+fuente oficial directa: el PDF del informe monetario diario del BCRA devuelve 403.
+Prensa hay de sobra, pero no alcanza para este proyecto. Falta conseguir el dato
+de cierre de mes desde el BCRA.
+
+### 4. Archivos descargables
 Los PDFs de presentaciones y varios Excel son placeholders. Los cronogramas de
 licitaciones sí bajan el PDF oficial real.
 
-### 4. Contenido que se sacó y habría que reponer con otra forma
+### 5. Contenido que se sacó y habría que reponer con otra forma
 Al limpiar la página de Deuda quedaron afuera la composición de deuda y los flujos
 mensuales. Juan quiere repensar qué poner en su lugar, no necesariamente lo mismo.
 
-### 5. Métricas de deuda que quedaron sin usar
-Del análisis del boletín salieron dos datos sólidos que hoy no están en el portal:
+### 6. Métrica de deuda que quedó sin usar
+Del análisis del boletín quedó un dato sólido que hoy no está en el portal:
 
-- **Participación en pesos**: subió de 43,5% (jul-24) a 48,5% (jul-26). Tendencia
-  real y sostenida, buen argumento de reducción de exposición cambiaria.
-  (Se llegó a construir el gráfico y después se sacó por pedido.)
-- **Tasa variable**: bajó de 36,1% a 32,7% en el mismo período.
+- **Tasa variable**: bajó de 36,1% (jul-24) a 32,7% (jul-26).
 
-Un tercero, **deuda de corto plazo**, se descartó: oscila entre 8% y 14% sin
-tendencia clara, no aguanta como indicador de mejora.
+Otras dos se descartaron y **no hay que reponerlas**:
 
-> **Contradicción sin resolver:** CLAUDE.md lista la solapa "Participación en
-> Pesos" en *decisiones tomadas, no revertir sin hablarlo*, y acá figura como
-> pendiente a reponer. Definir cuál vale y corregir el otro archivo.
+- **Participación en pesos** — decisión editorial de Juan (14/09/2026). Se llegó a
+  construir el gráfico y se sacó; no volver a proponerla. Coincide con lo que ya
+  dice CLAUDE.md en "decisiones tomadas".
+- **Deuda de corto plazo** — oscila entre 8% y 14% sin tendencia clara, no aguanta
+  como indicador de mejora.
 
 ---
 
