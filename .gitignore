@@ -1,0 +1,14 @@
+# Archivos fuente del MECON (planillas de deuda, boletines).
+# El repo es PUBLICO: estos archivos no deben publicarse nunca.
+datos/
+*.xlsx
+*.xls
+*.xlsm
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Temporales de Office
+~$*
