@@ -2,6 +2,9 @@
 
 Última actualización: **14 de septiembre de 2026**
 
+Este archivo lista los pendientes **conceptuales**. El estado del árbol de git
+(qué está commiteado, qué falta pushear) lo dice `git status`, no este archivo.
+
 ---
 
 ## Qué hay hecho
@@ -22,6 +25,15 @@ Institucional y footer.
 | **Presentaciones** | Estructura armada, PDFs son placeholders. |
 | **Sobre Argentina** | Indicadores económicos y enlaces útiles. |
 
+El fix de grilla de tarjetas (`card-grid`) está aplicado y publicado en las cinco
+páginas con grilla: `inversores`, `credit-ratings`, `licitaciones`,
+`about-argentina` e `historico-de-resultados`. Corregía el layout roto entre
+1000px y 1170px de ancho.
+
+Las planillas del MECON están fuera del repo público (`.gitignore`: `datos/*` con
+excepción de `LEEME.md`, más `*.xlsx` / `*.xls` / `*.xlsm`). Verificado que
+ninguna entró nunca al historial.
+
 ### Datos cargados
 
 - Boletín Mensual de Deuda al **31/07/2026**
@@ -30,20 +42,15 @@ Institucional y footer.
 
 ---
 
-## Sin publicar
-
-Hay **6 archivos modificados** esperando push: el fix de grilla de tarjetas
-(`card-grid`) en `inversores`, `credit-ratings`, `licitaciones`,
-`about-argentina`, `historico-de-resultados` y `css/styles.css`.
-
-Está verificado y funcionando. Solo falta la confirmación de Juan para publicar.
-
----
-
 ## Pendientes
 
-### 1. Alinear la estética al MECON real
-Lo único que falta para que se vea igual al sitio oficial:
+### 1. Contacto para inversores
+El portal no tiene ningún dato de contacto. Los 7 portales soberanos que se
+analizaron al principio lo tienen, y la propuesta original lo marcaba como
+requisito de Fase 1. Es la brecha más visible que queda, y la única que un
+revisor externo va a notar en los primeros treinta segundos.
+
+### 2. Alinear la estética al MECON real
 
 | | MECON | Prototipo |
 |---|---|---|
@@ -55,12 +62,8 @@ Lo único que falta para que se vea igual al sitio oficial:
 Las tipografías (Montserrat + Lora) y la paleta de fondos **ya coinciden**.
 
 Ojo: pasar de 14px a 18px agranda todo y va a requerir reajustar tarjetas, tablas
-y probablemente los gráficos. No es cosmético.
-
-### 2. Contacto para inversores
-El portal no tiene ningún dato de contacto. Los 7 portales soberanos que se
-analizaron al principio lo tienen, y la propuesta original lo marcaba como
-requisito de Fase 1. Es la brecha más visible que queda.
+y probablemente los gráficos. No es cosmético, y obliga a re-verificar el layout
+a los tres anchos. Rinde recién cuando esto pase de maqueta a construcción real.
 
 ### 3. Archivos descargables
 Los PDFs de presentaciones y varios Excel son placeholders. Los cronogramas de
@@ -80,6 +83,10 @@ Del análisis del boletín salieron dos datos sólidos que hoy no están en el p
 
 Un tercero, **deuda de corto plazo**, se descartó: oscila entre 8% y 14% sin
 tendencia clara, no aguanta como indicador de mejora.
+
+> **Contradicción sin resolver:** CLAUDE.md lista la solapa "Participación en
+> Pesos" en *decisiones tomadas, no revertir sin hablarlo*, y acá figura como
+> pendiente a reponer. Definir cuál vale y corregir el otro archivo.
 
 ---
 
