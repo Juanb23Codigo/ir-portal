@@ -1550,3 +1550,71 @@ body.ver-todo .oculto > * { outline: 2px dashed #E65100; outline-offset: 4px; }
 .lic-fecha { font-family: 'Montserrat', sans-serif; font-weight: 700;
              font-size: 15px; color: var(--primary); }
 .lic-detalle { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+/* ---------- Fuente oficial de datos (3 tarjetas con jerarquía) ---------- */
+.fuentes-datos {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.fuente-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.fuente-card:hover {
+  border-color: var(--celeste);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transform: translateY(-2px);
+}
+.fuente-card.destacada {
+  border: 2px solid var(--celeste);
+  background: #F4F8FC;
+}
+.fuente-icon { color: var(--celeste); font-size: 22px; margin-bottom: 12px; }
+.fuente-card.destacada .fuente-icon { font-size: 26px; }
+.fuente-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.25;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.fuente-desc { font-size: 13px; line-height: 1.45; color: var(--text-muted); margin-bottom: 14px; }
+.fuente-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.fuente-badge {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.fuente-badge.freq { color: #0F6E56; background: #E1F5EE; }
+.fuente-badge.fmt  { color: #444441; background: var(--footer-bg); }
+.fuente-badge i { margin-right: 4px; }
+.fuente-abrir {
+  margin-top: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--link);
+}
+.fuente-abrir i { margin-left: 4px; }
+.fuentes-ver-todo { font-size: 13px; margin-top: 4px; }
+.fuentes-ver-todo i { margin-left: 4px; }
+@media (max-width: 991px) {
+  .fuentes-datos { grid-template-columns: 1fr 1fr; }
+  .fuente-card.destacada { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .fuentes-datos { grid-template-columns: 1fr; }
+  .fuente-card.destacada { grid-column: auto; }
+}
