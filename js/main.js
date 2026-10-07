@@ -6,62 +6,6 @@
 (function($) {
   'use strict';
 
-  // -------- Password Gate --------
-  var PW_HASH = '529740df6896297f915d2640fc45f2ae7459077636d72ec96c5c6dd45b1ddca1';
-
-  function sha256(str) {
-    var encoder = new TextEncoder();
-    var data = encoder.encode(str);
-    return crypto.subtle.digest('SHA-256', data).then(function(buf) {
-      var arr = Array.from(new Uint8Array(buf));
-      return arr.map(function(b) { return b.toString(16).padStart(2, '0'); }).join('');
-    });
-  }
-
-  function showPasswordGate() {
-    var gate = document.createElement('div');
-    gate.className = 'password-gate';
-    gate.id = 'password-gate';
-    gate.innerHTML =
-      '<div class="pw-box">' +
-        '<div class="pw-flag"><div class="pw-flag-stripe"></div><div class="pw-flag-stripe pw-flag-white"><div class="pw-sun"></div></div><div class="pw-flag-stripe"></div></div>' +
-        '<div class="pw-title">Investor Relations Portal</div>' +
-        '<input type="password" class="pw-input" id="pw-input" placeholder="Enter password">' +
-        '<button class="pw-btn" id="pw-btn">Access</button>' +
-        '<div class="pw-error" id="pw-error">Incorrect password</div>' +
-      '</div>';
-    document.body.insertBefore(gate, document.body.firstChild);
-
-    var $input = $('#pw-input');
-    var $btn = $('#pw-btn');
-    var $error = $('#pw-error');
-
-    function tryPassword() {
-      var val = $input.val();
-      sha256(val).then(function(hash) {
-        if (hash === PW_HASH) {
-          sessionStorage.setItem('ir-portal-auth', '1');
-          $('#password-gate').addClass('fade-out');
-          setTimeout(function() { $('#password-gate').remove(); }, 400);
-        } else {
-          $error.show();
-          $input.val('').focus();
-        }
-      });
-    }
-
-    $btn.on('click', tryPassword);
-    $input.on('keypress', function(e) {
-      if (e.which === 13) tryPassword();
-    });
-    setTimeout(function() { $input.focus(); }, 100);
-  }
-
-  // Check auth on every page
-  if (!sessionStorage.getItem('ir-portal-auth')) {
-    $(function() { showPasswordGate(); });
-  }
-
   // -------- Language Toggle --------
   var currentLang = localStorage.getItem('ir-portal-lang') || 'en';
 

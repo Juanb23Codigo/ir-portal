@@ -1,6 +1,6 @@
 # Estado del proyecto
 
-Última actualización: **14 de septiembre de 2026**
+Última actualización: **7 de octubre de 2026**
 
 Este archivo lista los pendientes **conceptuales**. El estado del árbol de git
 (qué está commiteado, qué falta pushear) lo dice `git status`, no este archivo.
@@ -19,16 +19,15 @@ Institucional y footer.
 
 | Sección | Estado |
 |---|---|
-| **Programa Financiero** | Sección nueva. Lineamientos, tablas de necesidades y fuentes 2026 y 2027 (cifras del PDF oficial del MECON del 6/7/2026, sumas validadas), ejercicio de sostenibilidad con su caja de supuestos, y enlaces al PDF y al comunicado oficiales. |
+| **Programa Financiero** | Sección nueva. Lineamientos, tablas de necesidades y fuentes 2026 y 2027 (cifras del PDF oficial del MECON del 6/7/2026, sumas validadas) y enlaces al PDF y al comunicado oficiales. |
 | **Deuda Pública** | Dos gráficos interactivos de Deuda/PIB con datos reales (nov-23 a jun-26). Métricas clave arriba. Links a los datos oficiales. |
-| **Calificaciones Crediticias** | Las tres agencias con ratings vigentes (S&P B-, Moody's B3, Fitch B-), logos, y comunicados enlazados a las páginas oficiales. |
+| **Calificaciones Crediticias** | Las tres agencias con ratings vigentes (S&P B-, Moody's B3, Fitch B-), logos, la calificación en sí linkea al comunicado oficial de cada agencia, y se mantiene el listado de comunicados de prensa recientes. |
 | **Licitaciones** | Réplica de la sección oficial, con menú lateral y 4 subpáginas. Los cronogramas 2025/2026 muestran el calendario visual completo del año y descargan el PDF oficial del MECON. |
-| **Presentaciones** | Estructura armada, PDFs son placeholders. |
-| **Sobre Argentina** | Seis indicadores con fuente oficial verificada (INDEC y MECON), cada uno con período de referencia y link a su informe de prensa. Reemplazan los ocho tiles ilustrativos que traía el prototipo. |
+| **Presentaciones** | Estructura armada, PDFs son placeholders. Pendiente de decisión: ocultarla hasta tener una PPT real (ver Pendientes 7). |
+| ~~**Sobre Argentina**~~ | **Eliminada el 7/10/2026** (decisión de Juan: "no tiene sentido"). En su lugar, bloque **Links útiles** al pie de `inversores.html` con cinco destinos oficiales (MECON, BCRA, INDEC, BYMA, FMI). Lo que se perdió está anotado en Pendientes 8. |
 
-El fix de grilla de tarjetas (`card-grid`) está aplicado y publicado en las cinco
-páginas con grilla: `inversores`, `credit-ratings`, `licitaciones`,
-`about-argentina` e `historico-de-resultados`. Corregía el layout roto entre
+El fix de grilla de tarjetas (`card-grid`) está aplicado y publicado en las cuatro
+páginas con grilla: `inversores`, `credit-ratings`, `licitaciones` e `historico-de-resultados`. Corregía el layout roto entre
 1000px y 1170px de ancho.
 
 Las planillas del MECON están fuera del repo público (`.gitignore`: `datos/*` con
@@ -92,6 +91,22 @@ Otras dos se descartaron y **no hay que reponerlas**:
   dice CLAUDE.md en "decisiones tomadas".
 - **Deuda de corto plazo** — oscila entre 8% y 14% sin tendencia clara, no aguanta
   como indicador de mejora.
+
+### 7. Presentaciones: ocultar hasta tener PPT
+Pedido de Juan del 7/10/2026, **anotado pero no ejecutado**: la idea es ocultar la
+sección Presentaciones del portal hasta que exista una presentación real para
+inversores. Hoy sigue visible con PDFs placeholder. Cuando se decida, hay que
+sacarla del nav de las 10 páginas, del footer, y de la grilla de Acceso Rápido
+de `inversores.html`.
+
+### 8. Indicadores que se perdieron al eliminar Sobre Argentina
+La página traía seis indicadores con fuente oficial verificada, cada uno con su
+período de referencia y link al informe de prensa: EMAE, inflación mensual,
+inflación interanual, resultado primario, resultado financiero y superávit
+comercial. Conseguir esas fuentes llevó trabajo. Si en algún momento se quiere un
+bloque macro en el portal, el punto de partida está en el historial de git
+(`about-argentina.html`, última versión antes del 7/10/2026), no hay que
+reconstruirlo de cero.
 
 ---
 

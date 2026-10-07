@@ -13,3 +13,6 @@ desktop.ini
 
 # Temporales de Office
 ~$*
+
+# config local de Claude Code (no va al repo publico)
+.claude/

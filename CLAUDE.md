@@ -53,8 +53,7 @@ index.html          ← Landing "Finanzas": réplica de la página real del MECO
         │     ├── cronograma-2025.html
         │     ├── historico-de-resultados.html
         │     └── colocaciones-de-deuda.html
-        ├── investor-presentation.html Presentaciones
-        └── about-argentina.html       Sobre Argentina
+        └── investor-presentation.html Presentaciones
 ```
 
 **Regla de links en la landing:** `index.html` imita la página pública del MECON,
@@ -113,7 +112,6 @@ lugar vacío. Inventar un número plausible no es una opción.
 | Calificaciones crediticias | Comunicados oficiales de S&P, Moody's y Fitch |
 | Cronogramas y PDFs de licitaciones | argentina.gob.ar (se enlaza el archivo oficial, no se copia) |
 | Programa Financiero 2026 y 2027 | Presentación oficial del MECON del 6/7/2026, publicada en argentina.gob.ar (se enlaza el PDF oficial, no se copia) |
-| Indicadores de Sobre Argentina | INDEC (IPC, EMAE, ICA) y MECON (resultado fiscal), cada tile enlazado a su informe de prensa |
 
 **Los excels los provee Juan y no están en el repo** (ver el aviso del principio).
 Si hacen falta y no los tenés a mano, pedírselos — no avanzar con valores
@@ -230,12 +228,16 @@ Si cambiás el ángulo o el tamaño de las etiquetas, **medí el solapamiento** 
   argumento construido como "esta gestión contra la anterior" le recuerda al
   tenedor de bonos que acá la política se da vuelta con cada elección, que es
   justamente el riesgo que está pricear. Decisión de Juan, 14/09/2026.
-- **La caja de supuestos del ejercicio de sostenibilidad no se saca nunca.** Es lo
-  que lo convierte en un ejercicio auditable en vez de una promesa del emisor. El
-  HTML de `programa-financiero.html` tiene un comentario interno que explica la
-  brecha entre los supuestos (sp 1,3% y g 4,5%) y los datos corrientes que el
-  propio portal publica en Sobre Argentina (+0,6% y +1,9% en el 1er sem. 2026).
-  Leerlo antes de tocar esa sección.
+- **El ejercicio de sostenibilidad de la deuda se eliminó** (Juan, 7/10/2026) y
+  con él su caja de supuestos. No reponerlo sin que Juan lo pida explícitamente.
+  Si se repone, vuelve con la caja de supuestos: es lo que lo convertía en un
+  ejercicio auditable en vez de una promesa del emisor.
+- **La sección "Sobre Argentina" se eliminó** (Juan, 7/10/2026: "no tiene
+  sentido"). En su lugar quedó un bloque **Links útiles** al pie de
+  `inversores.html` con cinco destinos oficiales. Los seis indicadores que tenía
+  (EMAE, IPC mensual e interanual, resultado primario y financiero, superávit
+  comercial), con sus fuentes oficiales verificadas, están en el historial de git:
+  si alguna vez se quiere un bloque macro, partir de ahí.
 - **La presentación del programa no se aloja en el repo.** El `.pptx` (V7, versión
   interna) y el PDF van a `datos/`. La página enlaza el PDF oficial del MECON,
   misma regla que los PDFs de licitaciones.
