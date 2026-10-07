@@ -45,12 +45,27 @@ pública. La implementación está en `css/styles.css` (`.oculto` / `.ver-todo`)
 
 - **Qué:** el bloque "Métricas Clave / Key Metrics" con las dos tarjetas
   (Deuda Bruta/PIB 71,4% y Deuda con Privados y OI/PIB 40,9%) y su línea de fuente.
-- **Dónde:** `debt-statistics.html`. El gráfico interactivo de Deuda/PIB que está
-  debajo **queda visible**: solo se ocultaron las dos tarjetas de métricas.
+- **Dónde:** `debt-statistics.html`.
 - **Desde cuándo:** 7/10/2026.
 - **Por qué:** pedido de Juani, hasta que valide las cifras.
 - **Para reactivar:** cuando Juani valide los números. Quitar el
   `<span class="oculto">` que envuelve el bloque.
+
+### 2b. Gráfico "Deuda / PIB — Evolución Mensual" + aviso de datos
+
+- **Qué:** el gráfico interactivo de Deuda/PIB (las dos series, pestañas, SVG y
+  caption) y el aviso amarillo de "datos reales / foto estática" que lo encabeza.
+- **Dónde:** `debt-statistics.html`.
+- **Desde cuándo:** 7/10/2026.
+- **Por qué:** Juani está dudando si mostrar estos gráficos. Se ocultan mientras
+  decide. El aviso de datos se ocultó con ellos porque describe cifras que ya no se
+  ven (sin el gráfico y sin las métricas, la página pública no muestra ninguna
+  cifra, así que el aviso quedaría colgado).
+- **Para reactivar:** cuando Juani decida mostrarlos. Quitar los dos
+  `<span class="oculto">` (el del aviso y el del gráfico).
+- **Ojo:** con esto oculto, la página pública de Deuda Pública queda prácticamente
+  solo con el título y los 3 botones de fuente oficial. Es una decisión consciente
+  de "todavía no está listo", no un descuido.
 
 ### 3. Novedades inventadas (home de Inversores) — RESUELTO (7/10/2026)
 
