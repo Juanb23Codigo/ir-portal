@@ -52,23 +52,16 @@ pública. La implementación está en `css/styles.css` (`.oculto` / `.ver-todo`)
 - **Para reactivar:** cuando Juani valide los números. Quitar el
   `<span class="oculto">` que envuelve el bloque.
 
-### 3. Novedades inventadas (home de Inversores)
+### 3. Novedades inventadas (home de Inversores) — RESUELTO (7/10/2026)
 
-- **Qué:** las **cuatro** noticias de la sección "Novedades / What's New":
-  1. "Presentación para Inversores Q4 2025 Actualizada" (5/2/2026)
-  2. "Plan Anual de Endeudamiento 2026 Publicado" (28/1/2026)
-  3. "Informe Mensual de Deuda de Diciembre 2025 Disponible" (15/1/2026)
-  4. **"S&P Mejora la Perspectiva de Argentina a Positiva" (10/1/2026)**
-- **Dónde:** `inversores.html`, columna izquierda de la sección Novedades.
-- **Desde cuándo:** 7/10/2026.
-- **Por qué:** es **contenido inventado del prototipo original**, sin fuente
-  verificable. La #4 es la más grave: una acción de calificación de S&P que nunca
-  ocurrió, atribuida a la agencia en una página del Ministerio. Las otras tres son
-  relleno con fechas y eventos de ene/feb 2026 que tampoco se pueden verificar.
-- **Para reactivar:** **no reactivar como están: borrar.** Si alguna corresponde a
-  un hecho real, se repone de cero con la fecha correcta y el link al comunicado o
-  informe oficial que lo respalde. Nunca la #4 sin el comunicado oficial de S&P.
-- **Nota de layout:** al ocultarse las cuatro, la columna izquierda de Novedades
-  queda vacía en la vista pública (a la derecha sigue la tarjeta de próximas
-  licitaciones, que ahora es real). Pendiente de decisión de Juani: reponer
-  novedades reales, o esconder la sección entera.
+Las cuatro noticias inventadas del prototipo (incluida la falsa acción de
+calificación de S&P) **se borraron** y se reemplazaron por las **últimas 4 noticias
+reales** de la Secretaría de Finanzas, tomadas de
+`https://www.argentina.gob.ar/economia/finanzas`, cada una enlazada a su comunicado
+oficial en `/noticias`. Ya no hay nada oculto acá.
+
+- **Mantenimiento:** son una **foto estática** (últimas al 28/09/2026). No se
+  actualizan solas — GitHub Pages no puede leer el sitio del MECON por CORS. Para
+  refrescarlas hay que reemplazar las 4 a mano en `inversores.html` por las más
+  recientes del link de arriba, con su fecha y su URL. Es la misma lógica de "foto
+  con fecha" que el resto del portal.
