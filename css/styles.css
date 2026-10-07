@@ -1525,3 +1525,28 @@ body.lang-active-es span.lang-es {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* ---------- Ocultamiento temporal ----------
+   Bloques que todavía no están listos para publicar.
+   Por defecto no se ven. Abriendo cualquier página con ?ver=todo
+   se muestran todos, para validarlos antes de darlos por buenos.
+   OJO: esto es ocultamiento VISUAL. El contenido sigue en el HTML
+   y el repositorio es público. No usar para nada confidencial.
+   El registro de qué está oculto y por qué está en OCULTO.md.      */
+.oculto { display: none !important; }
+body.ver-todo .oculto { display: revert !important; }
+body.ver-todo .oculto > * { outline: 2px dashed #E65100; outline-offset: 4px; }
+.banda-previsualizacion {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+  background: #E65100; color: #fff; text-align: center;
+  font-family: 'Montserrat', sans-serif; font-size: 12px;
+  padding: 8px 16px; letter-spacing: 0.5px;
+}
+.banda-previsualizacion a { color: #fff; text-decoration: underline; }
+
+/* ---------- Próximas licitaciones ---------- */
+.lic-item { padding: 8px 0; border-top: 1px solid rgba(0,0,0,0.08); }
+.lic-item:first-child { border-top: none; padding-top: 0; }
+.lic-fecha { font-family: 'Montserrat', sans-serif; font-weight: 700;
+             font-size: 15px; color: var(--primary); }
+.lic-detalle { font-size: 12px; color: var(--text-muted); margin-top: 2px; }

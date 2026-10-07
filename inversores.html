@@ -45,7 +45,7 @@
         </button>
         <a class="navbar-brand" href="inversores.html">
           <span class="lang-en">Investor Relations</span>
-          <span class="lang-es">Relaciones con Inversores</span>
+          <span class="lang-es">Relación con Inversores</span>
         </a>
       </div>
       <div class="collapse navbar-collapse" id="main-nav">
@@ -66,10 +66,10 @@
             <span class="lang-en">Auctions</span>
             <span class="lang-es">Licitaciones</span>
           </a></li>
-          <li><a href="investor-presentation.html">
+          <span class="oculto"><li><a href="investor-presentation.html">
             <span class="lang-en">Presentations</span>
             <span class="lang-es">Presentaciones</span>
-          </a></li>
+          </a></li></span>
         </ul>
         <div class="nav navbar-nav navbar-right lang-toggle">
           <button class="btn" id="lang-toggle-btn">ES</button>
@@ -83,44 +83,35 @@
     <div class="container">
       <ol class="breadcrumb breadcrumb-poncho">
         <li><a href="index.html" style="color: rgba(255,255,255,0.7);"><span class="lang-en">Finance</span><span class="lang-es">Finanzas</span></a></li>
-        <li class="active" style="color: rgba(255,255,255,0.9);"><span class="lang-en">Investor Relations</span><span class="lang-es">Relaciones con Inversores</span></li>
+        <li class="active" style="color: rgba(255,255,255,0.9);"><span class="lang-en">Investor Relations</span><span class="lang-es">Relación con Inversores</span></li>
       </ol>
       <div class="celeste-line"></div>
       <h1>
         <span class="lang-en">Investor Relations</span>
-        <span class="lang-es">Relaciones con Inversores</span>
+        <span class="lang-es">Relación con Inversores</span>
       </h1>
       <p>
         <span class="lang-en">Official portal of the Argentine Republic's Secretariat of Finance. Access comprehensive public debt information, credit ratings, operations calendar, and investor presentations.</span>
         <span class="lang-es">Portal oficial de la Secretaría de Finanzas de la República Argentina. Acceda a información integral sobre deuda pública, calificaciones crediticias, calendario de operaciones y presentaciones para inversores.</span>
       </p>
-      <a href="investor-presentation.html" class="btn btn-poncho btn-poncho-white mt-20">
+      <span class="oculto"><a href="investor-presentation.html" class="btn btn-poncho btn-poncho-white mt-20">
         <i class="fa fa-download"></i>&nbsp;
         <span class="lang-en">Investor Presentation</span>
         <span class="lang-es">Presentación para Inversores</span>
-      </a>
+      </a></span>
     </div>
   </section>
-
-  <!-- Sample Data Notice -->
-  <div class="container" style="margin-top: 20px;">
-    <div class="sample-data-notice">
-      <i class="fa fa-info-circle"></i>
-      <span class="lang-en"><strong>Note:</strong> This is a functional prototype with sample data for demonstration purposes. All figures are illustrative.</span>
-      <span class="lang-es"><strong>Nota:</strong> Este es un prototipo funcional con datos de muestra con fines demostrativos. Todas las cifras son ilustrativas.</span>
-    </div>
-  </div>
 
   <!-- Quick Access Cards -->
   <section class="section-default">
     <div class="container">
       <h2 class="section-title">
-        <span class="lang-en">Quick Access</span>
-        <span class="lang-es">Acceso Rápido</span>
+        <span class="lang-en">Sections</span>
+        <span class="lang-es">Secciones</span>
       </h2>
       <div class="row card-grid">
         <!-- Public Debt -->
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-6">
           <div class="card-poncho">
             <div class="card-icon"><i class="fa fa-bar-chart"></i></div>
             <div class="card-title">
@@ -139,7 +130,7 @@
         </div>
 
         <!-- Financial Program -->
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-6">
           <div class="card-poncho card-info">
             <div class="card-icon"><i class="fa fa-line-chart"></i></div>
             <div class="card-title">
@@ -158,7 +149,7 @@
         </div>
 
         <!-- Credit Ratings -->
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-6">
           <div class="card-poncho card-celeste">
             <div class="card-icon"><i class="fa fa-star"></i></div>
             <div class="card-title">
@@ -177,7 +168,7 @@
         </div>
 
         <!-- Auctions -->
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-6">
           <div class="card-poncho card-secondary">
             <div class="card-icon"><i class="fa fa-calendar"></i></div>
             <div class="card-title">
@@ -186,7 +177,7 @@
             </div>
             <div class="card-text">
               <span class="lang-en">Upcoming auctions, bond operations, and annual borrowing plan schedule.</span>
-              <span class="lang-es">Próximas subastas, operaciones de bonos y cronograma del plan anual de endeudamiento.</span>
+              <span class="lang-es">Próximas licitaciones, operaciones de bonos y cronograma del plan anual de endeudamiento.</span>
             </div>
             <a href="licitaciones.html" class="card-link">
               <span class="lang-en">View Calendar <i class="fa fa-arrow-right"></i></span>
@@ -195,8 +186,8 @@
           </div>
         </div>
 
-        <!-- Investor Presentation -->
-        <div class="col-md-4 col-sm-6">
+        <!-- Investor Presentation (oculta: ver OCULTO.md) -->
+        <span class="oculto"><div class="col-md-4 col-sm-6">
           <div class="card-poncho card-info">
             <div class="card-icon"><i class="fa fa-file-powerpoint-o"></i></div>
             <div class="card-title">
@@ -212,7 +203,7 @@
               <span class="lang-es">Descargar <i class="fa fa-arrow-right"></i></span>
             </a>
           </div>
-        </div>
+        </div></span>
 
       </div>
     </div>
@@ -227,7 +218,10 @@
       </h2>
       <div class="row">
         <div class="col-md-8">
-          <div class="news-item">
+          <!-- Novedades: 4 noticias ocultas el 7/10/2026. Relleno del prototipo,
+               sin fuente verificable (la de S&P es una acción de calificación
+               inventada). Ver OCULTO.md. -->
+          <span class="oculto"><div class="news-item">
             <div class="news-date">
               <span class="lang-en">February 5, 2026</span>
               <span class="lang-es">5 de febrero de 2026</span>
@@ -240,9 +234,9 @@
               <span class="lang-en">The latest investor presentation has been updated with Q4 2025 macroeconomic data, fiscal results, and debt composition figures.</span>
               <span class="lang-es">La última presentación para inversores ha sido actualizada con datos macroeconómicos del Q4 2025, resultados fiscales y cifras de composición de deuda.</span>
             </div>
-          </div>
+          </div></span>
 
-          <div class="news-item">
+          <span class="oculto"><div class="news-item">
             <div class="news-date">
               <span class="lang-en">January 28, 2026</span>
               <span class="lang-es">28 de enero de 2026</span>
@@ -255,9 +249,9 @@
               <span class="lang-en">The Secretariat of Finance has published the 2026 Annual Borrowing Plan, outlining the financing strategy for the fiscal year.</span>
               <span class="lang-es">La Secretaría de Finanzas ha publicado el Plan Anual de Endeudamiento 2026, delineando la estrategia de financiamiento para el ejercicio fiscal.</span>
             </div>
-          </div>
+          </div></span>
 
-          <div class="news-item">
+          <span class="oculto"><div class="news-item">
             <div class="news-date">
               <span class="lang-en">January 15, 2026</span>
               <span class="lang-es">15 de enero de 2026</span>
@@ -270,9 +264,9 @@
               <span class="lang-en">The monthly public debt report for December 2025 is now available for download, including updated composition and maturity data.</span>
               <span class="lang-es">El informe mensual de deuda pública de diciembre 2025 ya está disponible para descarga, incluyendo datos actualizados de composición y vencimientos.</span>
             </div>
-          </div>
+          </div></span>
 
-          <div class="news-item">
+          <span class="oculto"><div class="news-item">
             <div class="news-date">
               <span class="lang-en">January 10, 2026</span>
               <span class="lang-es">10 de enero de 2026</span>
@@ -285,35 +279,16 @@
               <span class="lang-en">Standard & Poor's has revised Argentina's sovereign credit outlook from Stable to Positive, citing improved fiscal performance and economic stabilization.</span>
               <span class="lang-es">Standard & Poor's ha revisado la perspectiva crediticia soberana de Argentina de Estable a Positiva, citando mejora en el desempeño fiscal y estabilización económica.</span>
             </div>
-          </div>
+          </div></span>
         </div>
 
         <div class="col-md-4">
           <div class="card-poncho card-celeste">
             <h4>
               <span class="lang-en">Upcoming Auctions</span>
-              <span class="lang-es">Próximas Subastas</span>
+              <span class="lang-es">Próximas Licitaciones</span>
             </h4>
-            <div class="news-item" style="padding-top:0">
-              <div class="news-date">
-                <span class="lang-en">Feb 18, 2026</span>
-                <span class="lang-es">18 feb 2026</span>
-              </div>
-              <div style="font-size:13px">
-                <span class="lang-en">Treasury Bills (LETES) – USD denominated</span>
-                <span class="lang-es">Letras del Tesoro (LETES) – Denominadas en USD</span>
-              </div>
-            </div>
-            <div class="news-item">
-              <div class="news-date">
-                <span class="lang-en">Feb 25, 2026</span>
-                <span class="lang-es">25 feb 2026</span>
-              </div>
-              <div style="font-size:13px">
-                <span class="lang-en">Treasury Notes (BONCER) – CER-adjusted</span>
-                <span class="lang-es">Bonos del Tesoro (BONCER) – Ajustados por CER</span>
-              </div>
-            </div>
+            <div id="proximas-licitaciones"></div>
             <a href="licitaciones.html" class="card-link" style="display:block; margin-top:10px;">
               <span class="lang-en">Full Calendar <i class="fa fa-arrow-right"></i></span>
               <span class="lang-es">Calendario Completo <i class="fa fa-arrow-right"></i></span>
@@ -396,14 +371,14 @@
         <div class="col-md-4 col-sm-6">
           <h4>
             <span class="lang-en">Investor Relations</span>
-            <span class="lang-es">Relaciones con Inversores</span>
+            <span class="lang-es">Relación con Inversores</span>
           </h4>
           <ul>
             <li><a href="debt-statistics.html"><span class="lang-en">Public Debt</span><span class="lang-es">Deuda Pública</span></a></li>
             <li><a href="programa-financiero.html"><span class="lang-en">Financial Program</span><span class="lang-es">Programa Financiero</span></a></li>
             <li><a href="credit-ratings.html"><span class="lang-en">Credit Ratings</span><span class="lang-es">Calificaciones Crediticias</span></a></li>
             <li><a href="licitaciones.html"><span class="lang-en">Auctions</span><span class="lang-es">Licitaciones</span></a></li>
-            <li><a href="investor-presentation.html"><span class="lang-en">Presentations</span><span class="lang-es">Presentaciones</span></a></li>
+            <span class="oculto"><li><a href="investor-presentation.html"><span class="lang-en">Presentations</span><span class="lang-es">Presentaciones</span></a></li></span>
           </ul>
         </div>
         <div class="col-md-4 col-sm-6">

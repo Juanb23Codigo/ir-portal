@@ -46,7 +46,7 @@
         </button>
         <a class="navbar-brand" href="inversores.html">
           <span class="lang-en">Investor Relations</span>
-          <span class="lang-es">Relaciones con Inversores</span>
+          <span class="lang-es">Relación con Inversores</span>
         </a>
       </div>
       <div class="collapse navbar-collapse" id="main-nav">
@@ -67,10 +67,10 @@
             <span class="lang-en">Auctions</span>
             <span class="lang-es">Licitaciones</span>
           </a></li>
-          <li><a href="investor-presentation.html">
+          <span class="oculto"><li><a href="investor-presentation.html">
             <span class="lang-en">Presentations</span>
             <span class="lang-es">Presentaciones</span>
-          </a></li>
+          </a></li></span>
         </ul>
         <div class="nav navbar-nav navbar-right lang-toggle">
           <button class="btn" id="lang-toggle-btn">ES</button>
@@ -86,7 +86,7 @@
         <li><a href="index.html" style="color: rgba(255,255,255,0.7);"><span class="lang-en">Finance</span><span class="lang-es">Finanzas</span></a></li>
         <li><a href="inversores.html" style="color: rgba(255,255,255,0.7);">
           <span class="lang-en">Investor Relations</span>
-          <span class="lang-es">Relaciones con Inversores</span>
+          <span class="lang-es">Relación con Inversores</span>
         </a></li>
         <li class="active" style="color: rgba(255,255,255,0.9);">
           <span class="lang-en">Public Debt</span>
@@ -97,10 +97,6 @@
         <span class="lang-en">Public Debt Statistics</span>
         <span class="lang-es">Estadísticas de Deuda Pública</span>
       </h1>
-      <p>
-        <span class="lang-en">Gross debt of the National Central Government, sourced from the official Monthly Debt Bulletin published by the Secretariat of Finance.</span>
-        <span class="lang-es">Deuda bruta de la Administración Central Nacional, en base al Boletín Mensual de Deuda publicado por la Secretaría de Finanzas.</span>
-      </p>
     </div>
   </section>
 
@@ -116,7 +112,8 @@
   <!-- Key Metrics -->
   <section class="section-default" style="padding-top:24px;">
     <div class="container">
-      <h2 class="section-title">
+      <!-- Métricas Clave: ocultas el 7/10/2026 hasta que Juani valide las cifras. Ver OCULTO.md. -->
+      <span class="oculto"><h2 class="section-title">
         <span class="lang-en">Key Metrics</span>
         <span class="lang-es">Métricas Clave</span>
       </h2>
@@ -153,7 +150,7 @@
       <p style="font-size:11px; color:#999; margin-top:0; margin-bottom:24px;">
         <span class="lang-en">As of June 30, 2026 · Source: Secretariat of Finance, Debt/GDP series</span>
         <span class="lang-es">Al 30 de junio de 2026 · Fuente: Secretaría de Finanzas, serie Deuda/PIB</span>
-      </p>
+      </p></span>
 
       <h3 style="font-size:1.1em;">
         <span class="lang-en">Debt / GDP &mdash; Monthly Evolution</span>
@@ -488,25 +485,70 @@
         <span class="lang-en">Official Data Source</span>
         <span class="lang-es">Fuente Oficial de Datos</span>
       </h2>
-      <div class="source-official">
-        <h3><i class="fa fa-database" style="color:var(--celeste); margin-right:8px;"></i><span class="lang-en">All figures on this page are drawn from the official public-debt data hub of the Secretariat of Finance.</span><span class="lang-es">Todas las cifras de esta página provienen del centro de datos oficial de deuda pública de la Secretaría de Finanzas.</span></h3>
-        <p style="margin-bottom:0; font-size:13px; color:var(--text-muted);">
-          <span class="lang-en">Visit the official page for the current Monthly Debt Bulletin, quarterly data, and the financial structure of outstanding public securities.</span>
-          <span class="lang-es">Visitá la página oficial para acceder al Boletín Mensual de Deuda vigente, datos trimestrales y la estructura financiera de los títulos públicos vigentes.</span>
-        </p>
-        <div style="margin-top:16px;">
-          <a href="https://www.argentina.gob.ar/economia/finanzas/datos" target="_blank" rel="noopener" class="btn btn-poncho btn-poncho-primary">
-            <i class="fa fa-external-link"></i>&nbsp;
-            <span class="lang-en">Go to Official Debt Data (argentina.gob.ar)</span>
-            <span class="lang-es">Ir a Datos Oficiales de Deuda (argentina.gob.ar)</span>
-          </a>
+      <p style="font-size:13px; color:var(--text-muted); margin-bottom:20px;">
+        <span class="lang-en">All figures on this page are drawn from the official public-debt data of the Secretariat of Finance. These indexes always list the most recent release first.</span>
+        <span class="lang-es">Todas las cifras de esta página provienen de los datos oficiales de deuda pública de la Secretaría de Finanzas. Estos índices siempre listan la publicación más reciente arriba.</span>
+      </p>
+      <div class="row card-grid">
+        <div class="col-md-4">
+          <div class="card-poncho">
+            <div class="card-icon"><i class="fa fa-file-text-o"></i></div>
+            <div class="card-title">
+              <span class="lang-en">Monthly Debt Bulletin</span>
+              <span class="lang-es">Boletín Mensual de Deuda</span>
+            </div>
+            <div class="card-text">
+              <span class="lang-en">Gross debt stock, composition and maturities, updated monthly.</span>
+              <span class="lang-es">Stock de deuda bruta, composición y vencimientos, con actualización mensual.</span>
+            </div>
+            <a href="https://www.argentina.gob.ar/economia/finanzas/datos-mensuales-de-la-deuda" target="_blank" rel="noopener" class="card-link">
+              <span class="lang-en">View on argentina.gob.ar <i class="fa fa-external-link"></i></span>
+              <span class="lang-es">Ver en argentina.gob.ar <i class="fa fa-external-link"></i></span>
+            </a>
+          </div>
         </div>
-        <ul class="source-sublinks">
-          <li><a href="https://www.argentina.gob.ar/economia/finanzas/datos-mensuales-de-la-deuda" target="_blank" rel="noopener"><i class="fa fa-file-text-o"></i><span class="lang-en">Monthly Data — Debt Bulletin</span><span class="lang-es">Datos Mensuales — Boletín de Deuda</span></a></li>
-          <li><a href="https://www.argentina.gob.ar/economia/finanzas/datos-trimestrales-de-la-deuda" target="_blank" rel="noopener"><i class="fa fa-calendar"></i><span class="lang-en">Quarterly Data</span><span class="lang-es">Datos Trimestrales</span></a></li>
-          <li><a href="https://www.argentina.gob.ar/economia/finanzas/estructura-financiera-de-titulos-publicos" target="_blank" rel="noopener"><i class="fa fa-list-alt"></i><span class="lang-en">Financial Structure of Public Securities</span><span class="lang-es">Estructura Financiera de Títulos Públicos</span></a></li>
-        </ul>
+        <div class="col-md-4">
+          <div class="card-poncho card-info">
+            <div class="card-icon"><i class="fa fa-calendar"></i></div>
+            <div class="card-title">
+              <span class="lang-en">Quarterly Data</span>
+              <span class="lang-es">Datos Trimestrales</span>
+            </div>
+            <div class="card-text">
+              <span class="lang-en">Quarterly public-debt series and indicators.</span>
+              <span class="lang-es">Series e indicadores de deuda pública con frecuencia trimestral.</span>
+            </div>
+            <a href="https://www.argentina.gob.ar/economia/finanzas/datos-trimestrales-de-la-deuda" target="_blank" rel="noopener" class="card-link">
+              <span class="lang-en">View on argentina.gob.ar <i class="fa fa-external-link"></i></span>
+              <span class="lang-es">Ver en argentina.gob.ar <i class="fa fa-external-link"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-poncho card-celeste">
+            <div class="card-icon"><i class="fa fa-list-alt"></i></div>
+            <div class="card-title">
+              <span class="lang-en">Financial Structure of Public Securities</span>
+              <span class="lang-es">Estructura Financiera de Títulos Públicos</span>
+            </div>
+            <div class="card-text">
+              <span class="lang-en">Terms and conditions of each outstanding instrument.</span>
+              <span class="lang-es">Condiciones financieras de cada título público vigente.</span>
+            </div>
+            <a href="https://www.argentina.gob.ar/economia/finanzas/estructura-financiera-de-titulos-publicos" target="_blank" rel="noopener" class="card-link">
+              <span class="lang-en">View on argentina.gob.ar <i class="fa fa-external-link"></i></span>
+              <span class="lang-es">Ver en argentina.gob.ar <i class="fa fa-external-link"></i></span>
+            </a>
+          </div>
+        </div>
       </div>
+      <p style="font-size:13px; margin-top:8px;">
+        <a href="https://www.argentina.gob.ar/economia/finanzas/datos" target="_blank" rel="noopener">
+          <i class="fa fa-folder-open-o"></i>&nbsp;
+          <span class="lang-en">Browse all data and historical files</span>
+          <span class="lang-es">Ver todos los datos y archivos históricos</span>
+        </a>
+      </p>
     </div>
   </section>
 
@@ -531,14 +573,14 @@
         <div class="col-md-4 col-sm-6">
           <h4>
             <span class="lang-en">Investor Relations</span>
-            <span class="lang-es">Relaciones con Inversores</span>
+            <span class="lang-es">Relación con Inversores</span>
           </h4>
           <ul>
             <li><a href="debt-statistics.html"><span class="lang-en">Public Debt</span><span class="lang-es">Deuda Pública</span></a></li>
             <li><a href="programa-financiero.html"><span class="lang-en">Financial Program</span><span class="lang-es">Programa Financiero</span></a></li>
             <li><a href="credit-ratings.html"><span class="lang-en">Credit Ratings</span><span class="lang-es">Calificaciones Crediticias</span></a></li>
             <li><a href="licitaciones.html"><span class="lang-en">Auctions</span><span class="lang-es">Licitaciones</span></a></li>
-            <li><a href="investor-presentation.html"><span class="lang-en">Presentations</span><span class="lang-es">Presentaciones</span></a></li>
+            <span class="oculto"><li><a href="investor-presentation.html"><span class="lang-en">Presentations</span><span class="lang-es">Presentaciones</span></a></li></span>
           </ul>
         </div>
         <div class="col-md-4 col-sm-6">

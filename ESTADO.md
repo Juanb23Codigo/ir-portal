@@ -73,7 +73,9 @@ de cierre de mes desde el BCRA.
 
 ### 4. Archivos descargables
 Los PDFs de presentaciones y varios Excel son placeholders. Los cronogramas de
-licitaciones sí bajan el PDF oficial real.
+licitaciones sí bajan el PDF oficial real. La sección Presentaciones se ocultó el
+7/10/2026 justamente por esto (ver `OCULTO.md`): sigue abierta como pendiente,
+porque falta la PPT real.
 
 ### 5. Contenido que se sacó y habría que reponer con otra forma
 Al limpiar la página de Deuda quedaron afuera la composición de deuda y los flujos
@@ -92,12 +94,13 @@ Otras dos se descartaron y **no hay que reponerlas**:
 - **Deuda de corto plazo** — oscila entre 8% y 14% sin tendencia clara, no aguanta
   como indicador de mejora.
 
-### 7. Presentaciones: ocultar hasta tener PPT
-Pedido de Juan del 7/10/2026, **anotado pero no ejecutado**: la idea es ocultar la
-sección Presentaciones del portal hasta que exista una presentación real para
-inversores. Hoy sigue visible con PDFs placeholder. Cuando se decida, hay que
-sacarla del nav de las 10 páginas, del footer, y de la grilla de Acceso Rápido
-de `inversores.html`.
+### 7. Presentaciones: ocultar hasta tener PPT — HECHO (7/10/2026)
+Se ocultó la sección Presentaciones con el mecanismo `.oculto` (navbar y footer de
+las 11 páginas, botón del hero y tarjeta de "Secciones" en `inversores.html`). La
+página `investor-presentation.html` **no se borró**: sigue accesible por URL
+directa. Registrado en `OCULTO.md`, con las condiciones para reactivarla (entre
+ellas volver la grilla de Secciones de `col-md-6` a `col-md-4`). Queda pendiente la
+PPT real (ver pendiente 4).
 
 ### 8. Indicadores que se perdieron al eliminar Sobre Argentina
 La página traía seis indicadores con fuente oficial verificada, cada uno con su
@@ -107,6 +110,27 @@ comercial. Conseguir esas fuentes llevó trabajo. Si en algún momento se quiere
 bloque macro en el portal, el punto de partida está en el historial de git
 (`about-argentina.html`, última versión antes del 7/10/2026), no hay que
 reconstruirlo de cero.
+
+### 9. Lo que falta contra el listado del FMI
+Contra el inventario de contenidos que el FMI recomienda para el sitio de un emisor
+soberano (IMF WP/20/204), el portal cumple bien la mitad que responde *qué emitimos
+y cuánto debemos*, y casi nada de la mitad que responde *cómo nos contactás y cómo
+se opera*. En orden de importancia, lo que falta:
+
+1. **Contacto IR**: formulario y personas de contacto. Es la brecha más grave —
+   hoy no hay ningún dato de contacto. (Coincide con lo que ya decía la propuesta
+   de Fase 1.)
+2. **Perfil de amortizaciones e indicadores de costo y riesgo** (vida promedio,
+   costo promedio): no está.
+3. **Series históricas descargables (CSV)**: se enlaza al origen, no hay descarga
+   propia.
+4. Marco legal, prospectos, mecánica de mercado primario/secundario, custodia,
+   liquidación y tributación: no está.
+5. Estrategia y reporte anual de gestión de deuda; lista de suscripción; materiales
+   de conferencias: no está.
+
+El detalle completo (cumplido vs no cumplido) está en el anexo del plan
+`datos/PLAN-2026-10-07.md`.
 
 ---
 

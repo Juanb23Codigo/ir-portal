@@ -34,7 +34,8 @@ dependencias que instalar. Se edita el HTML directo y se publica con `git push`.
 - **Bootstrap 3.4.1** y **Font Awesome 4.7** por CDN
 - **jQuery 1.12.4** (lo usa `js/main.js`)
 - `css/styles.css` — todos los estilos propios
-- `js/main.js` — toggle de idioma, gate de acceso, pantalla de carga
+- `js/main.js` — toggle de idioma, pantalla de carga, vista de previsualización
+  (`?ver=todo`) y el cartel de próximas licitaciones de la home
 
 ### Estructura de navegación
 
@@ -85,12 +86,22 @@ git add -A && git commit -m "..." && git push origin main
 GitHub Pages tarda **1-2 minutos** en reconstruir. Hay que entrar con **Ctrl+F5**
 porque el navegador cachea `styles.css` con ganas.
 
-### Gate de acceso
+### Ocultar bloques que no están listos (`.oculto` / `?ver=todo`)
 
-El sitio pide una contraseña al entrar (`js/main.js`, constante `PW_HASH`, SHA-256).
-Es para que el work-in-progress no quede completamente abierto, pero **no protege
-nada en serio**: el hash está en el JS del cliente y el repo es público. No poner
-ahí nada que no pueda verse.
+Para mostrar un sitio limpio sin mantener dos copias, hay un mecanismo de
+ocultamiento visual:
+
+- Un bloque con `class="oculto"` no se ve en la versión pública.
+- Abriendo cualquier página con `?ver=todo` se muestran **todos** los ocultos, con
+  borde naranja y una banda al pie, para validarlos antes de darlos por buenos.
+- Implementado en `css/styles.css` (`.oculto` / `.ver-todo`) y `js/main.js`.
+
+**Es ocultamiento VISUAL, no seguridad.** El contenido sigue en el HTML y el repo
+es público: no sirve para nada confidencial (eso se borra). El registro de qué está
+oculto, por qué, y qué hace falta para reactivarlo está en **`OCULTO.md`**.
+
+> Nota: el sitio tuvo un gate de contraseña (`PW_HASH` en `js/main.js`) que **se
+> eliminó el 7/10/2026**. Ya no existe en el código.
 
 ---
 
@@ -241,6 +252,21 @@ Si cambiás el ángulo o el tamaño de las etiquetas, **medí el solapamiento** 
 - **La presentación del programa no se aloja en el repo.** El `.pptx` (V7, versión
   interna) y el PDF van a `datos/`. La página enlaza el PDF oficial del MECON,
   misma regla que los PDFs de licitaciones.
+- **En castellano el acto es "licitación", no "subasta"** (Juani, 7/10/2026).
+  "Subasta" es el genérico; en deuda pública argentina se licita. En inglés
+  *Auctions* queda bien y no se toca.
+- **Los botones de datos oficiales apuntan a los índices del MECON, no a archivos
+  puntuales** (Juani, 7/10/2026). argentina.gob.ar no tiene URL estable al último
+  boletín: cada archivo tiene su dirección con fecha. Los índices siempre listan lo
+  más reciente arriba y nunca devuelven algo viejo. **Es deliberado: no "mejorarlo"
+  después linkeando el archivo del mes.**
+- **Sección Presentaciones oculta** (Juani, 7/10/2026): PDFs placeholder, sin PPT
+  real todavía. Se ocultó con `.oculto`, no se borró. Ver `OCULTO.md`.
+- **Se eliminó el contenido inventado de la home** (Juani, 7/10/2026): cuatro
+  "novedades" sin fuente (incluida una acción de calificación de S&P que nunca
+  ocurrió) y un cartel de próximas subastas con instrumentos y fechas inventados.
+  El cartel se reemplazó por uno que se calcula solo contra el cronograma oficial
+  2026. Ver `OCULTO.md`. No reponer nada de eso sin fuente oficial.
 
 ---
 
